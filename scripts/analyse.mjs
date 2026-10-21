@@ -5,6 +5,7 @@ import { createStudy, ingestScan, summarizeStudy, renderSummary, renderTrail } f
 import { validateConfig } from '../lib/study.mjs';
 import { renderInventory } from '../lib/context.mjs';
 import { compareScan, updateComparisonState, renderChanges } from '../lib/changes.mjs';
+import { publishEntry } from '../lib/published.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const config = validateConfig(await readJson(path.join(root, 'study.json')));
@@ -30,6 +31,16 @@ await atomicWrite(path.join(root, 'reports/CHANGES.md'), renderChanges(latest, c
 for (const trail of latest.catalog) {
   const history = trails.find(t => t.resourceId === trail.resourceId);
   const longRangeSamples = (dailyScan?.entries || []).filter(e => e.r === trail.resourceId && dailyScan.sentinelDates.includes(e.d));
+  const published = new Map();
+  for (const [entries, cadence] of [[longRangeSamples, 'daily'], [latest.entries.filter(e => e.r === trail.resourceId), 'hourly']]) {
+    for (const e of entries) published.set(e.d, publishEntry(e, trail, latest.sentinelDates?.includes(e.d) ? 'daily' : cadence));
+  }
+  for (const { index, profile } of published.values()) if (profile) {
+    await atomicWrite(path.join(root, index.path), JSON.stringify(profile, null, 2) + '\n');
+  }
+  await atomicWrite(path.join(root, `latest/index/${trail.resourceId}.json`), JSON.stringify({ version: 1,
+    resourceId: trail.resourceId, trail: trail.name, latestScanId: latest.id, scanFinishedAt: latest.finishedAt,
+    entries: [...published.values()].map(p => p.index) }, null, 2) + '\n');
   await atomicWrite(path.join(root, `reports/trails/${trail.resourceId}.md`), renderTrail(latest, trail, history, longRangeSamples));
   await atomicWrite(path.join(root, `reports/changes/${trail.resourceId}.md`), renderChanges(latest, changes, previousScanId, trail.resourceId));
   await atomicWrite(path.join(root, `latest/trails/${trail.resourceId}.json`), JSON.stringify({ v: 1, trail, scanId: latest.id,

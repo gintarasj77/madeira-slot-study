@@ -15,6 +15,7 @@ The collection is generic: it contains public trail names, dates, source timesta
 - `reports/trails/RESOURCE_ID.md`: every slot and percentage in the latest window, plus historical statistics by exact entry time and weekday/weekend.
 - `reports/INVENTORY.md`: daily IFCN route-status context and official routes missing from the booking catalog. A missing resource is not a claim that a route is closed or exempt from booking.
 - `latest/trails/RESOURCE_ID.json`: normalized data. `slotColumns` names the four values in each compact slot row: exact start local time, exact end local time, IANA timezone and non-resident percentage.
+- For a smaller scheduled-reader response, read `latest/index/RESOURCE_ID.json`, then its `latest/slots/RESOURCE_ID/YYYY-MM-DD.json` path **at the same Git commit**. Match `profileHash` and use the index's `sourceFetchedAt`, status and freshness limit. Slot payloads change only when their contents change; their file modification time is not observation freshness. Failed checks have no fresh payload reference.
 - `analysis/summary.json` and `analysis/trails/RESOURCE_ID.json`: historical changes, bounded threshold crossings, reopenings, sample counts, lead-time comparisons and collection gaps.
 - `data/scans/YYYY-MM/*.json.gz`: immutable, losslessly compressed complete scans. `data/manifests/*.ndjson` records their SHA-256 hashes and coverage counts. Historical observations are never pruned.
 

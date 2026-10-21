@@ -22,4 +22,6 @@ jobs:
         with:
           node-version: '24'
       - run: npm test
+      - name: Validate report reconstruction on the hosted runtime
+        run: npm run analyse
       - run: npm run verify
