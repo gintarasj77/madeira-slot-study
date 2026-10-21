@@ -18,6 +18,7 @@ test('unchanged slots keep a stable payload while fresh checks update the separa
 test('failed checks never label an old payload fresh, and daily probes have explicit cadence', () => {
   const failure = publishEntry({ ...entry, status: 'error', s: undefined, error: 'Unavailable' }, trail);
   assert.equal(failure.profile, null); assert.equal(failure.index.profileHash, undefined);
+  assert.equal(failure.index.sourceFetchedAt, undefined); assert.equal(failure.index.checkedAt, entry.at);
   assert.equal(failure.index.staleAfterMinutes, 90);
   assert.equal(publishEntry(entry, trail, 'daily').index.staleAfterMinutes, 1560);
   const empty = publishEntry({ ...entry, status: 'empty', s: [] }, trail);
