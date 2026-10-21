@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "resourceId": "228",
+  "trail": "PR9 | Levada do Caldeirão Verde",
+  "date": "2026-10-23",
+  "status": "slots_returned",
+  "slotColumns": [
+    "beginLocal",
+    "endLocal",
+    "timezone",
+    "nonResidentPercentage"
+  ],
+  "slots": [
+    [
+      "2026-10-23 08:00:00.000000",
+      "2026-10-23 08:30:00.000000",
+      "Europe/Lisbon",
+      56
+    ],
+    [
+      "2026-10-23 08:30:00.000000",
+      "2026-10-23 09:00:00.000000",
+      "Europe/Lisbon",
+      62
+    ],
+    [
+      "2026-10-23 09:00:00.000000",
+      "2026-10-23 09:30:00.000000",
+      "Europe/Lisbon",
+      90
+    ],
+    [
+      "2026-10-23 09:30:00.000000",
+      "2026-10-23 10:00:00.000000",
+      "Europe/Lisbon",
+      88
+    ],
+    [
+      "2026-10-23 10:00:00.000000",
+      "2026-10-23 10:30:00.000000",
+      "Europe/Lisbon",
+      91
+    ],
+    [
+      "2026-10-23 10:30:00.000000",
+      "2026-10-23 11:00:00.000000",
+      "Europe/Lisbon",
+      94
+    ],
+    [
+      "2026-10-23 11:00:00.000000",
+      "2026-10-23 11:30:00.000000",
+      "Europe/Lisbon",
+      96
+    ],
+    [
+      "2026-10-23 11:30:00.000000",
+      "2026-10-23 12:00:00.000000",
+      "Europe/Lisbon",
+      91
+    ],
+    [
+      "2026-10-23 12:00:00.000000",
+      "2026-10-23 12:30:00.000000",
+      "Europe/Lisbon",
+      98
+    ],
+    [
+      "2026-10-23 12:30:00.000000",
+      "2026-10-23 13:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-10-23 13:00:00.000000",
+      "2026-10-23 13:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-10-23 13:30:00.000000",
+      "2026-10-23 14:00:00.000000",
+      "Europe/Lisbon",
+      79
+    ]
+  ],
+  "profileHash": "e50eb2fb8a1a508ad91d1e21b24554f9f3dbeacbd98417bb02e7db82afab9505",
+  "freshnessIndex": "../../index/228.json",
+  "freshnessNote": "This payload changes only when slots change. Read sourceFetchedAt and status from the freshness index at the SAME Git commit. Payload file age is not observation age."
+}

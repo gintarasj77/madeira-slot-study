@@ -1,0 +1,34 @@
+{
+  "validatedAt": "2026-10-21T07:39:48.201Z",
+  "runner": "standard public GitHub-hosted Ubuntu",
+  "runId": 39561144907,
+  "conclusion": "success",
+  "scanId": "2026-10-21T07-19-24-984Z",
+  "startedAt": "2026-10-21T07:19:24.984Z",
+  "finishedAt": "2026-10-21T07:38:08.935Z",
+  "catalogResources": 34,
+  "verifiedPairs": 1122,
+  "expectedPairs": 1122,
+  "slotObservations": 19437,
+  "archive": {
+    "scans": 2,
+    "slots": 37107,
+    "bytes": 83783
+  },
+  "readerSample": {
+    "resourceId": "301",
+    "date": "2026-10-26",
+    "sourceFetchedAt": "2026-10-21T07:22:50.782Z",
+    "profileHash": "a66247b0d52e623ed82047c94938fe40b77cb13f4638d96e47856069146ec8ae",
+    "profileHashMatches": true,
+    "slotCount": 19,
+    "timezone": "Europe/Lisbon",
+    "nonResident07": 0,
+    "nonResident13": 24
+  },
+  "hostedCodeChecks": {
+    "tests": 27,
+    "reportReconstruction": "passed",
+    "privacyAndArchiveIntegrity": "passed"
+  }
+}

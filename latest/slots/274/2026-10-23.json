@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "resourceId": "274",
+  "trail": "PR13 | Vereda do Fanal",
+  "date": "2026-10-23",
+  "status": "slots_returned",
+  "slotColumns": [
+    "beginLocal",
+    "endLocal",
+    "timezone",
+    "nonResidentPercentage"
+  ],
+  "slots": [
+    [
+      "2026-10-23 08:00:00.000000",
+      "2026-10-23 08:30:00.000000",
+      "Europe/Lisbon",
+      94
+    ],
+    [
+      "2026-10-23 08:30:00.000000",
+      "2026-10-23 09:00:00.000000",
+      "Europe/Lisbon",
+      94
+    ],
+    [
+      "2026-10-23 09:00:00.000000",
+      "2026-10-23 09:30:00.000000",
+      "Europe/Lisbon",
+      58
+    ],
+    [
+      "2026-10-23 09:30:00.000000",
+      "2026-10-23 10:00:00.000000",
+      "Europe/Lisbon",
+      78
+    ],
+    [
+      "2026-10-23 10:00:00.000000",
+      "2026-10-23 10:30:00.000000",
+      "Europe/Lisbon",
+      38
+    ],
+    [
+      "2026-10-23 10:30:00.000000",
+      "2026-10-23 11:00:00.000000",
+      "Europe/Lisbon",
+      56
+    ],
+    [
+      "2026-10-23 11:00:00.000000",
+      "2026-10-23 11:30:00.000000",
+      "Europe/Lisbon",
+      74
+    ],
+    [
+      "2026-10-23 11:30:00.000000",
+      "2026-10-23 12:00:00.000000",
+      "Europe/Lisbon",
+      99
+    ],
+    [
+      "2026-10-23 12:00:00.000000",
+      "2026-10-23 12:30:00.000000",
+      "Europe/Lisbon",
+      94
+    ],
+    [
+      "2026-10-23 12:30:00.000000",
+      "2026-10-23 13:00:00.000000",
+      "Europe/Lisbon",
+      99
+    ],
+    [
+      "2026-10-23 13:00:00.000000",
+      "2026-10-23 13:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-10-23 13:30:00.000000",
+      "2026-10-23 14:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-10-23 14:00:00.000000",
+      "2026-10-23 14:30:00.000000",
+      "Europe/Lisbon",
+      96
+    ],
+    [
+      "2026-10-23 14:30:00.000000",
+      "2026-10-23 15:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ]
+  ],
+  "profileHash": "39fab897aab5ddaebfce28b76460c60d7a1a153705b66dce5edf15cd3a0cb17f",
+  "freshnessIndex": "../../index/274.json",
+  "freshnessNote": "This payload changes only when slots change. Read sourceFetchedAt and status from the freshness index at the SAME Git commit. Payload file age is not observation age."
+}

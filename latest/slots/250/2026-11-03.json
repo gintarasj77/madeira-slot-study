@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "resourceId": "250",
+  "trail": "PR12 | Caminho Real da Encumeada",
+  "date": "2026-11-03",
+  "status": "slots_returned",
+  "slotColumns": [
+    "beginLocal",
+    "endLocal",
+    "timezone",
+    "nonResidentPercentage"
+  ],
+  "slots": [
+    [
+      "2026-11-03 08:00:00.000000",
+      "2026-11-03 08:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-03 08:30:00.000000",
+      "2026-11-03 09:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-03 09:00:00.000000",
+      "2026-11-03 09:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-03 09:30:00.000000",
+      "2026-11-03 10:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-03 10:00:00.000000",
+      "2026-11-03 10:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-03 10:30:00.000000",
+      "2026-11-03 11:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-03 11:00:00.000000",
+      "2026-11-03 11:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-03 11:30:00.000000",
+      "2026-11-03 12:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-03 12:00:00.000000",
+      "2026-11-03 12:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-03 12:30:00.000000",
+      "2026-11-03 13:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-03 13:00:00.000000",
+      "2026-11-03 13:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-03 13:30:00.000000",
+      "2026-11-03 14:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ]
+  ],
+  "profileHash": "60a4905afe74b9d2bd2eeb1b780411b0ab863d3f76f173eab43712729913d51d",
+  "freshnessIndex": "../../index/250.json",
+  "freshnessNote": "This payload changes only when slots change. Read sourceFetchedAt and status from the freshness index at the SAME Git commit. Payload file age is not observation age."
+}

@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "resourceId": "279",
+  "trail": "PR17 | Caminho do Pináculo e Folhadal",
+  "date": "2026-10-24",
+  "status": "slots_returned",
+  "slotColumns": [
+    "beginLocal",
+    "endLocal",
+    "timezone",
+    "nonResidentPercentage"
+  ],
+  "slots": [
+    [
+      "2026-10-24 08:00:00.000000",
+      "2026-10-24 08:30:00.000000",
+      "Europe/Lisbon",
+      93
+    ],
+    [
+      "2026-10-24 08:30:00.000000",
+      "2026-10-24 09:00:00.000000",
+      "Europe/Lisbon",
+      96
+    ],
+    [
+      "2026-10-24 09:00:00.000000",
+      "2026-10-24 09:30:00.000000",
+      "Europe/Lisbon",
+      82
+    ],
+    [
+      "2026-10-24 09:30:00.000000",
+      "2026-10-24 10:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-10-24 10:00:00.000000",
+      "2026-10-24 10:30:00.000000",
+      "Europe/Lisbon",
+      93
+    ],
+    [
+      "2026-10-24 10:30:00.000000",
+      "2026-10-24 11:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-10-24 11:00:00.000000",
+      "2026-10-24 11:30:00.000000",
+      "Europe/Lisbon",
+      91
+    ],
+    [
+      "2026-10-24 11:30:00.000000",
+      "2026-10-24 12:00:00.000000",
+      "Europe/Lisbon",
+      99
+    ]
+  ],
+  "profileHash": "efee468fa55679fd7725b83ea09fa724b4b13529fcbb2633702d3a2ae60feb6d",
+  "freshnessIndex": "../../index/279.json",
+  "freshnessNote": "This payload changes only when slots change. Read sourceFetchedAt and status from the freshness index at the SAME Git commit. Payload file age is not observation age."
+}

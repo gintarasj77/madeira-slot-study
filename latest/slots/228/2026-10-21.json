@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "resourceId": "228",
+  "trail": "PR9 | Levada do Caldeirão Verde",
+  "date": "2026-10-21",
+  "status": "slots_returned",
+  "slotColumns": [
+    "beginLocal",
+    "endLocal",
+    "timezone",
+    "nonResidentPercentage"
+  ],
+  "slots": [
+    [
+      "2026-10-21 08:00:00.000000",
+      "2026-10-21 08:30:00.000000",
+      "Europe/Lisbon",
+      11
+    ],
+    [
+      "2026-10-21 08:30:00.000000",
+      "2026-10-21 09:00:00.000000",
+      "Europe/Lisbon",
+      0
+    ],
+    [
+      "2026-10-21 09:00:00.000000",
+      "2026-10-21 09:30:00.000000",
+      "Europe/Lisbon",
+      78
+    ],
+    [
+      "2026-10-21 09:30:00.000000",
+      "2026-10-21 10:00:00.000000",
+      "Europe/Lisbon",
+      82
+    ],
+    [
+      "2026-10-21 10:00:00.000000",
+      "2026-10-21 10:30:00.000000",
+      "Europe/Lisbon",
+      70
+    ],
+    [
+      "2026-10-21 10:30:00.000000",
+      "2026-10-21 11:00:00.000000",
+      "Europe/Lisbon",
+      81
+    ],
+    [
+      "2026-10-21 11:00:00.000000",
+      "2026-10-21 11:30:00.000000",
+      "Europe/Lisbon",
+      88
+    ],
+    [
+      "2026-10-21 11:30:00.000000",
+      "2026-10-21 12:00:00.000000",
+      "Europe/Lisbon",
+      83
+    ],
+    [
+      "2026-10-21 12:00:00.000000",
+      "2026-10-21 12:30:00.000000",
+      "Europe/Lisbon",
+      79
+    ],
+    [
+      "2026-10-21 12:30:00.000000",
+      "2026-10-21 13:00:00.000000",
+      "Europe/Lisbon",
+      83
+    ],
+    [
+      "2026-10-21 13:00:00.000000",
+      "2026-10-21 13:30:00.000000",
+      "Europe/Lisbon",
+      80
+    ],
+    [
+      "2026-10-21 13:30:00.000000",
+      "2026-10-21 14:00:00.000000",
+      "Europe/Lisbon",
+      75
+    ]
+  ],
+  "profileHash": "bfd14fd8bd76ac584a8e2efa06e196952a3d42473bd00017537bf001c4be8f2d",
+  "freshnessIndex": "../../index/228.json",
+  "freshnessNote": "This payload changes only when slots change. Read sourceFetchedAt and status from the freshness index at the SAME Git commit. Payload file age is not observation age."
+}

@@ -1,6 +1,6 @@
 # Madeira non-resident availability study
 
-Generated: **2026-10-21T07:38:09.471Z**. Latest scan: **2026-10-21T07-19-24-984Z**. Source reads: **2026-10-21T07:19:24.984Z — 2026-10-21T07:38:08.935Z UTC**.
+Generated: **2026-10-21T07:38:53.551Z**. Latest scan: **2026-10-21T07-19-24-984Z**. Source reads: **2026-10-21T07:19:24.984Z — 2026-10-21T07:38:08.935Z UTC**.
 
 Health: **fresh and complete**. Verified responses: **1122/1122**; responses with slots: **1122**; empty responses: **0**; failed/not queried: **0**. **19437 slot observations** in this scan. Empty responses are verified API responses with unknown booking availability.
 
@@ -55,4 +55,4 @@ A first observation already at 0% cannot tell when a slot filled. An observed cr
 | 292 | PR9.1 \| Queimadas - Um Caminho para todos | 33/33 | 660 | 0 | [Full slots and history](trails/292.md) |
 | 301 | PR1 \| Vereda do Areeiro - Pico Ruivo (sentido único) | 33/33 | 627 | 0 | [Full slots and history](trails/301.md) |
 
-[Official routes and missing booking resources](INVENTORY.md) · [Machine-readable historical summary](../analysis/summary.json) · [Methodology and limitations](../METHODOLOGY.md) · [Source](https://simplifica.madeira.gov.pt/services/78-82-259)
+[Latest material changes](CHANGES.md) · [Official routes and missing booking resources](INVENTORY.md) · [Machine-readable historical summary](../analysis/summary.json) · [Methodology and limitations](../METHODOLOGY.md) · [Source](https://simplifica.madeira.gov.pt/services/78-82-259)

@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "resourceId": "260",
+  "trail": "PR2 | Vereda do Urzal",
+  "date": "2026-11-09",
+  "status": "slots_returned",
+  "slotColumns": [
+    "beginLocal",
+    "endLocal",
+    "timezone",
+    "nonResidentPercentage"
+  ],
+  "slots": [
+    [
+      "2026-11-09 08:00:00.000000",
+      "2026-11-09 08:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-09 08:30:00.000000",
+      "2026-11-09 09:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-09 09:00:00.000000",
+      "2026-11-09 09:30:00.000000",
+      "Europe/Lisbon",
+      77
+    ],
+    [
+      "2026-11-09 09:30:00.000000",
+      "2026-11-09 10:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-09 10:00:00.000000",
+      "2026-11-09 10:30:00.000000",
+      "Europe/Lisbon",
+      91
+    ],
+    [
+      "2026-11-09 10:30:00.000000",
+      "2026-11-09 11:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-09 11:00:00.000000",
+      "2026-11-09 11:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-09 11:30:00.000000",
+      "2026-11-09 12:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-09 12:00:00.000000",
+      "2026-11-09 12:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-09 12:30:00.000000",
+      "2026-11-09 13:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-09 13:00:00.000000",
+      "2026-11-09 13:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-09 13:30:00.000000",
+      "2026-11-09 14:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-09 14:00:00.000000",
+      "2026-11-09 14:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ]
+  ],
+  "profileHash": "d1fce497386ec39c74ca13d9167c7d1117d9c0629ce561383dc526b6e376329c",
+  "freshnessIndex": "../../index/260.json",
+  "freshnessNote": "This payload changes only when slots change. Read sourceFetchedAt and status from the freshness index at the SAME Git commit. Payload file age is not observation age."
+}
