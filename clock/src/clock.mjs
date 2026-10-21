@@ -39,7 +39,8 @@ export async function tick(env, { fetcher = (url, init) => globalThis.fetch(url,
   if (metadata?.private === true) return { state: 'skipped', reason: 'private_repository' };
   if (metadata?.private !== false || metadata.default_branch !== 'main') throw new Error('Repository configuration changed; review the clock.');
   if (metadata.archived || metadata.disabled) return { state: 'skipped', reason: 'repository_inactive' };
-  const result = await request(`${base}/actions/workflows/${workflow}/runs?per_page=10`);
+  // Bound JSON parsing as run history grows: this clock must fit Workers Free.
+  const result = await request(`${base}/actions/workflows/${workflow}/runs?per_page=5`);
   const runs = result?.workflow_runs;
   if (!Array.isArray(runs) || runs.some(r => ![...ACTIVE, 'completed'].includes(r.status) || !Number.isFinite(Date.parse(r.created_at)))) {
     throw new Error('GitHub workflow-run schema changed.');

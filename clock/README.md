@@ -6,6 +6,8 @@ This small Cloudflare Worker only decides whether to request a GitHub workflow r
 
 A ten-minute clock checks for an active or recently started collection. With a 55-minute guard this normally starts collection about once per hour. Source recency comes from the exact start encoded in the v1 archive scan identifier; a skipped successful workflow does not reset source age. Recent failed attempts are paced separately. It checks the repository remains public, respects upstream cooldown and storage warnings, rejects unknown API schemas, and never retries an uncertain dispatch immediately. The collector's own recent-complete-scan guard protects against queued duplicates. Configure one primary clock; remove the native GitHub cron once the independent clock is verified.
 
+Requests use Cloudflare-compatible manual redirect handling and reject non-success responses. The credential is never forwarded to a redirect destination. Transport diagnostics expose only fixed error categories, never request headers, response bodies or arbitrary exception text.
+
 ## Deployment
 
 Create a fine-grained GitHub token for just the public study repository, with Actions read/write, Contents read, and mandatory Metadata read. Store it only as the Worker's `GITHUB_ACTIONS_TOKEN` secret. Set `REPOSITORY` to the public repository path and leave `WORKFLOW` as `collect.yml`. Do not paste tokens into chat, source, reports or logs, and do not copy a broad existing GitHub CLI credential to Cloudflare. The token needs an expiry date and renewal before that date.

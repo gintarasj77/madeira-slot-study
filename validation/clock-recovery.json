@@ -1,0 +1,116 @@
+{
+  "validatedAt": "2026-10-21T12:09:30Z",
+  "purpose": "Validate recovery of the generic Madeira-only public collector and its independent free clock.",
+  "fullSourceRefresh": {
+    "runId": 39593409175,
+    "event": "workflow_dispatch",
+    "conclusion": "success",
+    "publicationCommit": "25b52fe55c845d26534c9f499953aea34db70b25",
+    "scanId": "2026-10-21T11-38-17-724Z",
+    "startedAt": "2026-10-21T11:38:17.724Z",
+    "finishedAt": "2026-10-21T11:54:23.738Z",
+    "catalogResources": 32,
+    "rollingCalendarDates": 30,
+    "expectedPairs": 960,
+    "verifiedPairs": 960,
+    "failedPairs": 0,
+    "slotObservations": 16530,
+    "concurrentCodeUpdatesPreserved": true
+  },
+  "archiveIntegrity": {
+    "scans": 3,
+    "slots": 53637,
+    "compressedBytes": 123449,
+    "allHashesVerified": true,
+    "historicalScansModified": false
+  },
+  "readerSample": {
+    "resourceId": "301",
+    "date": "2026-10-26",
+    "sourceFetchedAt": "2026-10-21T11:41:32.992Z",
+    "slotCount": 19,
+    "timezone": "Europe/Lisbon",
+    "profileHash": "acc77398e9ea8243619cbf2da8e43407e0f1517d72b5646a8ab732f43293e408",
+    "profileHashMatches": true,
+    "indexScanMatches": true,
+    "nonResident07": 0,
+    "nonResident13": 0
+  },
+  "runtimeTransportCheck": {
+    "authenticated": false,
+    "endpoint": "public GitHub repository metadata",
+    "originalRedirectMode": "error",
+    "originalOutcome": "Cloudflare runtime TypeError: unsupported redirect mode",
+    "correctedRedirectMode": "manual",
+    "correctedHttpStatus": 200,
+    "redirectLocation": null,
+    "credentialForwardedAfterRedirect": false
+  },
+  "automaticClock": {
+    "guardEvent": {
+      "scheduledAt": "2026-10-21T12:05:13.124Z",
+      "executedAt": "2026-10-21T12:05:14.455Z",
+      "outcome": "ok",
+      "cpuMilliseconds": 2,
+      "decision": {
+        "state": "skipped",
+        "reason": "recent_source_scan"
+      },
+      "cron": "* * * * *"
+    },
+    "controlledDispatchEvent": {
+      "scheduledAt": "2026-10-21T12:06:13.124Z",
+      "executedAt": "2026-10-21T12:06:14.130Z",
+      "outcome": "ok",
+      "cpuMilliseconds": 4,
+      "decision": {
+        "state": "dispatched",
+        "runId": 39596959398,
+        "controlledDispatchTest": true,
+        "clockAgeOffsetMinutes": 60
+      },
+      "cron": "* * * * *"
+    },
+    "dispatchedCollector": {
+      "runId": 39596959398,
+      "createdAt": "2026-10-21T12:06:17Z",
+      "event": "workflow_dispatch",
+      "conclusion": "success",
+      "decision": "recent_complete_scan",
+      "newSourceScan": false,
+      "sourceFinishedAt": "2026-10-21T11:54:23.738Z",
+      "archiveCountAfter": 3,
+      "publicationCommit": "7c4b42017d2642549cd43eaff096a19799cb79ee"
+    },
+    "restoredProduction": {
+      "scheduledAt": "2026-10-21T12:07:13.124Z",
+      "executedAt": "2026-10-21T12:07:13.928Z",
+      "cpuMilliseconds": 3,
+      "outcome": "ok",
+      "decision": {
+        "state": "skipped",
+        "reason": "recent_source_scan"
+      },
+      "observedCronDuringPropagation": "* * * * *",
+      "configuredCron": "*/10 * * * *",
+      "testEntrypointRemoved": true,
+      "clockAgeOffsetMinutes": 0
+    },
+    "normalConfiguration": {
+      "cron": "*/10 * * * *",
+      "minimumSourceAgeMinutes": 55,
+      "clockAgeOffsetMinutes": 0,
+      "handler": "clock/src/clock.mjs",
+      "handlerSha256": "ba879cb4cb024500d4f50fbc2e65e61da297a4cf57c43fad01bd4ac8f18db4d2",
+      "httpTriggerEnabled": false,
+      "paidServicesEnabled": false,
+      "maximumRecentRuns": 5
+    }
+  },
+  "validationLimits": [
+    "The controlled test advanced only the dispatch clock's age comparison by 60 minutes. The collector used its real clock and skipped the fresh source scan.",
+    "The full source refresh was manual; it is not represented as a naturally due automatic full scan.",
+    "Temporary minute-level timer events can continue during Cloudflare's propagation window. The restored handler uses the normal source-age guard.",
+    "The earlier unpublished refresh remains a historical observation gap. No missing observations were reconstructed."
+  ]
+}

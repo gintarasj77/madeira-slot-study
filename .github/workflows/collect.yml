@@ -1,8 +1,7 @@
 name: Collect public trail availability
 on:
-  schedule:
-    # Keep the hourly trigger registered to an active repository maintainer.
-    - cron: '27 * * * *'
+  # The independent Cloudflare clock dispatches this workflow. Keep manual
+  # dispatch available for recovery; do not add a second collection clock.
   workflow_dispatch:
 permissions:
   contents: read
