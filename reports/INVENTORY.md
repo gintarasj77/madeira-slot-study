@@ -2,7 +2,7 @@
 
 IFCN source fetched: **2026-10-21T07:04:53.598Z UTC**. [Official source](https://ifcn.madeira.gov.pt/en/atividades-de-natureza/percursos-pedestres-recomendados/percursos-pedestres-recomendados.html).
 
-34 current SIMplifica booking resources; 42 official island-specific routes in the IFCN tables. 9 official routes have no matching catalog resource; 0 booking resources have no automatic island/code match. Every catalog resource is still collected, including unmatched variants. The booking catalog and official walking-route list are different inventories. A missing booking resource or an empty API response is not proof of closure or exemption.
+32 current SIMplifica booking resources; 39 official Madeira-island routes in the IFCN table. 8 official routes have no matching catalog resource; 0 booking resources have no automatic island/code match. Every Madeira-island catalog resource is collected, including unmatched variants. Porto Santo is excluded. The booking catalog and official walking-route list are different inventories. A missing booking resource or an empty API response is not proof of closure or exemption.
 
 Status text is source context, preserved separately from availability. Read restrictions in the official source; a percentage does not establish that a route is open. Daily status snapshots are retained in data/context/ifcn.
 
@@ -47,9 +47,6 @@ Status text is source context, preserved separately from availability. Read rest
 | Madeira | PR23 | Levada da Azenha | ABERTO | **No matching booking resource** |
 | Madeira | PR27 | Glaciar de Planalto | ENCERRADO | **No matching booking resource** |
 | Madeira | PR28 | Levada da Rocha Vermelha | ENCERRADO | **No matching booking resource** |
-| Porto Santo | PR1 | Vereda do Pico Branco e Terra Chã | ABERTO | [282: Porto Santo PR1 \| V. do Pico Branco e Terra Chã](trails/282.md) |
-| Porto Santo | PR2 | Vereda do Pico do Castelo | ABERTO | [283: Porto Santo PR2 \| Vereda do Pico do Castelo](trails/283.md) |
-| Porto Santo | PR3 | Levada do Pico Castelo | ENCERRADO | **No matching booking resource** |
 
 ## Catalog resources needing manual matching
 

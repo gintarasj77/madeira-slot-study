@@ -1,18 +1,18 @@
 # Madeira non-resident availability study
 
-Generated: **2026-10-21T07:38:53.551Z**. Latest scan: **2026-10-21T07-19-24-984Z**. Source reads: **2026-10-21T07:19:24.984Z — 2026-10-21T07:38:08.935Z UTC**.
+Generated: **2026-10-21T07:56:06.126Z**. Latest scan: **2026-10-21T07-19-24-984Z**. Source reads: **2026-10-21T07:19:24.984Z — 2026-10-21T07:38:08.935Z UTC**.
 
-Health: **fresh and complete**. Verified responses: **1122/1122**; responses with slots: **1122**; empty responses: **0**; failed/not queried: **0**. **19437 slot observations** in this scan. Empty responses are verified API responses with unknown booking availability.
+Health: **fresh and complete**. Verified responses: **1056/1056**; responses with slots: **1056**; empty responses: **0**; failed/not queried: **0**. **18183 slot observations** in this scan. Empty responses are verified API responses with unknown booking availability.
 
-Rolling window: **2026-10-21 through 2026-11-19**, 30 calendar dates in Atlantic/Madeira. Additional daily long-range samples: 2026-12-05, 2026-12-20, 2027-01-19; the latest daily sample remains in each trail report. All 34 current booking-catalog resources and every returned slot are included, including 0% and 100%. Route variants remain separate. This covers SIMplifica service 259, not a claim that every official PR route is bookable there.
+Rolling window: **2026-10-21 through 2026-11-19**, 30 calendar dates in Atlantic/Madeira. Additional daily long-range samples: 2026-12-05, 2026-12-20, 2027-01-19; the latest daily sample remains in each trail report. All 32 current Madeira-island booking-catalog resources and every returned slot are included, including 0% and 100%. Porto Santo is excluded. Route variants remain separate. This covers SIMplifica service 259, not a claim that every official PR route is bookable there.
 
-Collection began: **2026-10-21T06:58:31.403Z**. Retained: **2 immutable scans**, **37107 slot observations**, **83783 compressed bytes**; all archive hashes verified. Scheduled refresh: hourly, at minute 17 UTC; timing is best effort. Treat individual source observations older than 90 minutes as stale.
+Collection began: **2026-10-21T06:58:31.403Z**. Retained: **2 immutable scans**, **37107 slot observations**, **83783 compressed bytes**; all archive hashes verified. Archive totals retain earlier wider-scope evidence; coverage and historical analysis on this page are Madeira-only. Scheduled refresh: hourly, at minute 17 UTC; timing is best effort. Treat individual source observations older than 90 minutes as stale.
 
 ## Learning booking lead times
 
 Analysis retains small changes, threshold crossings at 50%, 20% and 0%, and reopenings. It compares 1, 3, 7, 14, 21 and 28 days before entry, plus coarse daily 45-, 60- and 90-day samples, separately by route variant, exact slot, timezone and weekday/weekend. Samples count distinct visit dates. Observations after entry are excluded from booking-pressure analysis.
 
-Pre-entry observations: 37069; after-entry observations retained but excluded: 38; ambiguous/invalid local-time observations excluded: 0. Scan gaps over 90 minutes: **0**. Catalog additions/removals: 0.
+Pre-entry observations: 34677; after-entry observations retained but excluded: 36; ambiguous/invalid local-time observations excluded: 0. Scan gaps over 90 minutes: **0**. Catalog additions/removals: 0.
 
 A first observation already at 0% cannot tell when a slot filled. An observed crossing is bounded between checks, and gaps widen that uncertainty. No recommendation is produced until the relevant time/day group has at least 14 mature visit-date samples and adequate coverage. These percentages do not reveal seat counts or distinguish bookings from quota changes. Autumn history may not predict another season.
 
@@ -49,8 +49,6 @@ A first observation already at 0% cannot tell when a slot filled. An observed cr
 | 279 | PR17 \| Caminho do Pináculo e Folhadal | 33/33 | 264 | 0 | [Full slots and history](trails/279.md) |
 | 280 | PR21 \| Caminho do Norte | 33/33 | 627 | 0 | [Full slots and history](trails/280.md) |
 | 281 | PR22 \| Vereda do Chão dos Louros | 33/33 | 660 | 0 | [Full slots and history](trails/281.md) |
-| 282 | Porto Santo PR1 \| V. do Pico Branco e Terra Chã | 33/33 | 627 | 0 | [Full slots and history](trails/282.md) |
-| 283 | Porto Santo PR2 \| Vereda do Pico do Castelo | 33/33 | 627 | 0 | [Full slots and history](trails/283.md) |
 | 285 | PR6.8 \| Levada do Paul II - Um caminho para todos | 33/33 | 693 | 0 | [Full slots and history](trails/285.md) |
 | 292 | PR9.1 \| Queimadas - Um Caminho para todos | 33/33 | 660 | 0 | [Full slots and history](trails/292.md) |
 | 301 | PR1 \| Vereda do Areeiro - Pico Ruivo (sentido único) | 33/33 | 627 | 0 | [Full slots and history](trails/301.md) |

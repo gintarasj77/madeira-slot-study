@@ -8,7 +8,7 @@ import { collect } from '../lib/collector.mjs';
 import { writeScan, readScan, verifyArchives, archiveFiles } from '../lib/archive.mjs';
 import { normalizeSlots, fetchIntervals, validateQuery } from '../src/upstream.mjs';
 
-const config = { horizonDays: 2, calendarTimezone: 'Atlantic/Madeira', minimumRequestSpacingMs: 1000, concurrency: 1,
+const config = { island: 'Madeira', horizonDays: 2, calendarTimezone: 'Atlantic/Madeira', minimumRequestSpacingMs: 1000, concurrency: 1,
   maximumScanMinutes: 30, maximumConsecutiveFailures: 5, expectedIntervalMinutes: 60, staleAfterMinutes: 90, maximumArchiveMiB: 750 };
 const rawSlot = (date = '2026-10-26', percent = 42) => ({ begin: { date: date + ' 07:00:00.000000', timezone: 'Europe/Lisbon' },
   end: { date: date + ' 07:30:00.000000', timezone: 'Europe/Lisbon' },
