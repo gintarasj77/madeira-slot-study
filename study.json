@@ -1,0 +1,12 @@
+{
+  "horizonDays": 30,
+  "longRangeOffsetsDays": [45, 60, 90],
+  "calendarTimezone": "Atlantic/Madeira",
+  "minimumRequestSpacingMs": 1000,
+  "concurrency": 3,
+  "maximumScanMinutes": 30,
+  "maximumConsecutiveFailures": 5,
+  "expectedIntervalMinutes": 60,
+  "staleAfterMinutes": 90,
+  "maximumArchiveMiB": 750
+}

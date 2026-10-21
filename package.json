@@ -1,0 +1,14 @@
+{
+  "name": "madeira-slot-study",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test",
+    "collect": "node scripts/collect.mjs",
+    "analyse": "node scripts/analyse.mjs",
+    "verify": "node scripts/verify.mjs",
+    "test:live": "node scripts/validate-live.mjs"
+  }
+}

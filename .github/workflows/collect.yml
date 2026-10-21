@@ -1,0 +1,52 @@
+name: Collect public trail availability
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: public-availability-study
+  cancel-in-progress: false
+jobs:
+  collect:
+    # A visibility change must not silently consume private-repository minutes.
+    if: github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24'
+          # No dependency cache, packages or retained Actions artifacts.
+      - name: Check collector and analysis behavior
+        run: npm test
+      - name: Read public availability with fresh anonymous sessions
+        id: collect
+        continue-on-error: true
+        run: npm run collect
+      - name: Preserve official route-status context
+        continue-on-error: true
+        run: node scripts/context.mjs
+      - name: Verify retained history and rebuild reports
+        run: npm run analyse
+      - name: Check archive integrity and publication privacy
+        run: npm run verify
+      - name: Publish generic observations and analysis
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data latest reports analysis
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: retain hourly availability observations'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Surface collection failures after publishing partial evidence
+        env:
+          COLLECT_OUTCOME: ${{ steps.collect.outcome }}
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';const h=JSON.parse(fs.readFileSync('data/collector-health.json'));if(process.env.COLLECT_OUTCOME!=='success'||h.error||h.state!=='complete'){console.error('Collector needs attention; partial results were preserved.');process.exitCode=1;}"

@@ -1,0 +1,8 @@
+node_modules/
+.env*
+.wrangler/
+*.log
+data/.collector.lock
+data/.checkpoint.json
+data/**/*.tmp
+validation/*.raw.json
