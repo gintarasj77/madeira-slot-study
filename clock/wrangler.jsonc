@@ -1,0 +1,14 @@
+{
+  "name": "madeira-collector-clock",
+  "main": "src/clock.mjs",
+  "compatibility_date": "2026-10-21",
+  "workers_dev": false,
+  "preview_urls": false,
+  "observability": { "enabled": false },
+  "triggers": { "crons": [] },
+  "vars": {
+    "REPOSITORY": "OWNER/REPOSITORY",
+    "WORKFLOW": "collect.yml",
+    "MINIMUM_INTERVAL_MINUTES": "55"
+  }
+}

@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'src/**'
+      - 'clock/**'
       - 'lib/**'
       - 'scripts/**'
       - 'test/**'
