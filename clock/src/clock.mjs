@@ -19,7 +19,7 @@ export async function tick(env, { fetcher = (url, init) => globalThis.fetch(url,
           'X-GitHub-Api-Version': '2026-03-10', 'Accept': options.raw ? 'application/vnd.github.raw+json' : 'application/vnd.github+json',
           ...(options.body ? { 'Content-Type': 'application/json' } : {}) },
         body: options.body ? JSON.stringify(options.body) : undefined,
-        signal: AbortSignal.timeout(12000), redirect: 'error' });
+        signal: AbortSignal.timeout(12000), redirect: 'manual' });
     } catch (error) {
       // Classify platform failures without emitting URLs, headers, response
       // bodies or arbitrary exception text that could contain credentials.

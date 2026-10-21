@@ -12,7 +12,7 @@ function fixture(overrides = {}) {
   return { calls, fetcher: async (url, init) => {
     calls.push({ url, method: init.method, body: init.body });
     assert.ok(url.startsWith('https://api.github.com/repos/example/public-study'));
-    assert.equal(init.redirect, 'error');
+    assert.equal(init.redirect, 'manual');
     if (overrides.failure) return new Response('ignored', { status: overrides.failure });
     if (init.method === 'POST') return overrides.dispatchFailure ? new Response('ignored', { status: 502 })
       : overrides.legacy ? new Response(null, { status: 204 }) : Response.json({ workflow_run_id: 123 });
@@ -99,4 +99,10 @@ test('default transport preserves the platform fetch receiver', async () => {
     };
     assert.equal((await tick(env, { now })).state, 'dispatched');
   } finally { globalThis.fetch = original; }
+});
+
+test('redirect responses never forward the clock credential to a second URL', async () => {
+  const f = fixture({ failure: 302 });
+  await assert.rejects(tick(env, { ...f, now }), /HTTP 302/);
+  assert.equal(f.calls.length, 1);
 });
