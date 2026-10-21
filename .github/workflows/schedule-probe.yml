@@ -1,0 +1,20 @@
+name: Temporary scheduler diagnosis
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+# This probe never reads SIMplifica. Its first timer run disables itself.
+permissions:
+  contents: read
+  actions: write
+jobs:
+  probe:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Record the real timer event and disable this temporary probe
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node -e "console.log(JSON.stringify({event:process.env.GITHUB_EVENT_NAME,runId:process.env.GITHUB_RUN_ID,at:new Date().toISOString(),availabilityRequests:0}))"
+          gh workflow disable schedule-probe.yml --repo "$GITHUB_REPOSITORY"
