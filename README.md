@@ -36,6 +36,8 @@ Archives are compressed per scan to limit repository growth. At 750 MiB of compr
 
 If manual collection works but no automatic run appears, verify that the workflow is active and the cron file is on the default branch. An active maintainer should commit a change to the cron expression using their public GitHub identity and GitHub noreply email, following [GitHub's scheduled-workflow recovery guidance](https://docs.github.com/en/actions/how-tos/troubleshoot-workflows#scheduled-workflow-stopped-running). Verify an actual run with event `schedule` afterward. An enabled setting or successful manual run alone is insufficient. On 21 October the initial automatic trigger produced no runs despite successful manual collection; its hourly expression was re-registered at minute 27. The precise cause was not established by the API.
 
+Queued duplicate triggers do not query SIMplifica again when a complete, verified scan began less than 55 minutes ago. This check preserves the original source timestamps; it never labels a skipped run as a new observation. Partial or failed scans do not satisfy this guard, and upstream cooldowns still take priority.
+
 ## Running locally
 
 Use Node.js 22 or newer. No package installation is needed.

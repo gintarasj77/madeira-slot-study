@@ -8,6 +8,7 @@
   "maximumScanMinutes": 30,
   "maximumConsecutiveFailures": 5,
   "expectedIntervalMinutes": 60,
+  "minimumScanIntervalMinutes": 55,
   "staleAfterMinutes": 90,
   "maximumArchiveMiB": 750
 }

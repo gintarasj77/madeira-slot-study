@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { collect } from '../lib/collector.mjs';
 import { validateConfig, scanCounts, calendarDate } from '../lib/study.mjs';
 import { readJson, atomicWrite, archiveSize, writeScan } from '../lib/archive.mjs';
+import { recentCompleteScan } from '../lib/collection-window.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const config = validateConfig(await readJson(path.join(root, 'study.json')));
@@ -24,6 +25,9 @@ try {
     await atomicWrite(path.join(data, 'collector-health.json'), JSON.stringify({ ...priorHealth,
       checkedAt: new Date().toISOString(), state: 'cooldown', cooldownUntil: previous.cooldownUntil }) + '\n');
     console.log(JSON.stringify({ state: 'cooldown', until: previous.cooldownUntil }));
+  } else if (recentCompleteScan(previous, priorHealth, Date.now(), config.minimumScanIntervalMinutes ?? 55)) {
+    // Keep original observation timestamps and health; this was not a new source read.
+    console.log(JSON.stringify({ state: 'recent_complete_scan', scanId: previous.id, sourceFinishedAt: previous.finishedAt }));
   } else if (await archiveSize(root) >= config.maximumArchiveMiB * 1024 * 1024) {
     await atomicWrite(path.join(data, 'collector-health.json'), JSON.stringify({ checkedAt: new Date().toISOString(), error: 'ARCHIVE_SIZE_GUARD', message: 'Collection stopped without deleting history. Storage review required.' }) + '\n');
     process.exitCode = 1;
