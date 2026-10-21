@@ -43,12 +43,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data latest reports analysis
-          if ! git diff --cached --quiet; then
-            git commit -m 'data: retain hourly availability observations'
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
+          node scripts/publish.mjs
       - name: Surface collection failures after publishing partial evidence
         env:
           COLLECT_OUTCOME: ${{ steps.collect.outcome }}

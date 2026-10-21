@@ -8,6 +8,7 @@
 - Keep immutable compressed scans and their SHA-256 manifests. Never prune historical observations to reduce size. Stop with an explicit storage warning before the configured size guard instead.
 - Respect source rate limits; stop on 429 and persist the cooldown. Do not add retry loops or increase request speed to fill gaps.
 - Serialize collection runs and preserve the recent-complete-scan guard. Duplicate triggers must not create extra SIMplifica traffic or newer observation timestamps.
+- Publish by importing immutable evidence into current main and rebuilding derived reports there. Concurrent code/report commits must never require repeating source collection or overwrite historical scans.
 - Use standard public Ubuntu GitHub runners, no Actions artifacts/caches, no LFS, no paid services. Only the built-in short-lived GITHUB_TOKEN may write generated data.
 - Keep the reporting reader aware of freshness and collection gaps. Hourly scheduling is best effort.
 - Register or recover cron schedules with an active maintainer's public GitHub identity and GitHub noreply email. Use bot authorship for generated observation commits. Verify a run whose event is `schedule`; successful manual runs do not establish automatic operation.
