@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "resourceId": "228",
+  "trail": "PR9 | Levada do Caldeirão Verde",
+  "date": "2026-11-20",
+  "status": "slots_returned",
+  "slotColumns": [
+    "beginLocal",
+    "endLocal",
+    "timezone",
+    "nonResidentPercentage"
+  ],
+  "slots": [
+    [
+      "2026-11-20 08:00:00.000000",
+      "2026-11-20 08:30:00.000000",
+      "Europe/Lisbon",
+      98
+    ],
+    [
+      "2026-11-20 08:30:00.000000",
+      "2026-11-20 09:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-20 09:00:00.000000",
+      "2026-11-20 09:30:00.000000",
+      "Europe/Lisbon",
+      99
+    ],
+    [
+      "2026-11-20 09:30:00.000000",
+      "2026-11-20 10:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-20 10:00:00.000000",
+      "2026-11-20 10:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-20 10:30:00.000000",
+      "2026-11-20 11:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-20 11:00:00.000000",
+      "2026-11-20 11:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-20 11:30:00.000000",
+      "2026-11-20 12:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-20 12:00:00.000000",
+      "2026-11-20 12:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-20 12:30:00.000000",
+      "2026-11-20 13:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-20 13:00:00.000000",
+      "2026-11-20 13:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2026-11-20 13:30:00.000000",
+      "2026-11-20 14:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ]
+  ],
+  "profileHash": "ddc8c1f7637c5c1cca6aaa578c9a6128525a42ddde55c46f1d33cdf4265cc17c",
+  "freshnessIndex": "../../index/228.json",
+  "freshnessNote": "This payload changes only when slots change. Read sourceFetchedAt and status from the freshness index at the SAME Git commit. Payload file age is not observation age."
+}
