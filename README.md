@@ -11,6 +11,7 @@ The collection is generic: it contains public trail names, dates, source timesta
 ## Reading the results
 
 - `reports/SUMMARY.md`: freshness, complete/partial coverage, observation totals and links to all booking resources.
+- `reports/CHANGES.md` and `reports/changes/RESOURCE_ID.md`: latest sell-outs, reopenings, drops of at least 10 points, new/missing slots and data failures/recovery, with real comparison timestamps and uncertainty.
 - `reports/trails/RESOURCE_ID.md`: every slot and percentage in the latest window, plus historical statistics by exact entry time and weekday/weekend.
 - `reports/INVENTORY.md`: daily IFCN route-status context and official routes missing from the booking catalog. A missing resource is not a claim that a route is closed or exempt from booking.
 - `latest/trails/RESOURCE_ID.json`: normalized data. `slotColumns` names the four values in each compact slot row: exact start local time, exact end local time, IANA timezone and non-resident percentage.
