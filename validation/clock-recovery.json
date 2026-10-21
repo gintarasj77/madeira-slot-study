@@ -1,5 +1,5 @@
 {
-  "validatedAt": "2026-10-21T12:09:30Z",
+  "validatedAt": "2026-10-21T12:22:01.981Z",
   "purpose": "Validate recovery of the generic Madeira-only public collector and its independent free clock.",
   "fullSourceRefresh": {
     "runId": 39593409175,
@@ -105,6 +105,20 @@
       "httpTriggerEnabled": false,
       "paidServicesEnabled": false,
       "maximumRecentRuns": 5
+    },
+    "finalProductionEvent": {
+      "scheduledAt": "2026-10-21T12:20:47.601Z",
+      "executedAt": "2026-10-21T12:20:48.273Z",
+      "cron": "*/10 * * * *",
+      "outcome": "ok",
+      "cpuMilliseconds": 3,
+      "clockAgeOffsetMinutes": 0,
+      "controlledDispatchTest": false,
+      "decision": {
+        "state": "skipped",
+        "reason": "recent_source_scan"
+      },
+      "handlerSha256": "ba879cb4cb024500d4f50fbc2e65e61da297a4cf57c43fad01bd4ac8f18db4d2"
     }
   },
   "validationLimits": [
@@ -112,5 +126,20 @@
     "The full source refresh was manual; it is not represented as a naturally due automatic full scan.",
     "Temporary minute-level timer events can continue during Cloudflare's propagation window. The restored handler uses the normal source-age guard.",
     "The earlier unpublished refresh remains a historical observation gap. No missing observations were reconstructed."
-  ]
+  ],
+  "hostedCodeChecks": {
+    "commit": "0e6201c9cd9ae81bd3d9a33128e5c73683151d12",
+    "runId": 39598121287,
+    "conclusion": "success",
+    "tests": 45,
+    "reportReconstruction": "passed",
+    "privacyAndArchiveIntegrity": "passed"
+  },
+  "publicReaderVerification": {
+    "verifiedAt": "2026-10-21T12:16:42.037Z",
+    "commit": "0e6201c9cd9ae81bd3d9a33128e5c73683151d12",
+    "sameCommitHashMatches": true,
+    "sourceFetchedAt": "2026-10-21T11:41:32.992Z",
+    "collectorFinishedAt": "2026-10-21T11:54:23.738Z"
+  }
 }
