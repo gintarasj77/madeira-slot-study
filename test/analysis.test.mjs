@@ -69,6 +69,7 @@ test('lead-time samples count visit dates once and separate mature evidence', ()
   assert.equal(group.leadTime[1].distinctDates, 1);
   assert.equal(group.leadTime[1].matureDistinctDates, 1);
   assert.equal(group.leadTime[1].median, 50);
+  assert.equal(group.leadTime[1].allDateMedian, 50);
   assert.equal(group.leadTime[1].samplingOpportunities, 1);
   assert.equal(group.suggestedLeadDays, null);
   const future = createStudy(Date.parse('2026-11-09T12:00:00Z'));
@@ -111,4 +112,21 @@ test('lead-time suggestions require 14 mature dates and sufficient sampling cove
     if (count < 14) assert.equal(group.suggestedLeadDays, null);
   }
   assert.equal(summarizeStudy(study).trails[0].groups[0].suggestedLeadDays, 1);
+});
+
+test('crossing summaries exclude already-low dates and retain right-censoring and decline rates', () => {
+  const study = createStudy(Date.parse('2026-11-11T00:00:00Z'));
+  ingestScan(study, scan('2026-11-01T07:00:00.000Z', 60));
+  ingestScan(study, scan('2026-11-01T08:00:00.000Z', 49));
+  const group = summarizeStudy(study).trails[0].groups[0];
+  assert.equal(group.thresholdSummary[50].observedInitialCrossingDates, 1);
+  assert.equal(group.thresholdSummary[50].medianObservedLowerLeadHours, 215);
+  assert.equal(group.thresholdSummary[20].noInitialCrossingObservedDates, 1);
+  assert.equal(group.maxObservedDropPointsPerHour, 11);
+  const censored = createStudy(); ingestScan(censored, scan('2026-11-01T07:00:00.000Z', 0));
+  ingestScan(censored, scan('2026-11-01T08:00:00.000Z', 60));
+  ingestScan(censored, scan('2026-11-01T09:00:00.000Z', 0));
+  const threshold = summarizeStudy(censored).trails[0].groups[0].thresholdSummary[0];
+  assert.equal(threshold.firstSeenAtOrBelowDates, 1);
+  assert.equal(threshold.observedInitialCrossingDates, 0);
 });

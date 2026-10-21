@@ -6,6 +6,7 @@ import { validateConfig } from '../lib/study.mjs';
 import { renderInventory } from '../lib/context.mjs';
 import { compareScan, updateComparisonState, renderChanges } from '../lib/changes.mjs';
 import { publishEntry } from '../lib/published.mjs';
+import { renderLeads, renderEvents } from '../lib/history-reports.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const config = validateConfig(await readJson(path.join(root, 'study.json')));
@@ -48,7 +49,11 @@ for (const trail of latest.catalog) {
     slotColumns: ['beginLocal', 'endLocal', 'timezone', 'nonResidentPercentage'],
     entries: latest.entries.filter(e => e.r === trail.resourceId), longRangeSamples }) + '\n');
 }
-for (const history of trails) await atomicWrite(path.join(root, `analysis/trails/${history.resourceId}.json`), JSON.stringify(history) + '\n');
+for (const history of trails) {
+  await atomicWrite(path.join(root, `analysis/trails/${history.resourceId}.json`), JSON.stringify(history) + '\n');
+  await atomicWrite(path.join(root, `reports/leads/${history.resourceId}.md`), renderLeads(history, summary.generatedAt));
+  await atomicWrite(path.join(root, `reports/events/${history.resourceId}.md`), renderEvents(history, summary.generatedAt));
+}
 const context = await readJson(path.join(root, 'data/context/latest-ifcn.json'), null);
 const contextHealth = await readJson(path.join(root, 'data/context/health.json'), null);
 await atomicWrite(path.join(root, 'reports/INVENTORY.md'), context ? renderInventory(context, latest.catalog, contextHealth)

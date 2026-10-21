@@ -23,6 +23,8 @@ Successful unchanged checks are retained: they establish how long a percentage r
 - Treat a 0% → positive transition as a reopening of quota. It can reflect cancellation, quota adjustment or another upstream change; the cause is unknown.
 - Mark crossings over missing/empty checks or intervals exceeding two hours as gap-spanning. They remain useful bounds but cannot support precise timing.
 - Retain observations after slot entry but exclude them from booking-pressure analysis. Expiry must not be interpreted as demand.
+- A date first seen above a threshold with no initial crossing recorded is right-censored at its last pre-entry check. Do not force it into a sell-out-time distribution.
+- Summaries of observed initial crossing bounds exclude dates already low at first sight and count each visit date once. Medians of those observed bounds are descriptive of that cohort, not an unbiased estimate across all visit dates. Report left/right censor counts alongside them. Maximum gap-free percentage-point decline rates describe observed changes, not ticket sales.
 
 ## Comparing lead times
 
