@@ -102,3 +102,38 @@ test('archive schema distinguishes empty, errors and incomplete accounting', () 
   const invalid = structuredClone(scan); invalid.entries[0].status = 'error';
   assert.throws(() => assertScan(invalid), /masquerading/);
 });
+
+test('calendar rollover retains reconstructable old scans and immutable manifests', async () => {
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), 'madeira-rollover-test-'));
+  try {
+    const first = fixture(); await writeScan(root, first);
+    const firstManifest = await fs.readFile(path.join(root, 'data/manifests/2026-10-26.ndjson'), 'utf8');
+    const second = fixture({ id: '2026-11-01T06-00-00-000Z', startedAt: '2026-11-01T06:00:00.000Z',
+      finishedAt: '2026-11-01T06:01:00.000Z', dates: ['2026-11-01'],
+      entries: [{ r: '301', d: '2026-11-01', at: '2026-11-01T06:00:05.000Z', status: 'ok',
+        s: packSlots(normalizeSlots([rawSlot('2026-11-01', 99)], '2026-11-01')) }] });
+    await writeScan(root, second); await writeScan(root, second);
+    assert.equal((await verifyArchives(root)).scans, 2);
+    const files = await archiveFiles(root);
+    assert.deepEqual(await readScan(files[0]), first);
+    assert.deepEqual(await readScan(files[1]), second);
+    assert.equal(await fs.readFile(path.join(root, 'data/manifests/2026-10-26.ndjson'), 'utf8'), firstManifest);
+  } finally { await fs.rm(root, { recursive: true, force: true }); }
+});
+
+test('catalog failure preserves explicit unknown coverage and schema drift stops the scan', async () => {
+  const options = { now: () => Date.parse('2026-10-26T06:00:00Z'), sleep: async () => {} };
+  const missing = await collect(config, { ...options, priorCatalog: [{ resourceId: '301', name: 'PR1' }],
+    fetcher: async () => new Response('Down', { status: 503 }) });
+  assertScan(missing); assert.ok(missing.catalogError); assert.equal(missing.entries.length, 2);
+  assert.ok(missing.entries.every(e => e.status === 'skipped' && !e.s));
+  let posts = 0;
+  const drift = await collect(config, { ...options, fetcher: async url => {
+    if (url.endsWith('/resources')) return envelope([{ id: 301, name: 'PR1' }]);
+    if (url.endsWith('/services/78-82-259')) return session();
+    posts++; return envelope([{ ...rawSlot(), slotTitle: '100% Residentes' }]);
+  } });
+  assertScan(drift); assert.equal(posts, 1); assert.equal(drift.stopReason, 'schema_changed');
+  assert.equal(drift.entries[0].code, 'UPSTREAM_SCHEMA_CHANGED');
+  assert.ok(drift.entries.every(e => !e.s));
+});
