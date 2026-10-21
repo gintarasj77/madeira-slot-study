@@ -1,7 +1,7 @@
 const API = 'https://api.github.com';
 const ACTIVE = new Set(['queued', 'in_progress', 'waiting', 'requested', 'pending']);
 
-export async function tick(env, { fetcher = fetch, now = Date.now() } = {}) {
+export async function tick(env, { fetcher = (url, init) => fetch(url, init), now = Date.now() } = {}) {
   const repository = env.REPOSITORY;
   const workflow = env.WORKFLOW || 'collect.yml';
   const minimum = Number(env.MINIMUM_INTERVAL_MINUTES || 55);
@@ -20,7 +20,17 @@ export async function tick(env, { fetcher = fetch, now = Date.now() } = {}) {
           ...(options.body ? { 'Content-Type': 'application/json' } : {}) },
         body: options.body ? JSON.stringify(options.body) : undefined,
         signal: AbortSignal.timeout(12000), redirect: 'error' });
-    } catch { throw new Error('GitHub clock request failed or timed out.'); }
+    } catch (error) {
+      // Classify platform failures without emitting URLs, headers, response
+      // bodies or arbitrary exception text that could contain credentials.
+      const message = String(error?.message || '');
+      const kind = /illegal invocation|incorrect.*this/i.test(message) ? 'runtime_binding'
+        : /timeout|timed out|abort/i.test(message + ' ' + error?.name) ? 'timeout'
+        : /redirect/i.test(message) ? 'redirect'
+        : /certificate|\btls\b|\bssl\b/i.test(message) ? 'tls'
+        : /\bdns\b|name.*resolv/i.test(message) ? 'dns' : 'network';
+      throw new Error(`GitHub clock request failed (${kind}).`);
+    }
     if (!response.ok) throw new Error(`GitHub clock request failed (HTTP ${response.status}).`);
     if (response.status === 204) return null;
     try { return await response.json(); } catch { throw new Error('GitHub clock response schema changed.'); }

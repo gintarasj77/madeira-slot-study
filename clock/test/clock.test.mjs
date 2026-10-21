@@ -79,3 +79,12 @@ test('configuration validation and HTTP surface cannot trigger collection', asyn
   assert.equal(called, false);
   assert.equal((await worker.fetch()).status, 404);
 });
+
+test('transport diagnostics classify failures without forwarding arbitrary error text', async () => {
+  for (const [message, kind] of [['Illegal invocation: incorrect this reference', 'runtime_binding'],
+    ['The operation was aborted', 'timeout'], ['TLS certificate failure', 'tls'], ['DNS name resolution failed', 'dns'],
+    ['Unexpected redirect', 'redirect'], ['Synthetic private error text', 'network']]) {
+    await assert.rejects(tick(env, { fetcher: async () => { throw new Error(message + ' ' + env.GITHUB_ACTIONS_TOKEN); } }),
+      error => error.message === `GitHub clock request failed (${kind}).`);
+  }
+});
