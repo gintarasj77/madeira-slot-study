@@ -1,7 +1,7 @@
 const API = 'https://api.github.com';
 const ACTIVE = new Set(['queued', 'in_progress', 'waiting', 'requested', 'pending']);
 
-export async function tick(env, { fetcher = (url, init) => fetch(url, init), now = Date.now() } = {}) {
+export async function tick(env, { fetcher = (url, init) => globalThis.fetch(url, init), now = Date.now() } = {}) {
   const repository = env.REPOSITORY;
   const workflow = env.WORKFLOW || 'collect.yml';
   const minimum = Number(env.MINIMUM_INTERVAL_MINUTES || 55);

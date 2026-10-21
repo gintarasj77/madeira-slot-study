@@ -88,3 +88,15 @@ test('transport diagnostics classify failures without forwarding arbitrary error
       error => error.message === `GitHub clock request failed (${kind}).`);
   }
 });
+
+test('default transport preserves the platform fetch receiver', async () => {
+  const original = globalThis.fetch;
+  const f = fixture();
+  try {
+    globalThis.fetch = function(url, init) {
+      assert.equal(this, globalThis);
+      return f.fetcher(url, init);
+    };
+    assert.equal((await tick(env, { now })).state, 'dispatched');
+  } finally { globalThis.fetch = original; }
+});
