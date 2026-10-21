@@ -1,6 +1,6 @@
 # Madeira non-resident availability study
 
-Generated: **2026-10-21T11:54:27.378Z**. Latest scan: **2026-10-21T11-38-17-724Z**. Source reads: **2026-10-21T11:38:17.724Z — 2026-10-21T11:54:23.738Z UTC**.
+Generated: **2026-10-21T12:06:29.310Z**. Latest scan: **2026-10-21T11-38-17-724Z**. Source reads: **2026-10-21T11:38:17.724Z — 2026-10-21T11:54:23.738Z UTC**.
 
 Health at report generation: **fresh and complete**. Verified responses: **960/960**; responses with slots: **960**; empty responses: **0**; failed/not queried: **0**. **16530 slot observations** in this scan. Empty responses are verified API responses with unknown booking availability.
 
