@@ -4,7 +4,7 @@ A read-only historical study of **non-resident** trail-slot availability in Made
 
 [Latest report](reports/SUMMARY.md) · [Official-route coverage](reports/INVENTORY.md) · [Methodology](METHODOLOGY.md)
 
-The collector starts immediately and refreshes hourly at minute 17 UTC. Each scan discovers the current service-259 resource catalog, selects Madeira-island resources (excluding Porto Santo), visits every selected resource and every date in a rolling 30-day Madeira calendar window, and stores every returned slot, including 0% and 100%. Route variants remain separate. Once per Madeira calendar day it also samples 45, 60 and 90 days ahead. Past observations remain available as the window moves forward.
+The collector starts immediately and refreshes hourly at minute 27 UTC. Each scan discovers the current service-259 resource catalog, selects Madeira-island resources (excluding Porto Santo), visits every selected resource and every date in a rolling 30-day Madeira calendar window, and stores every returned slot, including 0% and 100%. Route variants remain separate. Once per Madeira calendar day it also samples 45, 60 and 90 days ahead. Past observations remain available as the window moves forward.
 
 The collection is generic: it contains public trail names, dates, source timestamps and quota percentages. It contains no traveler profiles, private trip dates, bookings, account information or credentials. Repository ownership and public GitHub activity remain visible.
 
@@ -33,6 +33,8 @@ There are no third-party runtime dependencies, paid runners, Actions caches, ret
 Free compute does **not** guarantee an hourly observation: [GitHub schedules can be delayed or dropped](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule), and SIMplifica can fail, change schema or rate-limit access. The collector records partial scans, stops on rate limits, carries the cooldown into subsequent runs, and exposes stale data and gaps. Reports older than 90 minutes require attention. The default source pacing is one lookup per second, with at most three in flight; a lookup establishes a fresh anonymous session and reads availability. Do not run extra collectors in parallel.
 
 Archives are compressed per scan to limit repository growth. At 750 MiB of compressed scans the collector stops with an explicit warning, preserving history. This is a storage review guard, not a paid overage. GitHub also has [repository and file size limits](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github). Public schedules may be disabled after 60 days without repository activity. No historical gap can be reconstructed after the fact.
+
+If manual collection works but no automatic run appears, verify that the workflow is active and the cron file is on the default branch. An active maintainer should commit a change to the cron expression using their public GitHub identity and GitHub noreply email, following [GitHub's scheduled-workflow recovery guidance](https://docs.github.com/en/actions/how-tos/troubleshoot-workflows#scheduled-workflow-stopped-running). Verify an actual run with event `schedule` afterward. An enabled setting or successful manual run alone is insufficient. On 21 October the initial automatic trigger produced no runs despite successful manual collection; its hourly expression was re-registered at minute 27. The precise cause was not established by the API.
 
 ## Running locally
 

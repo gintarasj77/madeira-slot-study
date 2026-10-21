@@ -1,7 +1,8 @@
 name: Collect public trail availability
 on:
   schedule:
-    - cron: '17 * * * *'
+    # Keep the hourly trigger registered to an active repository maintainer.
+    - cron: '27 * * * *'
   workflow_dispatch:
 permissions:
   contents: read

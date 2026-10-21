@@ -1,12 +1,12 @@
 # Madeira non-resident availability study
 
-Generated: **2026-10-21T07:56:06.126Z**. Latest scan: **2026-10-21T07-19-24-984Z**. Source reads: **2026-10-21T07:19:24.984Z — 2026-10-21T07:38:08.935Z UTC**.
+Generated: **2026-10-21T09:23:50.961Z**. Latest scan: **2026-10-21T07-19-24-984Z**. Source reads: **2026-10-21T07:19:24.984Z — 2026-10-21T07:38:08.935Z UTC**.
 
-Health: **fresh and complete**. Verified responses: **1056/1056**; responses with slots: **1056**; empty responses: **0**; failed/not queried: **0**. **18183 slot observations** in this scan. Empty responses are verified API responses with unknown booking availability.
+Health at report generation: **ATTENTION: incomplete, stale or stopped**. Verified responses: **1056/1056**; responses with slots: **1056**; empty responses: **0**; failed/not queried: **0**. **18183 slot observations** in this scan. Empty responses are verified API responses with unknown booking availability.
 
 Rolling window: **2026-10-21 through 2026-11-19**, 30 calendar dates in Atlantic/Madeira. Additional daily long-range samples: 2026-12-05, 2026-12-20, 2027-01-19; the latest daily sample remains in each trail report. All 32 current Madeira-island booking-catalog resources and every returned slot are included, including 0% and 100%. Porto Santo is excluded. Route variants remain separate. This covers SIMplifica service 259, not a claim that every official PR route is bookable there.
 
-Collection began: **2026-10-21T06:58:31.403Z**. Retained: **2 immutable scans**, **37107 slot observations**, **83783 compressed bytes**; all archive hashes verified. Archive totals retain earlier wider-scope evidence; coverage and historical analysis on this page are Madeira-only. Scheduled refresh: hourly, at minute 17 UTC; timing is best effort. Treat individual source observations older than 90 minutes as stale.
+Collection began: **2026-10-21T06:58:31.403Z**. Retained: **2 immutable scans**, **37107 slot observations**, **83783 compressed bytes**; all archive hashes verified. Archive totals retain earlier wider-scope evidence; coverage and historical analysis on this page are Madeira-only. Scheduled refresh: hourly, at minute 27 UTC; timing is best effort. Treat individual source observations older than 90 minutes as stale.
 
 ## Learning booking lead times
 

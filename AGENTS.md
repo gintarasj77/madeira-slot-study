@@ -9,5 +9,6 @@
 - Respect source rate limits; stop on 429 and persist the cooldown. Do not add retry loops or increase request speed to fill gaps.
 - Use standard public Ubuntu GitHub runners, no Actions artifacts/caches, no LFS, no paid services. Only the built-in short-lived GITHUB_TOKEN may write generated data.
 - Keep the reporting reader aware of freshness and collection gaps. Hourly scheduling is best effort.
+- Register or recover cron schedules with an active maintainer's public GitHub identity and GitHub noreply email. Use bot authorship for generated observation commits. Verify a run whose event is `schedule`; successful manual runs do not establish automatic operation.
 - Analysis must distinguish first-seen low availability from observed threshold crossings, mark gap-spanning intervals, exclude observations after slot entry, and count distinct visit dates rather than repeated hourly checks as independent samples.
 - Run `npm test` and `npm run verify` after changes. Validate the live anonymous flow when changing upstream access. Keep README and analysis limitations accurate; commit and push completed authorized changes.
