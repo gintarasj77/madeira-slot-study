@@ -1,18 +1,18 @@
 # Madeira non-resident availability study
 
-Generated: **2026-10-26T10:57:34.122Z**. Latest scan: **2026-10-26T10-40-59-910Z**. Source reads: **2026-10-26T10:40:59.910Z — 2026-10-26T10:57:04.006Z UTC**.
+Generated: **2026-10-26T11:57:32.442Z**. Latest scan: **2026-10-26T11-40-58-979Z**. Source reads: **2026-10-26T11:40:58.979Z — 2026-10-26T11:57:02.050Z UTC**.
 
-Health at report generation: **fresh and complete**. Verified responses: **960/960**; responses with slots: **960**; empty responses: **0**; failed/not queried: **0**. **16530 slot observations** in this scan. Empty responses are verified API responses with unknown booking availability.
+Health at report generation: **ATTENTION: incomplete, stale or stopped**. Verified responses: **959/960**; responses with slots: **959**; empty responses: **0**; failed/not queried: **1**. **16514 slot observations** in this scan. Empty responses are verified API responses with unknown booking availability.
 
 Rolling window: **2026-10-26 through 2026-11-24**, 30 calendar dates in Atlantic/Madeira. Additional daily long-range samples: none in this scan; the latest daily sample remains in each trail report. All 32 current Madeira-island booking-catalog resources and every returned slot are included, including 0% and 100%. Porto Santo is excluded. Route variants remain separate. This covers SIMplifica service 259, not a claim that every official PR route is bookable there.
 
-Collection began: **2026-10-21T06:58:31.403Z**. Retained: **122 immutable scans**, **2028972 slot observations**, **4790314 compressed bytes**; all archive hashes verified. Archive totals retain earlier wider-scope evidence; coverage and historical analysis on this page are Madeira-only. Refresh target: about hourly; the independent clock checks every ten minutes and dispatches only when source-age and active-run guards permit. Timing is best effort. Treat individual source observations older than 90 minutes as stale.
+Collection began: **2026-10-21T06:58:31.403Z**. Retained: **123 immutable scans**, **2045486 slot observations**, **4829248 compressed bytes**; all archive hashes verified. Archive totals retain earlier wider-scope evidence; coverage and historical analysis on this page are Madeira-only. Refresh target: about hourly; the independent clock checks every ten minutes and dispatches only when source-age and active-run guards permit. Timing is best effort. Treat individual source observations older than 90 minutes as stale.
 
 ## Learning booking lead times
 
 Analysis retains small changes, threshold crossings at 50%, 20% and 0%, and reopenings. It compares 1, 3, 7, 14, 21 and 28 days before entry, plus coarse daily 45-, 60- and 90-day samples, separately by route variant, exact slot, timezone and weekday/weekend. Samples count distinct visit dates. Observations after entry are excluded from booking-pressure analysis.
 
-Pre-entry observations: 1993455; after-entry observations retained but excluded: 33123; ambiguous/invalid local-time observations excluded: 0. Scan gaps over 90 minutes: **1**. Catalog additions/removals: 0.
+Pre-entry observations: 2009711; after-entry observations retained but excluded: 33381; ambiguous/invalid local-time observations excluded: 0. Scan gaps over 90 minutes: **1**. Catalog additions/removals: 0.
 
 A first observation already at 0% cannot tell when a slot filled. An observed crossing is bounded between checks, and gaps widen that uncertainty. No recommendation is produced until the relevant time/day group has at least 14 mature visit-date samples and adequate coverage. These percentages do not reveal seat counts or distinguish bookings from quota changes. Autumn history may not predict another season.
 
@@ -39,7 +39,7 @@ A first observation already at 0% cannot tell when a slot filled. An observed cr
 | 269 | PR6.5 \| Vereda do Pico Fernandes | 30/30 | 570 | 0 | [Full slots and history](trails/269.md) |
 | 270 | PR6.6 \| Vereda do Túnel do Cavalo | 30/30 | 600 | 0 | [Full slots and history](trails/270.md) |
 | 271 | PR6.7 \| Vereda Câmara Carga do Rabaçal | 30/30 | 600 | 0 | [Full slots and history](trails/271.md) |
-| 272 | PR10 \| Levada do Furado | 30/30 | 480 | 0 | [Full slots and history](trails/272.md) |
+| 272 | PR10 \| Levada do Furado | 29/30 | 464 | 0 | [Full slots and history](trails/272.md) |
 | 273 | PR11 \| Vereda dos Balcões | 30/30 | 570 | 0 | [Full slots and history](trails/273.md) |
 | 274 | PR13 \| Vereda do Fanal | 30/30 | 420 | 0 | [Full slots and history](trails/274.md) |
 | 275 | PR13.1 \| Vereda da Palha Carga | 30/30 | 600 | 0 | [Full slots and history](trails/275.md) |
