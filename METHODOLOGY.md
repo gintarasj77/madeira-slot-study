@@ -10,6 +10,8 @@ The main window is the current Madeira calendar day plus the following 29 days, 
 
 Every observation records when the source response completed. A scan takes about 17–20 minutes at the default pacing, so its entries have different timestamps. Preserve exact local start/end timestamps and the upstream IANA timezone, including fractional seconds. Resolve timezone offsets using the rules in effect on the visit date. Ambiguous or nonexistent DST times remain archived but are excluded from lead-time calculations.
 
+An isolated transient availability failure may be retried after the first pass of the same scan. Only its later successful response is an availability observation, at that later response time. Earlier failures and the final attempt are retained in optional `attempts` metadata, with timestamps, durations, statuses and safe error codes. Retries never count as additional independent samples; a comparison spanning failed attempts remains marked as uncertain. Older immutable scans are never repaired retrospectively.
+
 ## Historical record
 
 Full normalized scans are compressed losslessly and retained permanently. A daily append-only manifest contains scan identifiers, hashes, byte sizes and coverage counts. Archive writes are idempotent and refuse conflicting replacement. Reports are derived views that can be rebuilt from those archives.
@@ -39,5 +41,7 @@ Weather, closures, holidays, day of week, season, quota changes and transport co
 ## Failure monitoring
 
 Expected cadence is hourly. Report gaps over 90 minutes between scan starts and expose per-pair source timestamps. Stop starting requests on HTTP 429, preserve Retry-After and do not start another scan during its cooldown. Up to two already-running lookups may finish after the first failure. Stop on schema drift or five consecutive source failures. Missing data stays unknown; a later successful check does not repair a lost historical interval.
+
+After the initial pass, recover only timeouts, network errors and HTTP 408/500/502/503/504 errors without an explicit Retry-After instruction. Two recovery passes at most wait 30 seconds, then a further 120 seconds, and query only the checks still affected. Recovery is serial, retains the normal request spacing, and is skipped when more than 20 checks need it. A server backoff instruction stops requests and persists its cooldown, including when supplied with a 503 response. Authentication failures are not retried. Circuit breakers, schema drift, cancellation and the 30-minute scan budget cannot be bypassed by recovery. A fully recovered scan is complete; exhausted recovery remains partial and fails the hosted job after publication. Run summaries expose recovery counts and remaining failures.
 
 There is no guarantee of uninterrupted collection. GitHub's schedule, runner availability and the upstream service are external dependencies. The reader must flag persistent stale data or coverage failures and flag recovery once, rather than reporting “no changes” when the data is unverified.

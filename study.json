@@ -7,6 +7,8 @@
   "concurrency": 3,
   "maximumScanMinutes": 30,
   "maximumConsecutiveFailures": 5,
+  "transientRetryDelaysMs": [30000, 120000],
+  "maximumRetryChecks": 20,
   "expectedIntervalMinutes": 60,
   "minimumScanIntervalMinutes": 55,
   "staleAfterMinutes": 90,

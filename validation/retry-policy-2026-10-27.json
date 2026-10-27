@@ -1,0 +1,21 @@
+{
+  "validatedAt": "2026-10-27T12:22:54.064Z",
+  "live": {
+    "resourceId": "301",
+    "date": "2026-11-16",
+    "slotsCompared": 19,
+    "method": "Fresh anonymous session; read-only availability query; independent non-resident category comparison."
+  },
+  "recovery": {
+    "method": "Synthetic fault tests, separate from live observations.",
+    "maximumAdditionalAttempts": 2,
+    "delaysMs": [
+      30000,
+      120000
+    ],
+    "maximumAffectedChecks": 20,
+    "serial": true,
+    "preservesAttemptHistory": true,
+    "successfulChecksRepeated": false
+  }
+}

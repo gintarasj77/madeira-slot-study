@@ -14,6 +14,12 @@ export class ProxyError extends Error {
 }
 const schema = message => { throw new ProxyError('UPSTREAM_SCHEMA_CHANGED', message); };
 
+function retryAfter(response, fallback) {
+  const raw = response.headers.get('retry-after');
+  const seconds = /^\d+$/.test(raw || '') ? Number(raw) : Math.ceil((Date.parse(raw) - Date.now()) / 1000);
+  return Number.isFinite(seconds) ? Math.max(1, Math.min(86400, seconds)) : fallback;
+}
+
 export function validateQuery(url) {
   if ([...url.searchParams.keys()].some(k => !['resourceId', 'date'].includes(k)) ||
       ['resourceId', 'date'].some(k => url.searchParams.getAll(k).length !== 1)) {
@@ -45,13 +51,12 @@ async function upstream(fetcher, path, init = {}) {
       timeout ? 'SIMplifica timed out.' : 'Could not reach SIMplifica.', timeout ? 504 : 502);
   }
   if (response.status === 429) {
-    const raw = response.headers.get('retry-after');
-    const seconds = /^\d+$/.test(raw || '') ? Number(raw) : Math.ceil((Date.parse(raw) - Date.now()) / 1000);
     throw new ProxyError('UPSTREAM_RATE_LIMITED', 'SIMplifica rate limited this request. Try again later.', 429,
-      Number.isFinite(seconds) ? Math.max(1, Math.min(86400, seconds)) : 60);
+      retryAfter(response, 60));
   }
   if (response.status === 419) return response;
-  if (!response.ok) throw new ProxyError('UPSTREAM_HTTP_ERROR', `SIMplifica returned HTTP ${response.status}.`);
+  if (!response.ok) throw Object.assign(new ProxyError('UPSTREAM_HTTP_ERROR', `SIMplifica returned HTTP ${response.status}.`, 502,
+    response.headers.has('retry-after') ? retryAfter(response, 60) : undefined), { upstreamStatus: response.status });
   return response;
 }
 

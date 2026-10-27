@@ -32,3 +32,13 @@ test('empty arrays mean unknown; schedule changes do not match different interva
   assert.deepEqual(compareScan({ entries: [different] }, good, attempts).map(c => c.type), ['new_slot_returned', 'slot_no_longer_returned']);
   assert.equal(compareScan({ entries: [entry(79)] }, good, attempts).length, 0);
 });
+
+test('within-scan recovery preserves uncertain timing without a spurious outage notification', () => {
+  const good = new Map(), attempts = new Map(); updateComparisonState({ entries: [entry(80)] }, good, attempts);
+  const recovered = { ...entry(0, '2026-11-01T08:05:00Z'), attempts: [
+    { status: 'error', at: '2026-11-01T08:00:00Z', code: 'UPSTREAM_TIMEOUT' },
+    { status: 'ok', at: '2026-11-01T08:05:00Z' }] };
+  const changes = compareScan({ entries: [recovered] }, good, attempts);
+  assert.deepEqual(changes.map(c => c.type), ['non_resident_sold_out']);
+  assert.equal(changes[0].gap, true); assert.equal(changes[0].at, recovered.at);
+});
