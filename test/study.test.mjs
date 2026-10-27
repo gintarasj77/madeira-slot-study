@@ -54,6 +54,24 @@ test('anonymous session is fresh; only allowed read POST; retry 419 once', async
   assert.equal(data.length, 1); assert.equal(pages, 2); assert.equal(posts, 2);
 });
 
+test('request and body timeouts remain unknown observations without retry or schema-stop', async () => {
+  const query = validateQuery(new URL('https://test.invalid/?resourceId=301&date=2026-10-26'));
+  let calls = 0;
+  await assert.rejects(fetchIntervals(query, async () => {
+    calls++; throw new DOMException('expired', 'TimeoutError');
+  }), { code: 'UPSTREAM_TIMEOUT' });
+  assert.equal(calls, 1);
+  let pages = 0, posts = 0;
+  await assert.rejects(fetchIntervals(query, async url => {
+    if (url.endsWith('/services/78-82-259')) { pages++; return session(); }
+    posts++;
+    return { ok: true, status: 200, json: async () => { throw new DOMException('expired', 'AbortError'); } };
+  }), { code: 'UPSTREAM_TIMEOUT' });
+  assert.equal(pages, 1); assert.equal(posts, 1);
+  await assert.rejects(fetchIntervals(query, async url => url.endsWith('/services/78-82-259')
+    ? session() : new Response('invalid JSON')), { code: 'UPSTREAM_SCHEMA_CHANGED' });
+});
+
 test('collector accounts for every resource/day, empty arrays, and every returned slot', async () => {
   let now = Date.parse('2026-10-26T06:00:00Z'), posts = 0;
   const scan = await collect(config, { now: () => now, sleep: async ms => { now += ms; }, fetcher: async (url, init) => {

@@ -46,5 +46,4 @@ jobs:
       - name: Surface collection failures after publishing partial evidence
         env:
           COLLECT_OUTCOME: ${{ steps.collect.outcome }}
-        run: |
-          node --input-type=module -e "import fs from 'node:fs';const h=JSON.parse(fs.readFileSync('data/collector-health.json'));if(process.env.COLLECT_OUTCOME!=='success'||h.error||h.state!=='complete'){console.error('Collector needs attention; partial results were preserved.');process.exitCode=1;}"
+        run: node scripts/report-run.mjs

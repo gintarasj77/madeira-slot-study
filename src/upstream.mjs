@@ -1,8 +1,10 @@
 export const ORIGIN = 'https://simplifica.madeira.gov.pt';
 export const SERVICE = `${ORIGIN}/services/78-82-259`;
 const CATALOG = '/api/infoProcess/259/resources';
-const TIMEOUT_MS = 12000;
+// Allow brief source stalls without repeating queries or changing request pacing.
+const TIMEOUT_MS = 30000;
 const validatedTimezones = new Set();
+const timedOut = error => ['TimeoutError', 'AbortError'].includes(error?.name);
 
 export class ProxyError extends Error {
   constructor(code, message, status = 502, retryAfter) {
@@ -38,7 +40,7 @@ async function upstream(fetcher, path, init = {}) {
       ...init, redirect: 'manual', signal: AbortSignal.timeout(TIMEOUT_MS),
     });
   } catch (error) {
-    const timeout = ['TimeoutError', 'AbortError'].includes(error.name);
+    const timeout = timedOut(error);
     throw new ProxyError(timeout ? 'UPSTREAM_TIMEOUT' : 'UPSTREAM_UNREACHABLE',
       timeout ? 'SIMplifica timed out.' : 'Could not reach SIMplifica.', timeout ? 504 : 502);
   }
@@ -56,7 +58,12 @@ async function upstream(fetcher, path, init = {}) {
 async function jsonBody(response) {
   let body;
   try { body = await response.json(); }
-  catch { schema('SIMplifica returned invalid JSON.'); }
+  catch (error) {
+    // The same request deadline also covers the response body. A stalled body
+    // is a missing observation, not evidence that the upstream schema changed.
+    if (timedOut(error)) throw new ProxyError('UPSTREAM_TIMEOUT', 'SIMplifica timed out.', 504);
+    schema('SIMplifica returned invalid JSON.');
+  }
   if (body?.status === false) throw new ProxyError('UPSTREAM_REJECTED', 'SIMplifica rejected the availability query.');
   if (body?.status !== true || !Array.isArray(body.data)) schema('Expected status:true and a data array.');
   return body.data;

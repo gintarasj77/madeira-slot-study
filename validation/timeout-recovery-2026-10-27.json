@@ -1,0 +1,27 @@
+{
+  "validatedAt": "2026-10-27T12:03:52.867Z",
+  "method": "One fresh anonymous session and read-only availability query per affected resource/date; independent non-resident category comparison. Does not replace historical missed observations.",
+  "checks": [
+    {
+      "resourceId": "301",
+      "date": "2026-11-16",
+      "checkedAt": "2026-10-27T12:03:45.694Z",
+      "durationMs": 1478,
+      "slotsCompared": 19
+    },
+    {
+      "resourceId": "188",
+      "date": "2026-11-17",
+      "checkedAt": "2026-10-27T12:03:48.879Z",
+      "durationMs": 2180,
+      "slotsCompared": 17
+    },
+    {
+      "resourceId": "225",
+      "date": "2026-11-17",
+      "checkedAt": "2026-10-27T12:03:51.866Z",
+      "durationMs": 1982,
+      "slotsCompared": 19
+    }
+  ]
+}
