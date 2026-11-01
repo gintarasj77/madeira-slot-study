@@ -2,8 +2,8 @@
   "version": 1,
   "resourceId": "228",
   "trail": "PR9 | Levada do Caldeirão Verde",
-  "latestScanId": "2026-11-01T05-40-58-653Z",
-  "scanFinishedAt": "2026-11-01T05:57:01.358Z",
+  "latestScanId": "2026-11-01T06-41-00-252Z",
+  "scanFinishedAt": "2026-11-01T06:41:10.861Z",
   "entries": [
     {
       "date": "2026-12-16",
@@ -37,303 +37,273 @@
     },
     {
       "date": "2026-11-01",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:41:04.998Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "c97f98db47233f5f2ad35d2ded12e2e749a670c67ac0a290d7d3889e4971cb69",
-      "path": "latest/slots/228/2026-11-01.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-02",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:41:37.417Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "f09482d0752fedbfa91236a32472dc30d2d1ef8d6fde54cdb8b3276e94ffe738",
-      "path": "latest/slots/228/2026-11-02.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-03",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:42:10.212Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "dc81f2d4c6cf0430c1e5b3808bcb8d7e8d66469bfdc24ab5171cb34d06dc5fce",
-      "path": "latest/slots/228/2026-11-03.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-04",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:42:42.282Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "e173ef86ed58e3cde295d632486ddb3a1632594b9b1733a1be4977f196394105",
-      "path": "latest/slots/228/2026-11-04.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-05",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:43:13.637Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "0866e31dd2ea7bb1ab02df5afb9f7109db3f2157d92c54871fb6a5618d577877",
-      "path": "latest/slots/228/2026-11-05.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-06",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:43:46.484Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "86b1c81c494e9c64f58f674c75127d6b6b6aacb7301a3ed67c162ca55ea3279f",
-      "path": "latest/slots/228/2026-11-06.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-07",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:44:17.965Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "fd63a713a50fb5b5aca1e640af3a5bf6b3975332c42e347a92fc84306c4120fb",
-      "path": "latest/slots/228/2026-11-07.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-08",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:44:50.017Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "5ac1f3eca043a31d7c282c01cbfaf24221285d9cd9023f7f085747c630b175e6",
-      "path": "latest/slots/228/2026-11-08.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-09",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:45:22.018Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "c85786a48edf8ad3c05e3068b001a64312a7ef9a0ef6bdaac4ec3e35422d84a3",
-      "path": "latest/slots/228/2026-11-09.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-10",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:45:53.995Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "6046a8e034b8b08a1f16f20c90f7a4065b06c04044599bc229333ac23f2d1e09",
-      "path": "latest/slots/228/2026-11-10.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-11",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:46:25.852Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "5ba652adf731a7c62e021566aa089220c8bc6ae01e641c9078eeca64a2472419",
-      "path": "latest/slots/228/2026-11-11.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-12",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:46:58.044Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "610d4fcbce5e82e3d5f342caaf4ee0acc1f7cd49c830f55b893bafb3bf741b92",
-      "path": "latest/slots/228/2026-11-12.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-13",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:47:29.952Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "5e498955ec47becaa0aa7066dcb26bfac2a5ad43c6745cfbf822a2cf8ec6bc68",
-      "path": "latest/slots/228/2026-11-13.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-14",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:48:02.143Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "424e32c76259bd32e34190c169b6c1b4c9cbd76752c6b9f9ecb0a6cf4fbca1ef",
-      "path": "latest/slots/228/2026-11-14.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-15",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:48:34.117Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "8d962e17dd58974544b9e9304ccdf8892462a382cb51119412eec79ea4cf36e4",
-      "path": "latest/slots/228/2026-11-15.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-16",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:49:06.104Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "074283bfca2afe73dab6b96f32f7e368d3fb1def448ea09204574f25db99036b",
-      "path": "latest/slots/228/2026-11-16.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-17",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:49:37.967Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "7a0927037ad99390a50432227a56e6dbc28f24d653f0ff436ecdf429b4afa528",
-      "path": "latest/slots/228/2026-11-17.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-18",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:50:10.442Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "4056077eaf47311a253a5f3967cce22b4b1e53d25a2c00e65268b3d54bb5af6e",
-      "path": "latest/slots/228/2026-11-18.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-19",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:50:42.397Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "776544392def4872d6285a656321554f4e8ef7541ded0e667059c6c3144f7ffe",
-      "path": "latest/slots/228/2026-11-19.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-20",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:51:14.593Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "a6d6581e5b7df3f6ab02ec0865ea27d748da4bdfb7a7f4c67f6bc0720b631538",
-      "path": "latest/slots/228/2026-11-20.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-21",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:51:46.364Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "12ac0a75906ab185ecb8763edda18fdb4bbc9f56c436c2fe7b435a5479adaa97",
-      "path": "latest/slots/228/2026-11-21.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-22",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:52:18.496Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "c3e5c2a68a8bacc09741543a49ae2d8106e3c77dfe297c5ff0ef6f1f6bc1897c",
-      "path": "latest/slots/228/2026-11-22.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-23",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:52:50.499Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "b2f0f1ba287f54fe0a116c9f87c63717a4a7c48e0f8a92ca229ee8ecd8ed163d",
-      "path": "latest/slots/228/2026-11-23.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-24",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:53:22.343Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "6ae5afa52fdad391cd49484d2348f548edda2e931e3bfdf63baa087f37177c3a",
-      "path": "latest/slots/228/2026-11-24.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-25",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:53:54.402Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "7a08b7abdc153f1b8d0854cc1e2ce3b61dadc98666e8f38470efac4abed9f920",
-      "path": "latest/slots/228/2026-11-25.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-26",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:54:26.401Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "bfe6a6a2fa44c959010f3796cf1fba1e67a32d63b4871148be048679a571fb81",
-      "path": "latest/slots/228/2026-11-26.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-27",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:54:58.510Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "4f903a1e4a93c4064c613dd8298fbc581dc289933a904feb31cf48336f792f9e",
-      "path": "latest/slots/228/2026-11-27.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-28",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:55:30.472Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "dc636e9a9f0cbbc469000dd227c78aa21e4b34941b9c4f484dec16e43b613e1e",
-      "path": "latest/slots/228/2026-11-28.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-29",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:56:02.519Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "dc09cd71a6367c4bba32b6a5c5a4f9ed650a3b3c9627ed9aefb187cc47ceb77d",
-      "path": "latest/slots/228/2026-11-29.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     },
     {
       "date": "2026-11-30",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-01T05:56:34.545Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "b1c67b12299672f90fa2f051e2f0945c53dd4bd2b0eaef66bc94db242f53534f",
-      "path": "latest/slots/228/2026-11-30.json",
-      "slotCount": 12
+      "checkedAt": "2026-11-01T06:41:10.859Z",
+      "error": "Not queried: catalog_unverified.",
+      "code": null
     }
   ]
 }
