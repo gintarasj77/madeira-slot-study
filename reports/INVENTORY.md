@@ -1,6 +1,6 @@
 # Official route inventory and booking coverage
 
-IFCN source fetched: **2026-10-31T00:58:38.335Z UTC**. [Official source](https://ifcn.madeira.gov.pt/en/atividades-de-natureza/percursos-pedestres-recomendados/percursos-pedestres-recomendados.html). **Context refresh failed:** Official context unavailable or schema changed; previous context retained.. Retained source may be stale.
+IFCN source fetched: **2026-11-01T09:07:19.091Z UTC**. [Official source](https://ifcn.madeira.gov.pt/en/atividades-de-natureza/percursos-pedestres-recomendados/percursos-pedestres-recomendados.html).
 
 32 current SIMplifica booking resources; 39 official Madeira-island routes in the IFCN table. 8 official routes have no matching catalog resource; 0 booking resources have no automatic island/code match. Every Madeira-island catalog resource is collected, including unmatched variants. Porto Santo is excluded. The booking catalog and official walking-route list are different inventories. A missing booking resource or an empty API response is not proof of closure or exemption.
 
