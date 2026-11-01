@@ -33,7 +33,8 @@ test('Madeira-only collection excludes current and future Porto Santo IDs before
 });
 
 test('catalog failure also excludes Porto Santo from unknown fallback coverage', async () => {
-  const scan = await collect(config, { now: () => Date.parse('2026-10-26T06:00:00Z'), sleep: async () => {},
+  let clock = Date.parse('2026-10-26T06:00:00Z');
+  const scan = await collect(config, { now: () => clock, sleep: async ms => { clock += ms; },
     priorCatalog: catalog, fetcher: async () => new Response('Down', { status: 503 }) });
   assertScan(scan);
   assert.deepEqual(scan.catalog.map(t => t.resourceId), ['301', '225', '999']);

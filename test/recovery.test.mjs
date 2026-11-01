@@ -19,14 +19,18 @@ const slot = (percentage = 42) => ({ begin: { date: '2026-10-27 08:00:00.000000'
 const ok = percentage => Response.json({ status: true, data: [slot(percentage)] });
 const timeout = () => { throw new DOMException('temporary timeout', 'TimeoutError'); };
 
-async function run(scenario, { resources = catalog, settings = {}, cancelAfter = Infinity } = {}) {
+async function run(scenario, { resources = catalog, settings = {}, cancelAfter = Infinity, catalogScenario, priorCatalog = [] } = {}) {
   const started = Date.parse('2026-10-27T06:00:00.000Z');
   let time = started, pages = 0;
-  const calls = [], checkpoints = [], attempts = new Map();
+  const calls = [], catalogCalls = [], checkpoints = [], attempts = new Map();
   const scan = await collect({ ...config, ...settings }, { now: () => time,
+    priorCatalog,
     sleep: async ms => { time += ms; }, stopRequested: () => time - started >= cancelAfter,
     checkpoint: async value => { checkpoints.push(structuredClone(value)); }, fetcher: async (url, init) => {
-      if (url.endsWith('/resources')) return Response.json({ status: true, data: resources });
+      if (url.endsWith('/resources')) {
+        catalogCalls.push(time);
+        return catalogScenario ? catalogScenario(catalogCalls.length) : Response.json({ status: true, data: resources });
+      }
       if (url.endsWith('/services/78-82-259')) {
         pages++;
         return new Response('unused', { headers: [['Set-Cookie', 'XSRF-TOKEN=fresh%3D; Path=/'], ['Set-Cookie', 'laravel_session=anonymous']] });
@@ -39,7 +43,7 @@ async function run(scenario, { resources = catalog, settings = {}, cancelAfter =
       return scenario(resourceId, attempt);
     } });
   assertScan(scan);
-  return { scan, calls, pages, checkpoints };
+  return { scan, calls, catalogCalls, pages, checkpoints };
 }
 
 test('only failed checks recover, with bounded delays, real timestamps and lossless attempt history', async () => {
@@ -166,4 +170,65 @@ test('retry configuration and archive validation refuse unbounded or falsified a
   const fabricated = structuredClone(scan);
   fabricated.entries[0].attempts[0].s = [];
   assert.throws(() => assertScan(fabricated), /retry|Retry/);
+});
+
+test('startup catalog connection failures recover before any availability query uses a freshly scoped catalog', async () => {
+  const { scan, calls, catalogCalls, checkpoints } = await run(() => ok(42), {
+    priorCatalog: [{ resourceId: '999', name: 'PR1 | previous catalog' }, { resourceId: '282', name: 'Porto Santo PR1 | coast' }],
+    catalogScenario: attempt => {
+      if (attempt === 1) throw new TypeError('temporary connection failure');
+      if (attempt === 2) return new Response('', { status: 503 });
+      return Response.json({ status: true, data: [...catalog, { id: 282, name: 'Porto Santo PR1 | coast' }] });
+    },
+  });
+  assert.equal(catalogCalls.length, 3);
+  assert.ok(catalogCalls[1] - catalogCalls[0] >= 30000);
+  assert.ok(catalogCalls[2] - catalogCalls[1] >= 120000);
+  assert.ok(calls.every(c => c.at >= catalogCalls[2]));
+  assert.deepEqual(calls.map(c => c.resourceId), ['301', '188', '225']);
+  assert.equal(scan.catalogError, undefined); assert.equal(scan.stopReason, null);
+  assert.deepEqual(scan.catalogAttempts.map(a => a.status), ['error', 'error', 'ok']);
+  assert.equal(scan.catalogAttempts[0].code, 'UPSTREAM_UNREACHABLE');
+  assert.ok(checkpoints.some(s => s.catalogError && s.entries.every(e => e.status === 'skipped')));
+  const status = collectionRunStatus(scan, { scanId: scan.id, state: 'complete' }, 'success');
+  assert.equal(status.failed, false); assert.match(status.message, /Trail list recovered after 2 additional attempts/);
+  assert.match(status.summary, /Trail-list attempts/);
+  const invalid = structuredClone(scan); invalid.catalogError = scan.catalogAttempts[0];
+  assert.throws(() => assertScan(invalid), /Catalog retry history/);
+});
+
+test('exhausted catalog retries retain unknown scoped coverage and make no availability queries', async () => {
+  const { scan, calls, catalogCalls } = await run(() => assert.fail('Unverified catalog must not authorize availability'), {
+    priorCatalog: [{ resourceId: '301', name: 'PR1 | full' }, { resourceId: '282', name: 'Porto Santo PR1 | coast' }],
+    catalogScenario: () => new Response('', { status: 503 }),
+  });
+  assert.equal(catalogCalls.length, 3); assert.equal(calls.length, 0);
+  assert.equal(scan.catalogAttempts.length, 3); assert.equal(scan.stopReason, 'catalog_unverified');
+  assert.deepEqual(scan.catalog.map(t => t.resourceId), ['301']);
+  assert.ok(scan.entries.every(e => e.status === 'skipped' && e.s === undefined));
+  const status = collectionRunStatus(scan, { scanId: scan.id, state: 'partial' }, 'success');
+  assert.equal(status.failed, true); assert.match(status.message, /Trail-list failure: UPSTREAM_HTTP_ERROR/);
+});
+
+test('catalog rate limits, explicit backoff, authentication and schema failures are never retried', async () => {
+  for (const response of [new Response('', { status: 429, headers: { 'Retry-After': '3600' } }),
+    new Response('', { status: 503, headers: { 'Retry-After': '120' } }), new Response('', { status: 403 }),
+    Response.json({ status: true, data: [{ id: 301, missingName: true }] })]) {
+    const { scan, calls, catalogCalls } = await run(() => assert.fail('No availability permitted'), {
+      priorCatalog: [{ resourceId: '301', name: 'PR1 | full' }], catalogScenario: () => response,
+    });
+    assert.equal(catalogCalls.length, 1); assert.equal(calls.length, 0); assert.equal(scan.catalogAttempts.length, 1);
+    if (response.headers.has('retry-after')) assert.equal(Date.parse(scan.cooldownUntil) - Date.parse(scan.finishedAt),
+      Number(response.headers.get('retry-after')) * 1000);
+  }
+});
+
+test('catalog retry backoff obeys cancellation and the shared scan time budget', async () => {
+  for (const options of [{ cancelAfter: 10000 }, { settings: { maximumScanMinutes: 1 } }]) {
+    const { scan, calls, catalogCalls } = await run(() => assert.fail('No verified catalog'), {
+      ...options, priorCatalog: [{ resourceId: '301', name: 'PR1 | full' }], catalogScenario: () => new Response('', { status: 503 }),
+    });
+    assert.equal(scan.stopReason, 'scan_time_budget_or_shutdown'); assert.equal(calls.length, 0);
+    assert.ok(catalogCalls.length < 3); assert.ok(scan.catalogError);
+  }
 });
