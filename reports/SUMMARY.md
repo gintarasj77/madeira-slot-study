@@ -1,18 +1,18 @@
 # Madeira non-resident availability study
 
-Generated: **2026-11-01T22:17:37.162Z**. Latest scan: **2026-11-01T22-00-58-197Z**. Source reads: **2026-11-01T22:00:58.197Z — 2026-11-01T22:17:01.015Z UTC**.
+Generated: **2026-11-01T23:17:37.465Z**. Latest scan: **2026-11-01T23-00-57-598Z**. Source reads: **2026-11-01T23:00:57.598Z — 2026-11-01T23:16:58.701Z UTC**.
 
 Health at report generation: **fresh and complete**. Verified responses: **960/960**; responses with slots: **960**; empty responses: **0**; failed/not queried: **0**. **16530 slot observations** in this scan. Empty responses are verified API responses with unknown booking availability.
 
 Rolling window: **2026-11-01 through 2026-11-30**, 30 calendar dates in Atlantic/Madeira. Additional daily long-range samples: none in this scan; the latest daily sample remains in each trail report. All 32 current Madeira-island booking-catalog resources and every returned slot are included, including 0% and 100%. Porto Santo is excluded. Route variants remain separate. This covers SIMplifica service 259, not a claim that every official PR route is bookable there.
 
-Collection began: **2026-10-21T06:58:31.403Z**. Retained: **278 immutable scans**, **4600969 slot observations**, **10750070 compressed bytes**; all archive hashes verified. Archive totals retain earlier wider-scope evidence; coverage and historical analysis on this page are Madeira-only. Refresh target: about hourly; the independent clock checks every ten minutes and dispatches only when source-age and active-run guards permit. Timing is best effort. Treat individual source observations older than 90 minutes as stale.
+Collection began: **2026-10-21T06:58:31.403Z**. Retained: **279 immutable scans**, **4617499 slot observations**, **10787928 compressed bytes**; all archive hashes verified. Archive totals retain earlier wider-scope evidence; coverage and historical analysis on this page are Madeira-only. Refresh target: about hourly; the independent clock checks every ten minutes and dispatches only when source-age and active-run guards permit. Timing is best effort. Treat individual source observations older than 90 minutes as stale.
 
 ## Learning booking lead times
 
 Analysis retains small changes, threshold crossings at 50%, 20% and 0%, and reopenings. It compares 1, 3, 7, 14, 21 and 28 days before entry, plus coarse daily 45-, 60- and 90-day samples, separately by route variant, exact slot, timezone and weekday/weekend. Samples count distinct visit dates. Observations after entry are excluded from booking-pressure analysis.
 
-Pre-entry observations: 4520047; after-entry observations retained but excluded: 78528; ambiguous/invalid local-time observations excluded: 0. Scan gaps over 90 minutes: **1**. Catalog additions/removals: 0.
+Pre-entry observations: 4536026; after-entry observations retained but excluded: 79079; ambiguous/invalid local-time observations excluded: 0. Scan gaps over 90 minutes: **1**. Catalog additions/removals: 0.
 
 A first observation already at 0% cannot tell when a slot filled. An observed crossing is bounded between checks, and gaps widen that uncertainty. No recommendation is produced until the relevant time/day group has at least 14 mature visit-date samples and adequate coverage. These percentages do not reveal seat counts or distinguish bookings from quota changes. Autumn history may not predict another season.
 
