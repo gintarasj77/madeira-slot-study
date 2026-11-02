@@ -2,7 +2,7 @@
 
 IFCN source fetched: **2026-11-02T00:18:40.103Z UTC**. [Official source](https://ifcn.madeira.gov.pt/en/atividades-de-natureza/percursos-pedestres-recomendados/percursos-pedestres-recomendados.html).
 
-32 current SIMplifica booking resources; 39 official Madeira-island routes in the IFCN table. 8 official routes have no matching catalog resource; 0 booking resources have no automatic island/code match. Every Madeira-island catalog resource is collected, including unmatched variants. Porto Santo is excluded. The booking catalog and official walking-route list are different inventories. A missing booking resource or an empty API response is not proof of closure or exemption.
+31 current SIMplifica booking resources; 39 official Madeira-island routes in the IFCN table. 9 official routes have no matching catalog resource; 0 booking resources have no automatic island/code match. Every Madeira-island catalog resource is collected, including unmatched variants. Porto Santo is excluded. The booking catalog and official walking-route list are different inventories. A missing booking resource or an empty API response is not proof of closure or exemption.
 
 Status text is source context, preserved separately from availability. Read restrictions in the official source; a percentage does not establish that a route is open. Daily status snapshots are retained in data/context/ifcn.
 
@@ -30,7 +30,7 @@ Status text is source context, preserved separately from availability. Read rest
 | Madeira | PR8 | Vereda da Ponta de S. Lourenço | ABERTO | [188: PR8 \| Vereda da Ponta de São Lourenço](trails/188.md) |
 | Madeira | PR9 | Levada do Caldeirão Verde | ABERTO | [228: PR9 \| Levada do Caldeirão Verde](trails/228.md) |
 | Madeira | PR9.1 | Levada do Caldeirão Verde - Um Caminho para todos | ABERTO | [292: PR9.1 \| Queimadas - Um Caminho para todos](trails/292.md) |
-| Madeira | PR10 | Levada do Furado | ABERTO | [272: PR10 \| Levada do Furado](trails/272.md) |
+| Madeira | PR10 | Levada do Furado | ABERTO | **No matching booking resource** |
 | Madeira | PR11 | Vereda dos Balcões | ABERTO | [273: PR11 \| Vereda dos Balcões](trails/273.md) |
 | Madeira | PR12 | Caminho Real da Encumeada | PARCIALMENTE ABERTO (Transitável desde a Boca da Corrida até ao km 3,5) | [250: PR12 \| Caminho Real da Encumeada](trails/250.md) |
 | Madeira | PR13 | Vereda do Fanal | ABERTO | [274: PR13 \| Vereda do Fanal](trails/274.md) |

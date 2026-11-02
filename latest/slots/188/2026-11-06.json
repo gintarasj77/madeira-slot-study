@@ -15,13 +15,13 @@
       "2026-11-06 08:00:00.000000",
       "2026-11-06 08:30:00.000000",
       "Europe/Lisbon",
-      3
+      0
     ],
     [
       "2026-11-06 08:30:00.000000",
       "2026-11-06 09:00:00.000000",
       "Europe/Lisbon",
-      2
+      4
     ],
     [
       "2026-11-06 09:00:00.000000",
@@ -45,7 +45,7 @@
       "2026-11-06 10:30:00.000000",
       "2026-11-06 11:00:00.000000",
       "Europe/Lisbon",
-      0
+      6
     ],
     [
       "2026-11-06 11:00:00.000000",
@@ -114,7 +114,7 @@
       95
     ]
   ],
-  "profileHash": "690141faf531bc5bd0db260c533bee9dccd3c424cd0b855821e0eda5335f0696",
+  "profileHash": "46ede51faeae69bb72da03b18180062925243e724c542718f6f8531ad18fb962",
   "freshnessIndex": "../../index/188.json",
   "freshnessNote": "This payload changes only when slots change. Read sourceFetchedAt and status from the freshness index at the SAME Git commit. Payload file age is not observation age."
 }
