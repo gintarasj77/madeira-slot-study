@@ -20,6 +20,8 @@ Successful unchanged checks are retained: they establish how long a percentage r
 
 ## Events and uncertainty
 
+A resource rejected for every sampled date can trigger one further catalog check. Only a confirmed removal, with no unqueried additions and no successful observations for that resource, is reconciled within the new scan. Its original catalog, scope and rejected checks remain in `catalogWithdrawal`; the active catalog and normal coverage counts cover the remaining resources. This is an observed booking-catalog change, not evidence of physical trail closure or zero quota. Existing archives are never rewritten, and ambiguous rejections remain failures.
+
 - Observe downward crossings at 50%, 20% and 0%. The crossing lies between the last observation above the threshold and the next observation at or below it; both timestamp and lead-time bounds are retained.
 - If the first observation is already at or below a threshold, it is **left-censored**. For example, a first observation at 0% three weeks ahead proves only that it was already full at that check. It does not establish that it filled three weeks ahead.
 - Treat a 0% → positive transition as a reopening of quota. It can reflect cancellation, quota adjustment or another upstream change; the cause is unknown.

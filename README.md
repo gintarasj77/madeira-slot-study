@@ -50,6 +50,8 @@ Publication imports immutable observations into a clean checkout of current main
 
 ## Running locally
 
+If every date for a resource is explicitly rejected, the collector checks the live catalog once more. It recognizes a withdrawal only when the resource is absent, no new resources were added, and none of its checks returned availability. The final active catalog is then reported normally; the original catalog and every rejected check remain in `catalogWithdrawal` evidence within the new scan. Historical archives are unchanged. A withdrawal means unknown booking availability, not proof of physical trail closure. Still-listed rejections, mixed successful/failed checks and uncertain catalog refreshes continue to fail visibly.
+
 Use Node.js 22 or newer. No package installation is needed.
 
 ```sh
