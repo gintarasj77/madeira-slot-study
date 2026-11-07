@@ -2,15 +2,15 @@
   "version": 1,
   "resourceId": "188",
   "trail": "PR8 | Vereda da Ponta de São Lourenço",
-  "latestScanId": "2026-11-07T04-01-07-164Z",
-  "scanFinishedAt": "2026-11-07T04:01:43.711Z",
+  "latestScanId": "2026-11-07T05-00-58-673Z",
+  "scanFinishedAt": "2026-11-07T05:01:34.605Z",
   "entries": [
     {
       "date": "2026-12-22",
       "status": "skipped",
       "cadence": "daily",
       "staleAfterMinutes": 1560,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.608Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -19,7 +19,7 @@
       "status": "skipped",
       "cadence": "daily",
       "staleAfterMinutes": 1560,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.608Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -28,17 +28,17 @@
       "status": "skipped",
       "cadence": "daily",
       "staleAfterMinutes": 1560,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.608Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
     {
       "date": "2026-11-07",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-07T04:01:11.095Z",
+      "sourceFetchedAt": "2026-11-07T05:01:02.027Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "5b94e4d7a15f566b76233be1afeb4a7d3f13f6216ec571698f24cd4c3a5d7a5a",
+      "profileHash": "bdc75ebb2a0bf65b584906ee2a9b4c09d011db14bc93d9f169078affb7326180",
       "path": "latest/slots/188/2026-11-07.json",
       "slotCount": 17
     },
@@ -47,7 +47,7 @@
       "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.969Z",
+      "checkedAt": "2026-11-07T05:01:32.606Z",
       "error": "Expected exactly one Não residentes percentage in each slotTitle.",
       "code": "UPSTREAM_SCHEMA_CHANGED"
     },
@@ -56,7 +56,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.969Z",
+      "checkedAt": "2026-11-07T05:01:32.607Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -65,7 +65,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.969Z",
+      "checkedAt": "2026-11-07T05:01:32.607Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -74,7 +74,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.969Z",
+      "checkedAt": "2026-11-07T05:01:32.607Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -83,7 +83,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.969Z",
+      "checkedAt": "2026-11-07T05:01:32.607Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -92,7 +92,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.969Z",
+      "checkedAt": "2026-11-07T05:01:32.607Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -101,7 +101,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.969Z",
+      "checkedAt": "2026-11-07T05:01:32.607Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -110,7 +110,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.969Z",
+      "checkedAt": "2026-11-07T05:01:32.607Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -119,7 +119,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.607Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -128,7 +128,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.607Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -137,7 +137,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.607Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -146,7 +146,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.607Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -155,7 +155,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.607Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -164,7 +164,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.607Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -173,7 +173,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.607Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -182,7 +182,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.607Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -191,7 +191,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.607Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -200,7 +200,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.607Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -209,7 +209,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.607Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -218,7 +218,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.607Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -227,7 +227,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.607Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -236,7 +236,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.607Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -245,7 +245,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.608Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -254,7 +254,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.608Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -263,7 +263,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.608Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -272,7 +272,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.608Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -281,7 +281,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.608Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -290,7 +290,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.608Z",
       "error": "Not queried: schema_changed.",
       "code": null
     },
@@ -299,7 +299,7 @@
       "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-07T04:01:41.970Z",
+      "checkedAt": "2026-11-07T05:01:32.608Z",
       "error": "Not queried: schema_changed.",
       "code": null
     }
