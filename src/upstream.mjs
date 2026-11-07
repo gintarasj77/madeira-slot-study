@@ -146,16 +146,19 @@ function timestamp(value) {
   return { local: value.date, timezone: value.timezone };
 }
 
-export function normalizeSlots(data, date) {
+export function normalizeAvailability(data, date) {
   if (!Array.isArray(data)) schema('Expected an interval array.');
   const seen = new Set();
   return data.map(item => {
     if (typeof item?.slotTitle !== 'string') schema('A slot has no slotTitle.');
     const title = item.slotTitle.normalize('NFC').replace(/\u00a0/g, ' ');
     const matches = [...title.matchAll(/(?:^|[\s:•])((?:\d+)(?:[.,]\d+)?)\s*%\s*Não\s+residentes(?=\s|[•<]|$)/giu)];
-    if (matches.length !== 1) schema('Expected exactly one Não residentes percentage in each slotTitle.');
-    const nonResident = Number(matches[0][1].replace(',', '.'));
-    if (!Number.isFinite(nonResident) || nonResident < 0 || nonResident > 100) schema('Non-resident percentage is outside 0–100.');
+    // This exact generic response supplies no category quota. Preserve it as
+    // unknown; neither its zero nor the generic capacity fields are a percentage.
+    const unreported = title.trim() === '0 vagas disponíveis';
+    if (!unreported && matches.length !== 1) schema('Expected exactly one Não residentes percentage in each slotTitle.');
+    const nonResident = unreported ? null : Number(matches[0][1].replace(',', '.'));
+    if (!unreported && (!Number.isFinite(nonResident) || nonResident < 0 || nonResident > 100)) schema('Non-resident percentage is outside 0–100.');
     const begin = timestamp(item.begin), end = timestamp(item.end);
     if (begin.local.slice(0, 10) !== date || end.local <= begin.local || begin.timezone !== end.timezone) {
       schema('Slot dates, ordering, or timezones changed.');
@@ -165,4 +168,13 @@ export function normalizeSlots(data, date) {
     seen.add(key);
     return { time: begin.local.slice(11, 16), endTime: end.local.slice(11, 16), begin, end, nonResident };
   }).sort((a, b) => a.begin.local.localeCompare(b.begin.local));
+}
+
+// Strict percentage consumers must opt into the richer observation interface
+// rather than accidentally treating an unknown value as zero.
+export function normalizeSlots(data, date) {
+  const slots = normalizeAvailability(data, date);
+  if (slots.some(s => s.nonResident === null)) throw new ProxyError('UPSTREAM_CATEGORY_UNAVAILABLE',
+    'SIMplifica returned generic availability without a non-resident percentage.');
+  return slots;
 }

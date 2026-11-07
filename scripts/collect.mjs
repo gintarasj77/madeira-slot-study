@@ -39,9 +39,10 @@ try {
     const record = await writeScan(root, scan);
     await atomicWrite(path.join(data, 'collector-health.json'), JSON.stringify({ checkedAt: scan.finishedAt,
       state: scanCounts(scan).failed || scan.catalogError ? 'partial' : 'complete', scanId: scan.id, stopReason: scan.stopReason,
+      ...(scanCounts(scan).unreported ? { unreportedChecks: scanCounts(scan).unreported, unreportedSlots: scanCounts(scan).unreportedSlots } : {}),
       cooldownUntil: scan.cooldownUntil,
       lastCompletedLongRangeDate: scan.sentinelDates?.length && !scan.catalogError &&
-        scan.entries.filter(e => scan.sentinelDates.includes(e.d)).every(e => ['ok', 'empty'].includes(e.status))
+        scan.entries.filter(e => scan.sentinelDates.includes(e.d)).every(e => ['ok', 'empty', 'unreported'].includes(e.status))
         ? today : priorHealth?.lastCompletedLongRangeDate || null }) + '\n');
     await fs.rm(path.join(data, '.checkpoint.json'), { force: true });
     console.log(JSON.stringify({ archived: record.file, ...scanCounts(scan), stopReason: scan.stopReason }));
