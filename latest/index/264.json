@@ -2,338 +2,306 @@
   "version": 1,
   "resourceId": "264",
   "trail": "PR6 | Levada das 25 Fontes",
-  "latestScanId": "2026-11-06T23-01-00-460Z",
-  "scanFinishedAt": "2026-11-06T23:16:37.546Z",
+  "latestScanId": "2026-11-07T00-00-59-612Z",
+  "scanFinishedAt": "2026-11-07T00:01:37.370Z",
   "entries": [
     {
-      "date": "2026-12-21",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T00:16:43.298Z",
+      "date": "2026-12-22",
+      "status": "skipped",
       "cadence": "daily",
       "staleAfterMinutes": 1560,
-      "profileHash": "e5577b10a290ec842b82fc0bdb633a916e04f1b7f935c5b05764b0caa3b23fc2",
-      "path": "latest/slots/264/2026-12-21.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
-      "date": "2027-01-05",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T00:17:14.775Z",
+      "date": "2027-01-06",
+      "status": "skipped",
       "cadence": "daily",
       "staleAfterMinutes": 1560,
-      "profileHash": "3cb13bf450178464c92cddb79d2aef6bf10add58c132a5c6b7888d818b6bed63",
-      "path": "latest/slots/264/2027-01-05.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
-      "date": "2027-02-04",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T00:17:45.309Z",
+      "date": "2027-02-05",
+      "status": "skipped",
       "cadence": "daily",
       "staleAfterMinutes": 1560,
-      "profileHash": "91471927f48e65f6bf26874893acaa570df59c93398b7858d4972fe3626488f4",
-      "path": "latest/slots/264/2027-02-04.json",
-      "slotCount": 16
-    },
-    {
-      "date": "2026-11-06",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:01:15.778Z",
-      "cadence": "hourly",
-      "staleAfterMinutes": 90,
-      "profileHash": "c90bbede5090d06e104606c4676eeef81505ad8c9532e95cc657d0561d081800",
-      "path": "latest/slots/264/2026-11-06.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-11-07",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:01:47.522Z",
+      "sourceFetchedAt": "2026-11-07T00:01:15.636Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "f05f35faee377da382409114d6d760565ea78ae56f1a471f64962a8a6c2174f5",
+      "profileHash": "488bf77075b4a5a7933948b689e3b5d615e7461e6dad0bd904b8cc09584c893e",
       "path": "latest/slots/264/2026-11-07.json",
       "slotCount": 16
     },
     {
       "date": "2026-11-08",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:02:18.909Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "36f81075c2534b50ce77a5a6392a59579cce4f58313d3035c1e63fbc3d940a92",
-      "path": "latest/slots/264/2026-11-08.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-11-09",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:02:50.156Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "1f5147d23d37af0c0a678ac118991757339bfa6483c88a184f5ad00c02885b55",
-      "path": "latest/slots/264/2026-11-09.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-11-10",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:03:21.221Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "6c4ebee7751aac290f3f56346ebdf324af5dd3ee01df21bf90c973426532615c",
-      "path": "latest/slots/264/2026-11-10.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-11-11",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:03:52.702Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "c2ae9dc3ca75756142ec0396f23539ee50a767a8bd5397814d7c56f058ef4faf",
-      "path": "latest/slots/264/2026-11-11.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-11-12",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:04:24.156Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "9642b2663e22ed06fb8769ce82b1b9b1adf6e16c9b15f59de779a7fd999da578",
-      "path": "latest/slots/264/2026-11-12.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-11-13",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:04:55.618Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "cceabea40caa1b7257a04d749d407bbcebaf60e3e947e722b973b6326317c525",
-      "path": "latest/slots/264/2026-11-13.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-11-14",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:05:27.179Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "f991d6a69056dc0a5a4c9a9160d4fa234cbd02210a4e65ed73e396a6012153eb",
-      "path": "latest/slots/264/2026-11-14.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-11-15",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:05:58.172Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "cbd86ec5c1a26ced867657f490206c3ac14697675ebbee36b07ca82d90b644ad",
-      "path": "latest/slots/264/2026-11-15.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-11-16",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:06:29.368Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "0cfd1cb41505ae4e9231af440a9d9da1f11902d0f61e68aa62f252efcd4397ed",
-      "path": "latest/slots/264/2026-11-16.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-11-17",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:07:00.945Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "521e952d370e990f883fb2d33c36500099a69067846e3ea0f882d63304b32ebd",
-      "path": "latest/slots/264/2026-11-17.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-11-18",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:07:31.871Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "0f3aa0c8a32d87a7c7ee281376f209443386aef327c7741a81367f296d12c00d",
-      "path": "latest/slots/264/2026-11-18.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-11-19",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:08:03.560Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "eb96fcbac4e3b33eb883db65d7a17097674c0572d94577714f2b679cfe2a372d",
-      "path": "latest/slots/264/2026-11-19.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-11-20",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:08:34.771Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "022de767e14dd108ed6b2f1e2d32768e3009de0d9e746094bdc1970db9e2dac3",
-      "path": "latest/slots/264/2026-11-20.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-11-21",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:09:05.177Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "ffc506b85a699925947e62bcf64be3a1e2aa27e36c42959a9507994b9a1ea617",
-      "path": "latest/slots/264/2026-11-21.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-11-22",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:09:36.227Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "965ef32ed55c32330bd43d7bf59da0fd0dcb5db0d49bc37db05830043bfbfbb4",
-      "path": "latest/slots/264/2026-11-22.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-11-23",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:10:08.066Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "9b829851f582124597aa694e6ba87a6319588e552c8e48385509ae772b5c1535",
-      "path": "latest/slots/264/2026-11-23.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-11-24",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:10:38.482Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "e24a1f4bf3f654f7110eb829d6b5bc9d8298112dfbfe92c13dca7b344f2f1cde",
-      "path": "latest/slots/264/2026-11-24.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-11-25",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:11:09.690Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "f30a2ef7cd3e81c0534fd0b81327a54c56a1d42ce8d38a19eaa6664687d76ce8",
-      "path": "latest/slots/264/2026-11-25.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-11-26",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:11:40.546Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "c547f4ea26d88f705c61f110345e37f303dfe1858cbe8c5c4fea8b3b64f919c9",
-      "path": "latest/slots/264/2026-11-26.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-11-27",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:12:11.461Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "5bba84863ecfd1a29a89e67b135bbd8ef0894af8c15133a2b830607babd54b65",
-      "path": "latest/slots/264/2026-11-27.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-11-28",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:12:42.595Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "72011c9e1e3bdd3a01bab2eaaa0f00396286e4183241a2cf0c6df9fef01cd5ae",
-      "path": "latest/slots/264/2026-11-28.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-11-29",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:13:13.741Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "3331acade4861a927b8bfed51426f9f092246eeb020a3d73c9ce2fa3eca02780",
-      "path": "latest/slots/264/2026-11-29.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-11-30",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:13:44.622Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "ec758e3502a3f530714ae21efae2c16b23b03a8a9f04d2652485bbd57cfdfa7c",
-      "path": "latest/slots/264/2026-11-30.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-12-01",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:14:15.871Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "d83d97b384c47a639d3dfe99432c22ab767ba8bce736c7dae17df3a945d08979",
-      "path": "latest/slots/264/2026-12-01.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-12-02",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:14:46.924Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "67c98078f2adf64ec74405b1c51c43d2a17cda017beb948e2889961ea09b0f6c",
-      "path": "latest/slots/264/2026-12-02.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-12-03",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:15:18.047Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "ce877f82ad190eff41f010a78aa87b444dab146e8176ebb39a31fb671ee82a11",
-      "path": "latest/slots/264/2026-12-03.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-12-04",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:15:49.204Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "e17635176e7e0f62f37d3e079976026f6e23d082eb4844915348fb6549480416",
-      "path": "latest/slots/264/2026-12-04.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     },
     {
       "date": "2026-12-05",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-06T23:16:19.847Z",
+      "status": "skipped",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "861b4bdad10f3a43c5559f5c4fb7836d27b0b47427e791ef80e2c5f88108c78c",
-      "path": "latest/slots/264/2026-12-05.json",
-      "slotCount": 16
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
+    },
+    {
+      "date": "2026-12-06",
+      "status": "skipped",
+      "cadence": "hourly",
+      "staleAfterMinutes": 90,
+      "checkedAt": "2026-11-07T00:01:35.435Z",
+      "error": "Not queried: schema_changed.",
+      "code": null
     }
   ]
 }
