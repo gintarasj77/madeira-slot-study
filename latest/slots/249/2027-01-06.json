@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "resourceId": "249",
+  "trail": "PR1.3 | Vereda da Encumeada (transitável entre o Pico Ruivo e a Boca das Torrinhas)",
+  "date": "2027-01-06",
+  "status": "slots_returned",
+  "slotColumns": [
+    "beginLocal",
+    "endLocal",
+    "timezone",
+    "nonResidentPercentage"
+  ],
+  "slots": [
+    [
+      "2027-01-06 08:00:00.000000",
+      "2027-01-06 08:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2027-01-06 08:30:00.000000",
+      "2027-01-06 09:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2027-01-06 09:00:00.000000",
+      "2027-01-06 09:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2027-01-06 09:30:00.000000",
+      "2027-01-06 10:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2027-01-06 10:00:00.000000",
+      "2027-01-06 10:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2027-01-06 10:30:00.000000",
+      "2027-01-06 11:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2027-01-06 11:00:00.000000",
+      "2027-01-06 11:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2027-01-06 11:30:00.000000",
+      "2027-01-06 12:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2027-01-06 12:00:00.000000",
+      "2027-01-06 12:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2027-01-06 12:30:00.000000",
+      "2027-01-06 13:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2027-01-06 13:00:00.000000",
+      "2027-01-06 13:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2027-01-06 13:30:00.000000",
+      "2027-01-06 14:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2027-01-06 14:00:00.000000",
+      "2027-01-06 14:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2027-01-06 14:30:00.000000",
+      "2027-01-06 15:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2027-01-06 15:00:00.000000",
+      "2027-01-06 15:30:00.000000",
+      "Europe/Lisbon",
+      100
+    ],
+    [
+      "2027-01-06 15:30:00.000000",
+      "2027-01-06 16:00:00.000000",
+      "Europe/Lisbon",
+      100
+    ]
+  ],
+  "profileHash": "ce395db29cec8e4a59e98d66135a182ad0d25ae3603ed542edfafae862045347",
+  "freshnessIndex": "../../index/249.json",
+  "freshnessNote": "This payload changes only when slots change. Read sourceFetchedAt and status from the freshness index at the SAME Git commit. Payload file age is not observation age."
+}

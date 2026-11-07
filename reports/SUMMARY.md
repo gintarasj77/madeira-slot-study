@@ -1,18 +1,18 @@
 # Madeira non-resident availability study
 
-Generated: **2026-11-07T05:02:31.102Z**. Latest scan: **2026-11-07T05-00-58-673Z**. Source reads: **2026-11-07T05:00:58.673Z — 2026-11-07T05:01:34.605Z UTC**.
+Generated: **2026-11-07T05:42:12.362Z**. Latest scan: **2026-11-07T05-23-38-385Z**. Source reads: **2026-11-07T05:23:38.385Z — 2026-11-07T05:40:47.457Z UTC**.
 
-Health at report generation: **ATTENTION: incomplete, stale or stopped**. Verified responses: **31/1023**; responses with slots: **31**; empty responses: **0**; failed/not queried: **992**. **535 slot observations** in this scan. Empty responses are verified API responses with unknown booking availability. Stop reason: schema_changed.
+Health at report generation: **fresh collection; some source category data unavailable**. Verified responses: **992/1023**; responses with slots: **992**; empty responses: **0**; failed/not queried: **0**; category-unreported responses: **31** (535 unknown slots). **17120 slot observations** in this scan. Empty responses and generic source messages without a non-resident percentage are unknown booking availability. Unreported slots retain their source timestamps and text, contribute no numerical samples, and do not stop collection of other dates.
 
-Rolling window: **2026-11-07 through 2026-12-06**, 30 calendar dates in Atlantic/Madeira. Additional daily long-range samples: 2026-12-22, 2027-01-06, 2027-02-05; the latest daily sample remains in each trail report. All 31 current Madeira-island booking-catalog resources and every returned slot are included, including 0% and 100%. Porto Santo is excluded. Route variants remain separate. This covers SIMplifica service 259, not a claim that every official PR route is bookable there.
+Rolling window: **2026-11-07 through 2026-12-06**, 30 calendar dates in Atlantic/Madeira. Additional daily long-range samples: 2026-12-22, 2027-01-06, 2027-02-05; the latest daily sample remains in each trail report. All 31 current Madeira-island booking-catalog resources are queried. Returned category percentages, including 0% and 100%, are retained; generic responses retain slot evidence with unknown quota. Porto Santo is excluded. Route variants remain separate. This covers SIMplifica service 259, not a claim that every official PR route is bookable there.
 
-Collection began: **2026-10-21T06:58:31.403Z**. Retained: **405 immutable scans**, **6561982 slot observations**, **15214161 compressed bytes**; all archive hashes verified. Archive totals retain earlier wider-scope evidence; coverage and historical analysis on this page are Madeira-only. Refresh target: about hourly; the independent clock checks every ten minutes and dispatches only when source-age and active-run guards permit. Timing is best effort. Treat individual source observations older than 90 minutes as stale.
+Collection began: **2026-10-21T06:58:31.403Z**. Retained: **406 immutable scans**, **6579102 slot observations**, **15252060 compressed bytes**; all archive hashes verified. Archive totals retain earlier wider-scope evidence; coverage and historical analysis on this page are Madeira-only. Refresh target: about hourly; the independent clock checks every ten minutes and dispatches only when source-age and active-run guards permit. Timing is best effort. Treat individual source observations older than 90 minutes as stale.
 
 ## Learning booking lead times
 
 Analysis retains small changes, threshold crossings at 50%, 20% and 0%, and reopenings. It compares 1, 3, 7, 14, 21 and 28 days before entry, plus coarse daily 45-, 60- and 90-day samples, separately by route variant, exact slot, timezone and weekday/weekend. Samples count distinct visit dates. Observations after entry are excluded from booking-pressure analysis.
 
-Pre-entry observations: 6449425; after-entry observations retained but excluded: 110163; ambiguous/invalid local-time observations excluded: 0. Scan gaps over 90 minutes: **1**. Catalog additions/removals: 1.
+Pre-entry observations: 6466545; after-entry observations retained but excluded: 110163; ambiguous/invalid local-time observations excluded: 0. Scan gaps over 90 minutes: **1**. Catalog additions/removals: 1.
 
 A first observation already at 0% cannot tell when a slot filled. An observed crossing is bounded between checks, and gaps widen that uncertainty. No recommendation is produced until the relevant time/day group has at least 14 mature visit-date samples and adequate coverage. These percentages do not reveal seat counts or distinguish bookings from quota changes. Autumn history may not predict another season.
 
@@ -20,36 +20,36 @@ A first observation already at 0% cannot tell when a slot filled. An observed cr
 
 | Resource | Booking resource / route variant | Verified pairs | Slots | Empty responses | Details |
 |---|---|---:|---:|---:|---|
-| 188 | PR8 \| Vereda da Ponta de São Lourenço | 1/33 | 17 | 0 | [Full slots and history](trails/188.md) |
-| 225 | PR1 \| Vereda do Areeiro até ao Miradouro da Pedra Rija | 1/33 | 19 | 0 | [Full slots and history](trails/225.md) |
-| 226 | PR1.2 \| Vereda do Pico Ruivo | 1/33 | 19 | 0 | [Full slots and history](trails/226.md) |
-| 227 | PR6.1 \| Levada do Risco | 1/33 | 18 | 0 | [Full slots and history](trails/227.md) |
-| 228 | PR9 \| Levada do Caldeirão Verde | 1/33 | 12 | 0 | [Full slots and history](trails/228.md) |
-| 231 | PR18 \| Levada do Rei | 1/33 | 16 | 0 | [Full slots and history](trails/231.md) |
-| 249 | PR1.3 \| Vereda da Encumeada (transitável entre o Pico Ruivo e a Boca das Torrinhas) | 1/33 | 16 | 0 | [Full slots and history](trails/249.md) |
-| 250 | PR12 \| Caminho Real da Encumeada | 1/33 | 12 | 0 | [Full slots and history](trails/250.md) |
-| 251 | PR19 \| Caminho Real do Paul do Mar | 1/33 | 19 | 0 | [Full slots and history](trails/251.md) |
-| 259 | PR1.1 \| Vereda da Ilha | 1/33 | 16 | 0 | [Full slots and history](trails/259.md) |
-| 260 | PR2 \| Vereda do Urzal | 1/33 | 13 | 0 | [Full slots and history](trails/260.md) |
-| 263 | PR5 \| Vereda das Funduras | 1/33 | 16 | 0 | [Full slots and history](trails/263.md) |
-| 264 | PR6 \| Levada das 25 Fontes | 1/33 | 16 | 0 | [Full slots and history](trails/264.md) |
-| 265 | PR6.2 \| Levada do Alecrim | 1/33 | 18 | 0 | [Full slots and history](trails/265.md) |
-| 267 | PR6.3 \| Vereda da Lagoa do Vento | 1/33 | 20 | 0 | [Full slots and history](trails/267.md) |
-| 268 | PR6.4 \| Levada Velha do Rabaçal | 1/33 | 18 | 0 | [Full slots and history](trails/268.md) |
-| 269 | PR6.5 \| Vereda do Pico Fernandes | 1/33 | 19 | 0 | [Full slots and history](trails/269.md) |
-| 270 | PR6.6 \| Vereda do Túnel do Cavalo | 1/33 | 20 | 0 | [Full slots and history](trails/270.md) |
-| 271 | PR6.7 \| Vereda Câmara Carga do Rabaçal | 1/33 | 20 | 0 | [Full slots and history](trails/271.md) |
-| 273 | PR11 \| Vereda dos Balcões | 1/33 | 19 | 0 | [Full slots and history](trails/273.md) |
-| 274 | PR13 \| Vereda do Fanal | 1/33 | 14 | 0 | [Full slots and history](trails/274.md) |
-| 275 | PR13.1 \| Vereda da Palha Carga | 1/33 | 20 | 0 | [Full slots and history](trails/275.md) |
-| 276 | PR14 \| Levada dos Cedros | 1/33 | 16 | 0 | [Full slots and history](trails/276.md) |
-| 277 | PR15 \| Vereda da Ribeira da Janela | 1/33 | 19 | 0 | [Full slots and history](trails/277.md) |
-| 278 | PR16 \| Levada Fajã do Rodrigues | 1/33 | 16 | 0 | [Full slots and history](trails/278.md) |
-| 279 | PR17 \| Caminho do Pináculo e Folhadal | 1/33 | 8 | 0 | [Full slots and history](trails/279.md) |
-| 280 | PR21 \| Caminho do Norte | 1/33 | 19 | 0 | [Full slots and history](trails/280.md) |
-| 281 | PR22 \| Vereda do Chão dos Louros | 1/33 | 20 | 0 | [Full slots and history](trails/281.md) |
-| 285 | PR6.8 \| Levada do Paul II - Um caminho para todos | 1/33 | 21 | 0 | [Full slots and history](trails/285.md) |
-| 292 | PR9.1 \| Queimadas - Um Caminho para todos | 1/33 | 20 | 0 | [Full slots and history](trails/292.md) |
-| 301 | PR1 \| Vereda do Areeiro - Pico Ruivo (sentido único) | 1/33 | 19 | 0 | [Full slots and history](trails/301.md) |
+| 188 | PR8 \| Vereda da Ponta de São Lourenço | 32/33 | 544 | 0 | [Full slots and history](trails/188.md) |
+| 225 | PR1 \| Vereda do Areeiro até ao Miradouro da Pedra Rija | 32/33 | 608 | 0 | [Full slots and history](trails/225.md) |
+| 226 | PR1.2 \| Vereda do Pico Ruivo | 32/33 | 608 | 0 | [Full slots and history](trails/226.md) |
+| 227 | PR6.1 \| Levada do Risco | 32/33 | 576 | 0 | [Full slots and history](trails/227.md) |
+| 228 | PR9 \| Levada do Caldeirão Verde | 32/33 | 384 | 0 | [Full slots and history](trails/228.md) |
+| 231 | PR18 \| Levada do Rei | 32/33 | 512 | 0 | [Full slots and history](trails/231.md) |
+| 249 | PR1.3 \| Vereda da Encumeada (transitável entre o Pico Ruivo e a Boca das Torrinhas) | 32/33 | 512 | 0 | [Full slots and history](trails/249.md) |
+| 250 | PR12 \| Caminho Real da Encumeada | 32/33 | 384 | 0 | [Full slots and history](trails/250.md) |
+| 251 | PR19 \| Caminho Real do Paul do Mar | 32/33 | 608 | 0 | [Full slots and history](trails/251.md) |
+| 259 | PR1.1 \| Vereda da Ilha | 32/33 | 512 | 0 | [Full slots and history](trails/259.md) |
+| 260 | PR2 \| Vereda do Urzal | 32/33 | 416 | 0 | [Full slots and history](trails/260.md) |
+| 263 | PR5 \| Vereda das Funduras | 32/33 | 512 | 0 | [Full slots and history](trails/263.md) |
+| 264 | PR6 \| Levada das 25 Fontes | 32/33 | 512 | 0 | [Full slots and history](trails/264.md) |
+| 265 | PR6.2 \| Levada do Alecrim | 32/33 | 576 | 0 | [Full slots and history](trails/265.md) |
+| 267 | PR6.3 \| Vereda da Lagoa do Vento | 32/33 | 640 | 0 | [Full slots and history](trails/267.md) |
+| 268 | PR6.4 \| Levada Velha do Rabaçal | 32/33 | 576 | 0 | [Full slots and history](trails/268.md) |
+| 269 | PR6.5 \| Vereda do Pico Fernandes | 32/33 | 608 | 0 | [Full slots and history](trails/269.md) |
+| 270 | PR6.6 \| Vereda do Túnel do Cavalo | 32/33 | 640 | 0 | [Full slots and history](trails/270.md) |
+| 271 | PR6.7 \| Vereda Câmara Carga do Rabaçal | 32/33 | 640 | 0 | [Full slots and history](trails/271.md) |
+| 273 | PR11 \| Vereda dos Balcões | 32/33 | 608 | 0 | [Full slots and history](trails/273.md) |
+| 274 | PR13 \| Vereda do Fanal | 32/33 | 448 | 0 | [Full slots and history](trails/274.md) |
+| 275 | PR13.1 \| Vereda da Palha Carga | 32/33 | 640 | 0 | [Full slots and history](trails/275.md) |
+| 276 | PR14 \| Levada dos Cedros | 32/33 | 512 | 0 | [Full slots and history](trails/276.md) |
+| 277 | PR15 \| Vereda da Ribeira da Janela | 32/33 | 608 | 0 | [Full slots and history](trails/277.md) |
+| 278 | PR16 \| Levada Fajã do Rodrigues | 32/33 | 512 | 0 | [Full slots and history](trails/278.md) |
+| 279 | PR17 \| Caminho do Pináculo e Folhadal | 32/33 | 256 | 0 | [Full slots and history](trails/279.md) |
+| 280 | PR21 \| Caminho do Norte | 32/33 | 608 | 0 | [Full slots and history](trails/280.md) |
+| 281 | PR22 \| Vereda do Chão dos Louros | 32/33 | 640 | 0 | [Full slots and history](trails/281.md) |
+| 285 | PR6.8 \| Levada do Paul II - Um caminho para todos | 32/33 | 672 | 0 | [Full slots and history](trails/285.md) |
+| 292 | PR9.1 \| Queimadas - Um Caminho para todos | 32/33 | 640 | 0 | [Full slots and history](trails/292.md) |
+| 301 | PR1 \| Vereda do Areeiro - Pico Ruivo (sentido único) | 32/33 | 608 | 0 | [Full slots and history](trails/301.md) |
 
 [Latest material changes](CHANGES.md) · [Official routes and missing booking resources](INVENTORY.md) · [Machine-readable historical summary](../analysis/summary.json) · [Methodology and limitations](../METHODOLOGY.md) · [Source](https://simplifica.madeira.gov.pt/services/78-82-259)
