@@ -235,6 +235,7 @@ test('catalog rate limits, explicit backoff, authentication and schema failures 
   for (const response of [new Response('', { status: 429, headers: { 'Retry-After': '3600' } }),
     new Response('', { status: 503, headers: { 'Retry-After': '120' } }), new Response('', { status: 403 }),
     missingCatalog({ 'Retry-After': '120' }), Response.json({ status: false, data: [], errors: { code: 'other' } }),
+    Response.json({ status: true, data: [{ id: 282, name: 'Porto Santo PR1 | Pico Branco' }] }, { headers: { 'Retry-After': '120' } }),
     Response.json({ status: true, data: [{ id: 301, missingName: true }] })]) {
     const { scan, calls, catalogCalls } = await run(() => assert.fail('No availability permitted'), {
       priorCatalog: [{ resourceId: '301', name: 'PR1 | full' }], catalogScenario: () => response,
@@ -242,6 +243,26 @@ test('catalog rate limits, explicit backoff, authentication and schema failures 
     assert.equal(catalogCalls.length, 1); assert.equal(calls.length, 0); assert.equal(scan.catalogAttempts.length, 1);
     if (response.headers.has('retry-after')) assert.equal(Date.parse(scan.cooldownUntil) - Date.parse(scan.finishedAt),
       Number(response.headers.get('retry-after')) * 1000);
+  }
+});
+
+test('a Porto Santo-only catalog is retried and cannot authorize slot collection', async () => {
+  for (const recovers of [true, false]) {
+    const { scan, calls, catalogCalls, pages } = await run(() => ok(42), {
+      priorCatalog: [{ resourceId: '999', name: 'PR1 | previous catalog' }],
+      catalogScenario: attempt => Response.json({ status: true, data: recovers && attempt === 3 ? catalog :
+        [{ id: 282, name: 'Porto Santo PR1 | Pico Branco' }] }),
+    });
+    assert.equal(catalogCalls.length, 3);
+    assert.equal(catalogCalls[2] - catalogCalls[0], 150000);
+    assert.equal(scan.catalogAttempts[0].code, 'UPSTREAM_CATALOG_NO_MADEIRA');
+    assert.deepEqual(calls.map(call => call.resourceId), recovers ? ['301', '188', '225'] : []);
+    assert.ok(calls.every(call => call.at >= catalogCalls[2]));
+    if (!recovers) {
+      assert.equal(pages, 0);
+      assert.equal(scan.stopReason, 'catalog_unverified');
+      assert.deepEqual(scan.entries.map(e => [e.r, e.status]), [['999', 'skipped']]);
+    }
   }
 });
 

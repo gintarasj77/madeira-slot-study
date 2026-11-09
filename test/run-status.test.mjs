@@ -33,6 +33,10 @@ test('healthy retained data cannot hide a failed step, health error or mismatche
   assert.equal(collectionRunStatus(s, { ...health(s), scanId: 'older' }, 'success').failed, true);
   s.catalogError = { code: 'UPSTREAM_UNREACHABLE' };
   assert.equal(collectionRunStatus(s, health(s), 'success').failed, true);
+  const zero = { ...scan(), catalog: [], entries: [] };
+  const zeroStatus = collectionRunStatus(zero, health(zero), 'success');
+  assert.equal(zeroStatus.failed, true);
+  assert.match(zeroStatus.message, /No Madeira slot checks could be planned/);
 });
 
 test('run summary bounds large failures and keeps untrusted text out of annotations', () => {

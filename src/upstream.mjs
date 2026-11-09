@@ -83,7 +83,11 @@ async function jsonBody(response, { catalog = false } = {}) {
 }
 
 export async function getTrails(fetcher = fetch) {
-  const data = await jsonBody(await upstream(fetcher, CATALOG, { headers: { Accept: 'application/json' } }), { catalog: true });
+  const response = await upstream(fetcher, CATALOG, { headers: { Accept: 'application/json' } });
+  const data = await jsonBody(response, { catalog: true });
+  if (response.headers.has('retry-after')) {
+    throw new ProxyError('UPSTREAM_CATALOG_BACKOFF', 'SIMplifica requested a trail catalog backoff.', 503, retryAfter(response, 60));
+  }
   if (!data.length) schema('The trail catalog is unexpectedly empty.');
   const seen = new Set();
   return data.map(item => {

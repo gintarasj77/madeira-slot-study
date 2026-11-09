@@ -52,7 +52,10 @@ test('Madeira projections preserve old evidence and do not invent catalog-remova
   assert.equal(first.catalog.length, 3);
   const next = { ...first, id: '2026-10-26T07-00-00-000Z', startedAt: '2026-10-26T07:00:00.000Z',
     finishedAt: '2026-10-26T07:01:00.000Z' };
-  const study = createStudy(); ingestScan(study, first); ingestScan(study, next);
+  const legacyEmpty = { ...first, catalog: [], entries: [], id: '2026-10-26T06-30-00-000Z',
+    startedAt: '2026-10-26T06:30:00.000Z', finishedAt: '2026-10-26T06:31:00.000Z' };
+  const study = createStudy(); ingestScan(study, first); ingestScan(study, legacyEmpty); ingestScan(study, next);
+  assert.equal(study.scans[1].catalogVerified, false);
   const summary = summarizeStudy(study);
   assert.equal(summary.trails.length, 3);
   assert.deepEqual(summary.catalogChanges, []);
