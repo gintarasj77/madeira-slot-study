@@ -2,8 +2,8 @@
   "version": 1,
   "resourceId": "265",
   "trail": "PR6.2 | Levada do Alecrim",
-  "latestScanId": "2026-11-09T17-21-02-125Z",
-  "scanFinishedAt": "2026-11-09T17:36:04.842Z",
+  "latestScanId": "2026-11-09T18-21-14-631Z",
+  "scanFinishedAt": "2026-11-09T18:36:19.621Z",
   "entries": [
     {
       "date": "2026-12-24",
@@ -38,7 +38,7 @@
     {
       "date": "2026-11-09",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:21:17.252Z",
+      "sourceFetchedAt": "2026-11-09T18:21:30.835Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "9a4ffc81faf145fdc6cd7b82d9ae8ff630f3425835b4185274d0ebcd1c57bffb",
@@ -48,27 +48,143 @@
     {
       "date": "2026-11-10",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:21:47.172Z",
+      "sourceFetchedAt": "2026-11-09T18:22:00.373Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "db6b4e7ca111a58a2ab76ca5ecf53751309c26beba75825650c0c5ae48d5e032",
+      "profileHash": "b7882a995376735e437decb92cec90df20b8dec06e71e47235d990bca0bf2ae3",
       "path": "latest/slots/265/2026-11-10.json",
       "slotCount": 18
     },
     {
       "date": "2026-11-11",
-      "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:22:17.272Z",
+      "status": "unreported",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "5ad9461f5a11cade4dec1bd492f094bffce80b0d180e41c7ae0280b1937279e6",
-      "path": "latest/slots/265/2026-11-11.json",
-      "slotCount": 18
+      "checkedAt": "2026-11-09T18:22:30.379Z",
+      "error": "SIMplifica returned generic availability without a non-resident percentage; availability is unknown.",
+      "code": "UPSTREAM_CATEGORY_UNAVAILABLE",
+      "sourceTitle": "0 vagas disponíveis",
+      "sourceSlotColumns": [
+        "beginLocal",
+        "endLocal",
+        "timezone",
+        "nonResidentPercentageOrNull"
+      ],
+      "sourceSlots": [
+        [
+          "2026-11-11 08:00:00.000000",
+          "2026-11-11 08:30:00.000000",
+          "Europe/Lisbon",
+          null
+        ],
+        [
+          "2026-11-11 08:30:00.000000",
+          "2026-11-11 09:00:00.000000",
+          "Europe/Lisbon",
+          null
+        ],
+        [
+          "2026-11-11 09:00:00.000000",
+          "2026-11-11 09:30:00.000000",
+          "Europe/Lisbon",
+          null
+        ],
+        [
+          "2026-11-11 09:30:00.000000",
+          "2026-11-11 10:00:00.000000",
+          "Europe/Lisbon",
+          null
+        ],
+        [
+          "2026-11-11 10:00:00.000000",
+          "2026-11-11 10:30:00.000000",
+          "Europe/Lisbon",
+          null
+        ],
+        [
+          "2026-11-11 10:30:00.000000",
+          "2026-11-11 11:00:00.000000",
+          "Europe/Lisbon",
+          null
+        ],
+        [
+          "2026-11-11 11:00:00.000000",
+          "2026-11-11 11:30:00.000000",
+          "Europe/Lisbon",
+          null
+        ],
+        [
+          "2026-11-11 11:30:00.000000",
+          "2026-11-11 12:00:00.000000",
+          "Europe/Lisbon",
+          null
+        ],
+        [
+          "2026-11-11 12:00:00.000000",
+          "2026-11-11 12:30:00.000000",
+          "Europe/Lisbon",
+          null
+        ],
+        [
+          "2026-11-11 12:30:00.000000",
+          "2026-11-11 13:00:00.000000",
+          "Europe/Lisbon",
+          null
+        ],
+        [
+          "2026-11-11 13:00:00.000000",
+          "2026-11-11 13:30:00.000000",
+          "Europe/Lisbon",
+          null
+        ],
+        [
+          "2026-11-11 13:30:00.000000",
+          "2026-11-11 14:00:00.000000",
+          "Europe/Lisbon",
+          null
+        ],
+        [
+          "2026-11-11 14:00:00.000000",
+          "2026-11-11 14:30:00.000000",
+          "Europe/Lisbon",
+          null
+        ],
+        [
+          "2026-11-11 14:30:00.000000",
+          "2026-11-11 15:00:00.000000",
+          "Europe/Lisbon",
+          null
+        ],
+        [
+          "2026-11-11 15:00:00.000000",
+          "2026-11-11 15:30:00.000000",
+          "Europe/Lisbon",
+          null
+        ],
+        [
+          "2026-11-11 15:30:00.000000",
+          "2026-11-11 16:00:00.000000",
+          "Europe/Lisbon",
+          null
+        ],
+        [
+          "2026-11-11 16:00:00.000000",
+          "2026-11-11 16:30:00.000000",
+          "Europe/Lisbon",
+          null
+        ],
+        [
+          "2026-11-11 16:30:00.000000",
+          "2026-11-11 17:00:00.000000",
+          "Europe/Lisbon",
+          null
+        ]
+      ]
     },
     {
       "date": "2026-11-12",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:22:47.209Z",
+      "sourceFetchedAt": "2026-11-09T18:23:00.508Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "43077c4237b4fe2a20dad8c7d791c4354057c3f6b4102ddc8c386d4716e12758",
@@ -78,7 +194,7 @@
     {
       "date": "2026-11-13",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:23:17.311Z",
+      "sourceFetchedAt": "2026-11-09T18:23:30.622Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "7233d34e39347f641e6262eca9afc87bb55d9241476e7da15d4488557a74455b",
@@ -88,7 +204,7 @@
     {
       "date": "2026-11-14",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:23:46.940Z",
+      "sourceFetchedAt": "2026-11-09T18:24:00.647Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "355fb84fcc3029f9c3c74178fdbc864dc351fa86dc4063d53d9db696b7232487",
@@ -98,7 +214,7 @@
     {
       "date": "2026-11-15",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:24:16.983Z",
+      "sourceFetchedAt": "2026-11-09T18:24:30.634Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "5969eda70364c904cdf8d9c308d07778b6b7f469626acab5f3e98ee543a936b2",
@@ -108,7 +224,7 @@
     {
       "date": "2026-11-16",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:24:47.158Z",
+      "sourceFetchedAt": "2026-11-09T18:25:00.388Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "97d61699ea7fdfa749fe0c141060996f7af846cfbf7c8c2532ff874579ea85da",
@@ -118,7 +234,7 @@
     {
       "date": "2026-11-17",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:25:17.062Z",
+      "sourceFetchedAt": "2026-11-09T18:25:30.978Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "702df6fe374783e5b6900a52d900867a3f3d2a4ac846da369a89404050fbcbfa",
@@ -128,7 +244,7 @@
     {
       "date": "2026-11-18",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:25:47.079Z",
+      "sourceFetchedAt": "2026-11-09T18:26:00.851Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "a532e46a0bac75a73a697dd5e15e2ecd0b71941fe10842cde57a0867904fa7c6",
@@ -138,7 +254,7 @@
     {
       "date": "2026-11-19",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:26:17.145Z",
+      "sourceFetchedAt": "2026-11-09T18:26:31.028Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "425af13452125d30f9a80942514d8536503c2c24b17ecd08af9a0851787e92e6",
@@ -148,7 +264,7 @@
     {
       "date": "2026-11-20",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:26:47.336Z",
+      "sourceFetchedAt": "2026-11-09T18:27:01.301Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "cd731541bc66ed2b96c705a635550af49f909dfeac8cd2e52a301cc5e74134f3",
@@ -158,7 +274,7 @@
     {
       "date": "2026-11-21",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:27:18.037Z",
+      "sourceFetchedAt": "2026-11-09T18:27:31.276Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "2d44a98d0e7dcb775391883850e0fefa9390364c56d2bb2d9a888d182492a9ca",
@@ -168,7 +284,7 @@
     {
       "date": "2026-11-22",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:27:47.497Z",
+      "sourceFetchedAt": "2026-11-09T18:28:01.483Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "bd56b156fec42e4661fed6b9ffc6ea220e2cc8b872c4fa10c92e5ca8c613e22a",
@@ -178,7 +294,7 @@
     {
       "date": "2026-11-23",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:28:17.512Z",
+      "sourceFetchedAt": "2026-11-09T18:28:31.323Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "295c24d5f970d3fcf8b186cf7e912b79d92024420b6d55e80b687392eaaaec63",
@@ -188,7 +304,7 @@
     {
       "date": "2026-11-24",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:28:47.551Z",
+      "sourceFetchedAt": "2026-11-09T18:29:01.319Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "58108ca0647864635615631caf71e318b358978d79de3f7406108ad87a243446",
@@ -198,7 +314,7 @@
     {
       "date": "2026-11-25",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:29:17.650Z",
+      "sourceFetchedAt": "2026-11-09T18:29:31.536Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "118e854d2286da630c5900ae109bdc0dbd0c6a5257f00277a8423f391f130778",
@@ -208,7 +324,7 @@
     {
       "date": "2026-11-26",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:29:47.625Z",
+      "sourceFetchedAt": "2026-11-09T18:30:01.637Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "e0ef6603176fb7b868bda9cc27b18c52810e432ad7453124caddc65aba21003a",
@@ -218,7 +334,7 @@
     {
       "date": "2026-11-27",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:30:18.259Z",
+      "sourceFetchedAt": "2026-11-09T18:30:31.518Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "6cfd96ecc034f70822343b7ef5a8b5ce7164bc15615c6661bd1d986f0562dc52",
@@ -228,7 +344,7 @@
     {
       "date": "2026-11-28",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:30:47.676Z",
+      "sourceFetchedAt": "2026-11-09T18:31:02.548Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "cdb9a2e7debedf83a311185f8c90440eb7a21eb3ffd203797f5d43505c4d53d7",
@@ -238,7 +354,7 @@
     {
       "date": "2026-11-29",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:31:17.662Z",
+      "sourceFetchedAt": "2026-11-09T18:31:31.795Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "b2403e1c9531b6f342426e3d11433bcc50ebac411db22af02f1c7358a5a57e16",
@@ -248,7 +364,7 @@
     {
       "date": "2026-11-30",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:31:47.637Z",
+      "sourceFetchedAt": "2026-11-09T18:32:01.879Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "f8d9b5932d1a864577f511b04a7ac9d5f361395e914b5facb96a57ae73e4c52b",
@@ -258,7 +374,7 @@
     {
       "date": "2026-12-01",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:32:17.619Z",
+      "sourceFetchedAt": "2026-11-09T18:32:31.964Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "fe1d26d83fe3e8e4022d5e4a8cfc73154cc920d95f714e8e54a0794815eb5ea7",
@@ -268,7 +384,7 @@
     {
       "date": "2026-12-02",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:32:47.606Z",
+      "sourceFetchedAt": "2026-11-09T18:33:01.922Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "04e7cd37065c0393678e3e0270ced82e02343eff9dd1410a107d4599975401b2",
@@ -278,7 +394,7 @@
     {
       "date": "2026-12-03",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:33:17.639Z",
+      "sourceFetchedAt": "2026-11-09T18:33:31.974Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "1dc8062f0d718fe92d4a46753a1f3be6c355eccc88ebd5278b77df8e9a166859",
@@ -288,7 +404,7 @@
     {
       "date": "2026-12-04",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:33:47.715Z",
+      "sourceFetchedAt": "2026-11-09T18:34:02.200Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "119622c98d480e0f8e3da88269610474dced76b92dcf7876ffb25897aa3bb8cd",
@@ -298,7 +414,7 @@
     {
       "date": "2026-12-05",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:34:17.812Z",
+      "sourceFetchedAt": "2026-11-09T18:34:32.965Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "a1a22560ab3f176f24f5523f3f27231023a59152e1274179b95344b0ad39f2cf",
@@ -308,7 +424,7 @@
     {
       "date": "2026-12-06",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:34:47.704Z",
+      "sourceFetchedAt": "2026-11-09T18:35:03.589Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "34cb28bf6e4b8415fde52437128b854372afa6978be23dc7aafa00b08e7ba7c3",
@@ -318,7 +434,7 @@
     {
       "date": "2026-12-07",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:35:18.044Z",
+      "sourceFetchedAt": "2026-11-09T18:35:33.368Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "446609a7117c63d1b532dc238d40ae3373f507783921dae2f82b53e3db8034be",
@@ -328,7 +444,7 @@
     {
       "date": "2026-12-08",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-09T17:35:48.106Z",
+      "sourceFetchedAt": "2026-11-09T18:36:03.431Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "95ee3e270bea12201711bdfe110a276b3049c0aed35781404aa249dd6141fe22",
