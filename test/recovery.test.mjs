@@ -210,9 +210,31 @@ test('exhausted catalog retries retain unknown scoped coverage and make no avail
   assert.equal(status.failed, true); assert.match(status.message, /Trail-list failure: UPSTREAM_HTTP_ERROR/);
 });
 
+const missingCatalog = (headers) => Response.json({ status: false, data: [],
+  errors: { code: 'e071', msg: 'Resource not found', errors: [] } }, { headers });
+
+test('the exact catalog e071 error gets bounded recovery and requires a fresh list', async () => {
+  for (const recovers of [true, false]) {
+    const { scan, calls, catalogCalls } = await run(() => ok(42), {
+      priorCatalog: [{ resourceId: '999', name: 'PR1 | previous catalog' }],
+      catalogScenario: attempt => recovers && attempt === 3 ?
+        Response.json({ status: true, data: catalog }) : missingCatalog(),
+    });
+    assert.equal(catalogCalls.length, 3);
+    assert.equal(catalogCalls[1] - catalogCalls[0], 30000);
+    assert.equal(catalogCalls[2] - catalogCalls[1], 120000);
+    assert.deepEqual(scan.catalogAttempts.map(attempt => attempt.code || attempt.status),
+      ['UPSTREAM_CATALOG_NOT_FOUND', 'UPSTREAM_CATALOG_NOT_FOUND', recovers ? 'ok' : 'UPSTREAM_CATALOG_NOT_FOUND']);
+    assert.deepEqual(calls.map(call => call.resourceId), recovers ? ['301', '188', '225'] : []);
+    assert.ok(calls.every(call => call.at >= catalogCalls[2]));
+    assert.equal(collectionRunStatus(scan, { scanId: scan.id, state: recovers ? 'complete' : 'partial' }, 'success').failed, !recovers);
+  }
+});
+
 test('catalog rate limits, explicit backoff, authentication and schema failures are never retried', async () => {
   for (const response of [new Response('', { status: 429, headers: { 'Retry-After': '3600' } }),
     new Response('', { status: 503, headers: { 'Retry-After': '120' } }), new Response('', { status: 403 }),
+    missingCatalog({ 'Retry-After': '120' }), Response.json({ status: false, data: [], errors: { code: 'other' } }),
     Response.json({ status: true, data: [{ id: 301, missingName: true }] })]) {
     const { scan, calls, catalogCalls } = await run(() => assert.fail('No availability permitted'), {
       priorCatalog: [{ resourceId: '301', name: 'PR1 | full' }], catalogScenario: () => response,

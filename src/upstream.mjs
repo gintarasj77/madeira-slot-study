@@ -60,7 +60,7 @@ async function upstream(fetcher, path, init = {}) {
   return response;
 }
 
-async function jsonBody(response) {
+async function jsonBody(response, { catalog = false } = {}) {
   let body;
   try { body = await response.json(); }
   catch (error) {
@@ -69,13 +69,21 @@ async function jsonBody(response) {
     if (timedOut(error)) throw new ProxyError('UPSTREAM_TIMEOUT', 'SIMplifica timed out.', 504);
     schema('SIMplifica returned invalid JSON.');
   }
-  if (body?.status === false) throw new ProxyError('UPSTREAM_REJECTED', 'SIMplifica rejected the availability query.');
+  if (body?.status === false) {
+    const backoff = catalog && response.headers.has('retry-after') ? retryAfter(response, 60) : undefined;
+    if (catalog && body.errors?.code === 'e071' && body.errors.msg === 'Resource not found' &&
+        Array.isArray(body.data) && body.data.length === 0) {
+      throw new ProxyError('UPSTREAM_CATALOG_NOT_FOUND', 'SIMplifica returned e071 (Resource not found) for the trail catalog.', 502, backoff);
+    }
+    throw new ProxyError('UPSTREAM_REJECTED', catalog ? 'SIMplifica rejected the trail catalog query.' :
+      'SIMplifica rejected the availability query.', 502, backoff);
+  }
   if (body?.status !== true || !Array.isArray(body.data)) schema('Expected status:true and a data array.');
   return body.data;
 }
 
 export async function getTrails(fetcher = fetch) {
-  const data = await jsonBody(await upstream(fetcher, CATALOG, { headers: { Accept: 'application/json' } }));
+  const data = await jsonBody(await upstream(fetcher, CATALOG, { headers: { Accept: 'application/json' } }), { catalog: true });
   if (!data.length) schema('The trail catalog is unexpectedly empty.');
   const seen = new Set();
   return data.map(item => {
