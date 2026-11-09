@@ -2,7 +2,7 @@
 
 IFCN source fetched: **2026-11-09T11:21:09.218Z UTC**. [Official source](https://ifcn.madeira.gov.pt/en/atividades-de-natureza/percursos-pedestres-recomendados/percursos-pedestres-recomendados.html).
 
-31 current SIMplifica booking resources; 39 official Madeira-island routes in the IFCN table. 9 official routes have no matching catalog resource; 0 booking resources have no automatic island/code match. Every Madeira-island catalog resource is collected, including unmatched variants. Porto Santo is excluded. The booking catalog and official walking-route list are different inventories. A missing booking resource or an empty API response is not proof of closure or exemption.
+30 current SIMplifica booking resources; 39 official Madeira-island routes in the IFCN table. 10 official routes have no matching catalog resource; 0 booking resources have no automatic island/code match. Every Madeira-island catalog resource is collected, including unmatched variants. Porto Santo is excluded. The booking catalog and official walking-route list are different inventories. A missing booking resource or an empty API response is not proof of closure or exemption.
 
 Status text is source context, preserved separately from availability. Read restrictions in the official source; a percentage does not establish that a route is open. Daily status snapshots are retained in data/context/ifcn.
 
@@ -37,7 +37,7 @@ Status text is source context, preserved separately from availability. Read rest
 | Madeira | PR13.1 | Vereda da Palha Carga | ABERTO | [275: PR13.1 \| Vereda da Palha Carga](trails/275.md) |
 | Madeira | PR14 | Levada dos Cedros | ABERTO | [276: PR14 \| Levada dos Cedros](trails/276.md) |
 | Madeira | PR15 | Vereda da Ribeira da Janela | ABERTO | [277: PR15 \| Vereda da Ribeira da Janela](trails/277.md) |
-| Madeira | PR16 | Levada Fajã do Rodrigues | ABERTO | [278: PR16 \| Levada Fajã do Rodrigues](trails/278.md) |
+| Madeira | PR16 | Levada Fajã do Rodrigues | ABERTO | **No matching booking resource** |
 | Madeira | PR17 | Caminho do Pináculo e Folhadal | ABERTO (Transitável entre a Encumeada Folhadal – Caramujo - Bica da Cana) | [279: PR17 \| Caminho do Pináculo e Folhadal](trails/279.md) |
 | Madeira | PR18 | Levada do Rei | ABERTO | [231: PR18 \| Levada do Rei](trails/231.md) |
 | Madeira | PR19 | Caminho Real do Paul do Mar | ABERTO | [251: PR19 \| Caminho Real do Paul do Mar](trails/251.md) |

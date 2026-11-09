@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-09T12:38:04.354Z",
+  "generatedAt": "2026-11-09T13:37:04.487Z",
   "firstObservationAt": "2026-10-21T06:58:31.403Z",
-  "lastObservationAt": "2026-11-09T12:36:31.797Z",
-  "scans": 461,
-  "observationCount": 7407650,
-  "preEntryObservations": 7290871,
-  "afterEntryObservations": 116779,
+  "lastObservationAt": "2026-11-09T13:36:05.410Z",
+  "scans": 462,
+  "observationCount": 7423220,
+  "preEntryObservations": 7306112,
+  "afterEntryObservations": 117108,
   "invalidTimeObservations": 0,
   "missingScanIntervals": [
     {
@@ -22,394 +22,28 @@
       "name": "PR10 | Levada do Furado"
     },
     {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "188",
-      "name": "PR8 | Vereda da Ponta de São Lourenço"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "225",
-      "name": "PR1 | Vereda do Areeiro até ao Miradouro da Pedra Rija"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "226",
-      "name": "PR1.2 | Vereda do Pico Ruivo"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "227",
-      "name": "PR6.1 | Levada do Risco"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "228",
-      "name": "PR9 | Levada do Caldeirão Verde"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "231",
-      "name": "PR18 | Levada do Rei"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "249",
-      "name": "PR1.3 | Vereda da Encumeada (transitável entre o Pico Ruivo e a Boca das Torrinhas)"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "250",
-      "name": "PR12 | Caminho Real da Encumeada"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "251",
-      "name": "PR19 | Caminho Real do Paul do Mar"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "259",
-      "name": "PR1.1 | Vereda da Ilha"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "260",
-      "name": "PR2 | Vereda do Urzal"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "263",
-      "name": "PR5 | Vereda das Funduras"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "264",
-      "name": "PR6 | Levada das 25 Fontes"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "265",
-      "name": "PR6.2 | Levada do Alecrim"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "267",
-      "name": "PR6.3 | Vereda da Lagoa do Vento"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "268",
-      "name": "PR6.4 | Levada Velha do Rabaçal"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "269",
-      "name": "PR6.5 | Vereda do Pico Fernandes"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "270",
-      "name": "PR6.6 | Vereda do Túnel do Cavalo"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "271",
-      "name": "PR6.7 | Vereda Câmara Carga do Rabaçal"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "273",
-      "name": "PR11 | Vereda dos Balcões"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "274",
-      "name": "PR13 | Vereda do Fanal"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "275",
-      "name": "PR13.1 | Vereda da Palha Carga"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "276",
-      "name": "PR14 | Levada dos Cedros"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "277",
-      "name": "PR15 | Vereda da Ribeira da Janela"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
+      "at": "2026-11-09T13:36:05.410Z",
       "type": "removed",
       "resourceId": "278",
       "name": "PR16 | Levada Fajã do Rodrigues"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "279",
-      "name": "PR17 | Caminho do Pináculo e Folhadal"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "280",
-      "name": "PR21 | Caminho do Norte"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "281",
-      "name": "PR22 | Vereda do Chão dos Louros"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "285",
-      "name": "PR6.8 | Levada do Paul II - Um caminho para todos"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "292",
-      "name": "PR9.1 | Queimadas - Um Caminho para todos"
-    },
-    {
-      "at": "2026-11-09T11:21:04.121Z",
-      "type": "removed",
-      "resourceId": "301",
-      "name": "PR1 | Vereda do Areeiro - Pico Ruivo (sentido único)"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "188",
-      "name": "PR8 | Vereda da Ponta de São Lourenço"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "225",
-      "name": "PR1 | Vereda do Areeiro até ao Miradouro da Pedra Rija"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "226",
-      "name": "PR1.2 | Vereda do Pico Ruivo"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "227",
-      "name": "PR6.1 | Levada do Risco"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "228",
-      "name": "PR9 | Levada do Caldeirão Verde"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "231",
-      "name": "PR18 | Levada do Rei"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "249",
-      "name": "PR1.3 | Vereda da Encumeada (transitável entre o Pico Ruivo e a Boca das Torrinhas)"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "250",
-      "name": "PR12 | Caminho Real da Encumeada"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "251",
-      "name": "PR19 | Caminho Real do Paul do Mar"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "259",
-      "name": "PR1.1 | Vereda da Ilha"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "260",
-      "name": "PR2 | Vereda do Urzal"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "263",
-      "name": "PR5 | Vereda das Funduras"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "264",
-      "name": "PR6 | Levada das 25 Fontes"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "265",
-      "name": "PR6.2 | Levada do Alecrim"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "267",
-      "name": "PR6.3 | Vereda da Lagoa do Vento"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "268",
-      "name": "PR6.4 | Levada Velha do Rabaçal"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "269",
-      "name": "PR6.5 | Vereda do Pico Fernandes"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "270",
-      "name": "PR6.6 | Vereda do Túnel do Cavalo"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "271",
-      "name": "PR6.7 | Vereda Câmara Carga do Rabaçal"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "273",
-      "name": "PR11 | Vereda dos Balcões"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "274",
-      "name": "PR13 | Vereda do Fanal"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "275",
-      "name": "PR13.1 | Vereda da Palha Carga"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "276",
-      "name": "PR14 | Levada dos Cedros"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "277",
-      "name": "PR15 | Vereda da Ribeira da Janela"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "278",
-      "name": "PR16 | Levada Fajã do Rodrigues"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "279",
-      "name": "PR17 | Caminho do Pináculo e Folhadal"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "280",
-      "name": "PR21 | Caminho do Norte"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "281",
-      "name": "PR22 | Vereda do Chão dos Louros"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "285",
-      "name": "PR6.8 | Levada do Paul II - Um caminho para todos"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "292",
-      "name": "PR9.1 | Queimadas - Um Caminho para todos"
-    },
-    {
-      "at": "2026-11-09T12:36:31.797Z",
-      "type": "added",
-      "resourceId": "301",
-      "name": "PR1 | Vereda do Areeiro - Pico Ruivo (sentido único)"
     }
   ],
   "island": "Madeira",
   "archive": {
-    "scans": 461,
-    "slots": 7410044,
-    "bytes": 17132285
+    "scans": 462,
+    "slots": 7425614,
+    "bytes": 17166956
   },
   "trails": [
     {
       "resourceId": "188",
       "name": "PR8 | Vereda da Ponta de São Lourenço",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 1700,
-      "observedChanges": 5119,
-      "smallChanges": 4285,
-      "observedCrossings": 1176,
+      "observedChanges": 5132,
+      "smallChanges": 4295,
+      "observedCrossings": 1181,
       "gapSpanningCrossings": 26,
       "reopenings": 376,
       "firstSeenSoldOutSeries": 98,
@@ -419,12 +53,12 @@
     {
       "resourceId": "225",
       "name": "PR1 | Vereda do Areeiro até ao Miradouro da Pedra Rija",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 1900,
-      "observedChanges": 4747,
-      "smallChanges": 3703,
-      "observedCrossings": 1034,
+      "observedChanges": 4762,
+      "smallChanges": 3712,
+      "observedCrossings": 1042,
       "gapSpanningCrossings": 27,
       "reopenings": 260,
       "firstSeenSoldOutSeries": 43,
@@ -434,12 +68,12 @@
     {
       "resourceId": "226",
       "name": "PR1.2 | Vereda do Pico Ruivo",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 1900,
-      "observedChanges": 3435,
-      "smallChanges": 3118,
-      "observedCrossings": 287,
+      "observedChanges": 3443,
+      "smallChanges": 3125,
+      "observedCrossings": 288,
       "gapSpanningCrossings": 5,
       "reopenings": 28,
       "firstSeenSoldOutSeries": 1,
@@ -449,11 +83,11 @@
     {
       "resourceId": "227",
       "name": "PR6.1 | Levada do Risco",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 1800,
-      "observedChanges": 1807,
-      "smallChanges": 1559,
+      "observedChanges": 1809,
+      "smallChanges": 1561,
       "observedCrossings": 134,
       "gapSpanningCrossings": 1,
       "reopenings": 3,
@@ -464,11 +98,11 @@
     {
       "resourceId": "228",
       "name": "PR9 | Levada do Caldeirão Verde",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 1200,
-      "observedChanges": 2438,
-      "smallChanges": 2373,
+      "observedChanges": 2444,
+      "smallChanges": 2379,
       "observedCrossings": 53,
       "gapSpanningCrossings": 1,
       "reopenings": 1,
@@ -479,11 +113,11 @@
     {
       "resourceId": "231",
       "name": "PR18 | Levada do Rei",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 1600,
-      "observedChanges": 836,
-      "smallChanges": 798,
+      "observedChanges": 839,
+      "smallChanges": 801,
       "observedCrossings": 6,
       "gapSpanningCrossings": 0,
       "reopenings": 0,
@@ -494,7 +128,7 @@
     {
       "resourceId": "249",
       "name": "PR1.3 | Vereda da Encumeada (transitável entre o Pico Ruivo e a Boca das Torrinhas)",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 1600,
       "observedChanges": 230,
@@ -509,7 +143,7 @@
     {
       "resourceId": "250",
       "name": "PR12 | Caminho Real da Encumeada",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 1200,
       "observedChanges": 258,
@@ -524,7 +158,7 @@
     {
       "resourceId": "251",
       "name": "PR19 | Caminho Real do Paul do Mar",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 1900,
       "observedChanges": 236,
@@ -539,11 +173,11 @@
     {
       "resourceId": "259",
       "name": "PR1.1 | Vereda da Ilha",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 1600,
-      "observedChanges": 246,
-      "smallChanges": 230,
+      "observedChanges": 247,
+      "smallChanges": 231,
       "observedCrossings": 1,
       "gapSpanningCrossings": 0,
       "reopenings": 0,
@@ -554,7 +188,7 @@
     {
       "resourceId": "260",
       "name": "PR2 | Vereda do Urzal",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 1300,
       "observedChanges": 198,
@@ -569,11 +203,11 @@
     {
       "resourceId": "263",
       "name": "PR5 | Vereda das Funduras",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 1600,
-      "observedChanges": 192,
-      "smallChanges": 185,
+      "observedChanges": 193,
+      "smallChanges": 186,
       "observedCrossings": 0,
       "gapSpanningCrossings": 0,
       "reopenings": 0,
@@ -584,12 +218,12 @@
     {
       "resourceId": "264",
       "name": "PR6 | Levada das 25 Fontes",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 1600,
-      "observedChanges": 3941,
-      "smallChanges": 3192,
-      "observedCrossings": 952,
+      "observedChanges": 3950,
+      "smallChanges": 3199,
+      "observedCrossings": 958,
       "gapSpanningCrossings": 25,
       "reopenings": 282,
       "firstSeenSoldOutSeries": 93,
@@ -599,11 +233,11 @@
     {
       "resourceId": "265",
       "name": "PR6.2 | Levada do Alecrim",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 1800,
-      "observedChanges": 1247,
-      "smallChanges": 864,
+      "observedChanges": 1249,
+      "smallChanges": 866,
       "observedCrossings": 242,
       "gapSpanningCrossings": 4,
       "reopenings": 6,
@@ -614,11 +248,11 @@
     {
       "resourceId": "267",
       "name": "PR6.3 | Vereda da Lagoa do Vento",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 2000,
-      "observedChanges": 643,
-      "smallChanges": 537,
+      "observedChanges": 644,
+      "smallChanges": 538,
       "observedCrossings": 23,
       "gapSpanningCrossings": 0,
       "reopenings": 0,
@@ -629,7 +263,7 @@
     {
       "resourceId": "268",
       "name": "PR6.4 | Levada Velha do Rabaçal",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 1800,
       "observedChanges": 72,
@@ -644,7 +278,7 @@
     {
       "resourceId": "269",
       "name": "PR6.5 | Vereda do Pico Fernandes",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 1900,
       "observedChanges": 85,
@@ -659,11 +293,11 @@
     {
       "resourceId": "270",
       "name": "PR6.6 | Vereda do Túnel do Cavalo",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 2000,
-      "observedChanges": 185,
-      "smallChanges": 181,
+      "observedChanges": 186,
+      "smallChanges": 182,
       "observedCrossings": 0,
       "gapSpanningCrossings": 0,
       "reopenings": 0,
@@ -674,7 +308,7 @@
     {
       "resourceId": "271",
       "name": "PR6.7 | Vereda Câmara Carga do Rabaçal",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 2000,
       "observedChanges": 33,
@@ -704,12 +338,12 @@
     {
       "resourceId": "273",
       "name": "PR11 | Vereda dos Balcões",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 1900,
-      "observedChanges": 2423,
-      "smallChanges": 1876,
-      "observedCrossings": 398,
+      "observedChanges": 2426,
+      "smallChanges": 1878,
+      "observedCrossings": 399,
       "gapSpanningCrossings": 2,
       "reopenings": 18,
       "firstSeenSoldOutSeries": 8,
@@ -719,11 +353,11 @@
     {
       "resourceId": "274",
       "name": "PR13 | Vereda do Fanal",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 1400,
-      "observedChanges": 1845,
-      "smallChanges": 1687,
+      "observedChanges": 1850,
+      "smallChanges": 1692,
       "observedCrossings": 130,
       "gapSpanningCrossings": 0,
       "reopenings": 4,
@@ -734,7 +368,7 @@
     {
       "resourceId": "275",
       "name": "PR13.1 | Vereda da Palha Carga",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 2000,
       "observedChanges": 45,
@@ -749,11 +383,11 @@
     {
       "resourceId": "276",
       "name": "PR14 | Levada dos Cedros",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 1600,
-      "observedChanges": 751,
-      "smallChanges": 633,
+      "observedChanges": 755,
+      "smallChanges": 637,
       "observedCrossings": 24,
       "gapSpanningCrossings": 0,
       "reopenings": 0,
@@ -764,7 +398,7 @@
     {
       "resourceId": "277",
       "name": "PR15 | Vereda da Ribeira da Janela",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 1900,
       "observedChanges": 181,
@@ -794,7 +428,7 @@
     {
       "resourceId": "279",
       "name": "PR17 | Caminho do Pináculo e Folhadal",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 800,
       "observedChanges": 488,
@@ -809,7 +443,7 @@
     {
       "resourceId": "280",
       "name": "PR21 | Caminho do Norte",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 1900,
       "observedChanges": 34,
@@ -824,7 +458,7 @@
     {
       "resourceId": "281",
       "name": "PR22 | Vereda do Chão dos Louros",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 2000,
       "observedChanges": 83,
@@ -839,7 +473,7 @@
     {
       "resourceId": "285",
       "name": "PR6.8 | Levada do Paul II - Um caminho para todos",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 2100,
       "observedChanges": 173,
@@ -854,11 +488,11 @@
     {
       "resourceId": "292",
       "name": "PR9.1 | Queimadas - Um Caminho para todos",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 2000,
-      "observedChanges": 159,
-      "smallChanges": 149,
+      "observedChanges": 160,
+      "smallChanges": 150,
       "observedCrossings": 0,
       "gapSpanningCrossings": 0,
       "reopenings": 0,
@@ -869,14 +503,14 @@
     {
       "resourceId": "301",
       "name": "PR1 | Vereda do Areeiro - Pico Ruivo (sentido único)",
-      "catalogLastSeen": "2026-11-09T12:36:31.797Z",
+      "catalogLastSeen": "2026-11-09T13:36:05.410Z",
       "distinctVisitDates": 100,
       "slotSeries": 1898,
-      "observedChanges": 5421,
-      "smallChanges": 4350,
-      "observedCrossings": 1342,
+      "observedChanges": 5437,
+      "smallChanges": 4364,
+      "observedCrossings": 1344,
       "gapSpanningCrossings": 28,
-      "reopenings": 526,
+      "reopenings": 527,
       "firstSeenSoldOutSeries": 212,
       "timeDayGroups": 38,
       "groupsWithLeadTimeSuggestion": 0

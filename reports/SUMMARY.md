@@ -1,18 +1,18 @@
 # Madeira non-resident availability study
 
-Generated: **2026-11-09T12:38:04.354Z**. Latest scan: **2026-11-09T12-21-00-705Z**. Source reads: **2026-11-09T12:21:00.705Z — 2026-11-09T12:36:31.797Z UTC**.
+Generated: **2026-11-09T13:37:04.487Z**. Latest scan: **2026-11-09T13-21-01-924Z**. Source reads: **2026-11-09T13:21:01.924Z — 2026-11-09T13:36:05.410Z UTC**.
 
-Health at report generation: **ATTENTION: incomplete, stale or stopped**. Verified responses: **902/930**; responses with slots: **902**; empty responses: **0**; failed/not queried: **28**; category-unreported responses: **0** (0 unknown slots). **15602 slot observations** in this scan. Empty responses and generic source messages without a non-resident percentage are unknown booking availability. Unreported slots retain their source timestamps and text, contribute no numerical samples, and do not stop collection of other dates.
+Health at report generation: **fresh and complete**. Verified responses: **900/900**; responses with slots: **900**; empty responses: **0**; failed/not queried: **0**; category-unreported responses: **0** (0 unknown slots). **15570 slot observations** in this scan. Empty responses and generic source messages without a non-resident percentage are unknown booking availability. Unreported slots retain their source timestamps and text, contribute no numerical samples, and do not stop collection of other dates.
 
-Rolling window: **2026-11-09 through 2026-12-08**, 30 calendar dates in Atlantic/Madeira. Additional daily long-range samples: none in this scan; the latest daily sample remains in each trail report. All 31 current Madeira-island booking-catalog resources are queried. Returned category percentages, including 0% and 100%, are retained; generic responses retain slot evidence with unknown quota. Porto Santo is excluded. Route variants remain separate. This covers SIMplifica service 259, not a claim that every official PR route is bookable there.
+Rolling window: **2026-11-09 through 2026-12-08**, 30 calendar dates in Atlantic/Madeira. Additional daily long-range samples: none in this scan; the latest daily sample remains in each trail report. All 30 current Madeira-island booking-catalog resources are queried. Returned category percentages, including 0% and 100%, are retained; generic responses retain slot evidence with unknown quota. Porto Santo is excluded. Route variants remain separate. This covers SIMplifica service 259, not a claim that every official PR route is bookable there.
 
-Collection began: **2026-10-21T06:58:31.403Z**. Retained: **461 immutable scans**, **7410044 slot observations**, **17132285 compressed bytes**; all archive hashes verified. Archive totals retain earlier wider-scope evidence; coverage and historical analysis on this page are Madeira-only. Refresh target: about hourly; the independent clock checks every ten minutes and dispatches only when source-age and active-run guards permit. Timing is best effort. Treat individual source observations older than 90 minutes as stale.
+Collection began: **2026-10-21T06:58:31.403Z**. Retained: **462 immutable scans**, **7425614 slot observations**, **17166956 compressed bytes**; all archive hashes verified. Archive totals retain earlier wider-scope evidence; coverage and historical analysis on this page are Madeira-only. Refresh target: about hourly; the independent clock checks every ten minutes and dispatches only when source-age and active-run guards permit. Timing is best effort. Treat individual source observations older than 90 minutes as stale.
 
 ## Learning booking lead times
 
 Analysis retains small changes, threshold crossings at 50%, 20% and 0%, and reopenings. It compares 1, 3, 7, 14, 21 and 28 days before entry, plus coarse daily 45-, 60- and 90-day samples, separately by route variant, exact slot, timezone and weekday/weekend. Samples count distinct visit dates. Observations after entry are excluded from booking-pressure analysis.
 
-Pre-entry observations: 7290871; after-entry observations retained but excluded: 116779; ambiguous/invalid local-time observations excluded: 0. Scan gaps over 90 minutes: **1**. Catalog additions/removals: 63.
+Pre-entry observations: 7306112; after-entry observations retained but excluded: 117108; ambiguous/invalid local-time observations excluded: 0. Scan gaps over 90 minutes: **1**. Catalog additions/removals: 2.
 
 A first observation already at 0% cannot tell when a slot filled. An observed crossing is bounded between checks, and gaps widen that uncertainty. No recommendation is produced until the relevant time/day group has at least 14 mature visit-date samples and adequate coverage. These percentages do not reveal seat counts or distinguish bookings from quota changes. Autumn history may not predict another season.
 
@@ -44,7 +44,6 @@ A first observation already at 0% cannot tell when a slot filled. An observed cr
 | 275 | PR13.1 \| Vereda da Palha Carga | 30/30 | 600 | 0 | [Full slots and history](trails/275.md) |
 | 276 | PR14 \| Levada dos Cedros | 30/30 | 480 | 0 | [Full slots and history](trails/276.md) |
 | 277 | PR15 \| Vereda da Ribeira da Janela | 30/30 | 570 | 0 | [Full slots and history](trails/277.md) |
-| 278 | PR16 \| Levada Fajã do Rodrigues | 2/30 | 32 | 0 | [Full slots and history](trails/278.md) |
 | 279 | PR17 \| Caminho do Pináculo e Folhadal | 30/30 | 240 | 0 | [Full slots and history](trails/279.md) |
 | 280 | PR21 \| Caminho do Norte | 30/30 | 570 | 0 | [Full slots and history](trails/280.md) |
 | 281 | PR22 \| Vereda do Chão dos Louros | 30/30 | 600 | 0 | [Full slots and history](trails/281.md) |
