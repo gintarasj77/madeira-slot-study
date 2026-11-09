@@ -2,8 +2,8 @@
   "version": 1,
   "resourceId": "278",
   "trail": "PR16 | Levada Fajã do Rodrigues",
-  "latestScanId": "2026-11-09T10-21-01-064Z",
-  "scanFinishedAt": "2026-11-09T10:21:02.299Z",
+  "latestScanId": "2026-11-09T12-21-00-705Z",
+  "scanFinishedAt": "2026-11-09T12:36:31.797Z",
   "entries": [
     {
       "date": "2026-12-24",
@@ -37,273 +37,275 @@
     },
     {
       "date": "2026-11-09",
-      "status": "skipped",
+      "status": "ok",
+      "sourceFetchedAt": "2026-11-09T12:21:26.158Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.295Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "profileHash": "a4123319aafd1e777d12019d32de4ffb7ac531c443cb15cdd70fbb1ed465ddcd",
+      "path": "latest/slots/278/2026-11-09.json",
+      "slotCount": 16
     },
     {
       "date": "2026-11-10",
-      "status": "skipped",
+      "status": "ok",
+      "sourceFetchedAt": "2026-11-09T12:21:57.160Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.295Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "profileHash": "f84b57ffe0179fa3f3b0662caf75c8f7d37322c2f76aeafbc7864853b4ef4f87",
+      "path": "latest/slots/278/2026-11-10.json",
+      "slotCount": 16
     },
     {
       "date": "2026-11-11",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.295Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:22:27.949Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-11-12",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.295Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:22:58.923Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-11-13",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.295Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:23:29.936Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-11-14",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.295Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:24:00.962Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-11-15",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.295Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:24:31.944Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-11-16",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.295Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:25:02.942Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-11-17",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.295Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:25:33.951Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-11-18",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.295Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:26:04.942Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-11-19",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.295Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:26:35.945Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-11-20",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.295Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:27:06.939Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-11-21",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.295Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:27:37.945Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-11-22",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.295Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:28:08.940Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-11-23",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.295Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:28:39.966Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-11-24",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.296Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:29:10.954Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-11-25",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.296Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:29:41.937Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-11-26",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.296Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:30:12.961Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-11-27",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.296Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:30:43.932Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-11-28",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.296Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:31:14.936Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-11-29",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.296Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:31:45.982Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-11-30",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.296Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:32:16.937Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-12-01",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.296Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:32:47.950Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-12-02",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.296Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:33:18.946Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-12-03",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.296Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:33:49.929Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-12-04",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.296Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:34:20.938Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-12-05",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.296Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:34:51.926Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-12-06",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.296Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:35:22.929Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-12-07",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.296Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:35:53.930Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     },
     {
       "date": "2026-12-08",
-      "status": "skipped",
+      "status": "error",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-09T10:21:02.296Z",
-      "error": "Not queried: catalog_unverified.",
-      "code": null
+      "checkedAt": "2026-11-09T12:36:24.945Z",
+      "error": "SIMplifica rejected the availability query.",
+      "code": "UPSTREAM_REJECTED"
     }
   ]
 }
