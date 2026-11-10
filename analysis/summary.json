@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-10T13:37:27.451Z",
+  "generatedAt": "2026-11-10T14:37:53.132Z",
   "firstObservationAt": "2026-10-21T06:58:31.403Z",
-  "lastObservationAt": "2026-11-10T13:36:06.563Z",
-  "scans": 486,
-  "observationCount": 7788077,
-  "preEntryObservations": 7664954,
-  "afterEntryObservations": 123123,
+  "lastObservationAt": "2026-11-10T14:36:05.696Z",
+  "scans": 487,
+  "observationCount": 7803128,
+  "preEntryObservations": 7679620,
+  "afterEntryObservations": 123508,
   "invalidTimeObservations": 0,
   "missingScanIntervals": [
     {
@@ -30,22 +30,22 @@
   ],
   "island": "Madeira",
   "archive": {
-    "scans": 486,
-    "slots": 7790471,
-    "bytes": 17995586
+    "scans": 487,
+    "slots": 7805522,
+    "bytes": 18030019
   },
   "trails": [
     {
       "resourceId": "188",
       "name": "PR8 | Vereda da Ponta de São Lourenço",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 1734,
-      "observedChanges": 5388,
-      "smallChanges": 4498,
+      "observedChanges": 5401,
+      "smallChanges": 4510,
       "observedCrossings": 1251,
       "gapSpanningCrossings": 26,
-      "reopenings": 390,
+      "reopenings": 391,
       "firstSeenSoldOutSeries": 98,
       "timeDayGroups": 34,
       "groupsWithLeadTimeSuggestion": 0
@@ -53,12 +53,12 @@
     {
       "resourceId": "225",
       "name": "PR1 | Vereda do Areeiro até ao Miradouro da Pedra Rija",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 1938,
-      "observedChanges": 4985,
-      "smallChanges": 3880,
-      "observedCrossings": 1083,
+      "observedChanges": 4991,
+      "smallChanges": 3886,
+      "observedCrossings": 1084,
       "gapSpanningCrossings": 27,
       "reopenings": 268,
       "firstSeenSoldOutSeries": 43,
@@ -68,41 +68,41 @@
     {
       "resourceId": "226",
       "name": "PR1.2 | Vereda do Pico Ruivo",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 1938,
-      "observedChanges": 3573,
-      "smallChanges": 3246,
+      "observedChanges": 3581,
+      "smallChanges": 3254,
       "observedCrossings": 291,
       "gapSpanningCrossings": 5,
       "reopenings": 28,
       "firstSeenSoldOutSeries": 1,
       "timeDayGroups": 38,
-      "groupsWithLeadTimeSuggestion": 8
+      "groupsWithLeadTimeSuggestion": 10
     },
     {
       "resourceId": "227",
       "name": "PR6.1 | Levada do Risco",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 1836,
-      "observedChanges": 1898,
-      "smallChanges": 1639,
+      "observedChanges": 1900,
+      "smallChanges": 1641,
       "observedCrossings": 138,
       "gapSpanningCrossings": 1,
       "reopenings": 3,
       "firstSeenSoldOutSeries": 1,
       "timeDayGroups": 36,
-      "groupsWithLeadTimeSuggestion": 9
+      "groupsWithLeadTimeSuggestion": 11
     },
     {
       "resourceId": "228",
       "name": "PR9 | Levada do Caldeirão Verde",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 1224,
-      "observedChanges": 2573,
-      "smallChanges": 2500,
+      "observedChanges": 2576,
+      "smallChanges": 2502,
       "observedCrossings": 57,
       "gapSpanningCrossings": 1,
       "reopenings": 1,
@@ -113,22 +113,22 @@
     {
       "resourceId": "231",
       "name": "PR18 | Levada do Rei",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 1632,
-      "observedChanges": 887,
-      "smallChanges": 846,
+      "observedChanges": 888,
+      "smallChanges": 847,
       "observedCrossings": 7,
       "gapSpanningCrossings": 0,
       "reopenings": 0,
       "firstSeenSoldOutSeries": 0,
       "timeDayGroups": 32,
-      "groupsWithLeadTimeSuggestion": 9
+      "groupsWithLeadTimeSuggestion": 11
     },
     {
       "resourceId": "249",
       "name": "PR1.3 | Vereda da Encumeada (transitável entre o Pico Ruivo e a Boca das Torrinhas)",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 1632,
       "observedChanges": 234,
@@ -138,12 +138,12 @@
       "reopenings": 0,
       "firstSeenSoldOutSeries": 0,
       "timeDayGroups": 32,
-      "groupsWithLeadTimeSuggestion": 9
+      "groupsWithLeadTimeSuggestion": 11
     },
     {
       "resourceId": "250",
       "name": "PR12 | Caminho Real da Encumeada",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 1224,
       "observedChanges": 264,
@@ -158,7 +158,7 @@
     {
       "resourceId": "251",
       "name": "PR19 | Caminho Real do Paul do Mar",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 1938,
       "observedChanges": 243,
@@ -168,12 +168,12 @@
       "reopenings": 0,
       "firstSeenSoldOutSeries": 0,
       "timeDayGroups": 38,
-      "groupsWithLeadTimeSuggestion": 9
+      "groupsWithLeadTimeSuggestion": 11
     },
     {
       "resourceId": "259",
       "name": "PR1.1 | Vereda da Ilha",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 1632,
       "observedChanges": 255,
@@ -183,27 +183,27 @@
       "reopenings": 0,
       "firstSeenSoldOutSeries": 0,
       "timeDayGroups": 32,
-      "groupsWithLeadTimeSuggestion": 9
+      "groupsWithLeadTimeSuggestion": 11
     },
     {
       "resourceId": "260",
       "name": "PR2 | Vereda do Urzal",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 1326,
-      "observedChanges": 209,
-      "smallChanges": 203,
+      "observedChanges": 210,
+      "smallChanges": 204,
       "observedCrossings": 1,
       "gapSpanningCrossings": 0,
       "reopenings": 0,
       "firstSeenSoldOutSeries": 0,
       "timeDayGroups": 26,
-      "groupsWithLeadTimeSuggestion": 9
+      "groupsWithLeadTimeSuggestion": 10
     },
     {
       "resourceId": "263",
       "name": "PR5 | Vereda das Funduras",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 1632,
       "observedChanges": 211,
@@ -213,19 +213,19 @@
       "reopenings": 0,
       "firstSeenSoldOutSeries": 0,
       "timeDayGroups": 32,
-      "groupsWithLeadTimeSuggestion": 9
+      "groupsWithLeadTimeSuggestion": 11
     },
     {
       "resourceId": "264",
       "name": "PR6 | Levada das 25 Fontes",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 1632,
-      "observedChanges": 4175,
-      "smallChanges": 3374,
+      "observedChanges": 4181,
+      "smallChanges": 3379,
       "observedCrossings": 1016,
       "gapSpanningCrossings": 25,
-      "reopenings": 294,
+      "reopenings": 295,
       "firstSeenSoldOutSeries": 93,
       "timeDayGroups": 32,
       "groupsWithLeadTimeSuggestion": 0
@@ -233,7 +233,7 @@
     {
       "resourceId": "265",
       "name": "PR6.2 | Levada do Alecrim",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 1836,
       "observedChanges": 1312,
@@ -243,27 +243,27 @@
       "reopenings": 6,
       "firstSeenSoldOutSeries": 2,
       "timeDayGroups": 36,
-      "groupsWithLeadTimeSuggestion": 7
+      "groupsWithLeadTimeSuggestion": 9
     },
     {
       "resourceId": "267",
       "name": "PR6.3 | Vereda da Lagoa do Vento",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 2040,
-      "observedChanges": 669,
-      "smallChanges": 558,
+      "observedChanges": 671,
+      "smallChanges": 560,
       "observedCrossings": 24,
       "gapSpanningCrossings": 0,
       "reopenings": 0,
       "firstSeenSoldOutSeries": 0,
       "timeDayGroups": 40,
-      "groupsWithLeadTimeSuggestion": 9
+      "groupsWithLeadTimeSuggestion": 11
     },
     {
       "resourceId": "268",
       "name": "PR6.4 | Levada Velha do Rabaçal",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 1836,
       "observedChanges": 77,
@@ -273,12 +273,12 @@
       "reopenings": 0,
       "firstSeenSoldOutSeries": 0,
       "timeDayGroups": 36,
-      "groupsWithLeadTimeSuggestion": 9
+      "groupsWithLeadTimeSuggestion": 11
     },
     {
       "resourceId": "269",
       "name": "PR6.5 | Vereda do Pico Fernandes",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 1938,
       "observedChanges": 89,
@@ -288,12 +288,12 @@
       "reopenings": 0,
       "firstSeenSoldOutSeries": 0,
       "timeDayGroups": 38,
-      "groupsWithLeadTimeSuggestion": 9
+      "groupsWithLeadTimeSuggestion": 11
     },
     {
       "resourceId": "270",
       "name": "PR6.6 | Vereda do Túnel do Cavalo",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 2040,
       "observedChanges": 195,
@@ -303,12 +303,12 @@
       "reopenings": 0,
       "firstSeenSoldOutSeries": 0,
       "timeDayGroups": 40,
-      "groupsWithLeadTimeSuggestion": 9
+      "groupsWithLeadTimeSuggestion": 11
     },
     {
       "resourceId": "271",
       "name": "PR6.7 | Vereda Câmara Carga do Rabaçal",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 2040,
       "observedChanges": 35,
@@ -318,7 +318,7 @@
       "reopenings": 0,
       "firstSeenSoldOutSeries": 0,
       "timeDayGroups": 40,
-      "groupsWithLeadTimeSuggestion": 9
+      "groupsWithLeadTimeSuggestion": 11
     },
     {
       "resourceId": "272",
@@ -338,37 +338,37 @@
     {
       "resourceId": "273",
       "name": "PR11 | Vereda dos Balcões",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 1938,
-      "observedChanges": 2543,
-      "smallChanges": 1962,
-      "observedCrossings": 426,
+      "observedChanges": 2549,
+      "smallChanges": 1966,
+      "observedCrossings": 427,
       "gapSpanningCrossings": 2,
       "reopenings": 18,
       "firstSeenSoldOutSeries": 8,
       "timeDayGroups": 38,
-      "groupsWithLeadTimeSuggestion": 7
+      "groupsWithLeadTimeSuggestion": 9
     },
     {
       "resourceId": "274",
       "name": "PR13 | Vereda do Fanal",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 1428,
-      "observedChanges": 1941,
-      "smallChanges": 1777,
+      "observedChanges": 1948,
+      "smallChanges": 1784,
       "observedCrossings": 137,
       "gapSpanningCrossings": 0,
       "reopenings": 4,
       "firstSeenSoldOutSeries": 3,
       "timeDayGroups": 28,
-      "groupsWithLeadTimeSuggestion": 9
+      "groupsWithLeadTimeSuggestion": 11
     },
     {
       "resourceId": "275",
       "name": "PR13.1 | Vereda da Palha Carga",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 2040,
       "observedChanges": 47,
@@ -378,27 +378,27 @@
       "reopenings": 0,
       "firstSeenSoldOutSeries": 0,
       "timeDayGroups": 40,
-      "groupsWithLeadTimeSuggestion": 9
+      "groupsWithLeadTimeSuggestion": 11
     },
     {
       "resourceId": "276",
       "name": "PR14 | Levada dos Cedros",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 1632,
-      "observedChanges": 803,
-      "smallChanges": 676,
+      "observedChanges": 804,
+      "smallChanges": 677,
       "observedCrossings": 26,
       "gapSpanningCrossings": 0,
       "reopenings": 0,
       "firstSeenSoldOutSeries": 0,
       "timeDayGroups": 32,
-      "groupsWithLeadTimeSuggestion": 9
+      "groupsWithLeadTimeSuggestion": 11
     },
     {
       "resourceId": "277",
       "name": "PR15 | Vereda da Ribeira da Janela",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 1938,
       "observedChanges": 187,
@@ -408,7 +408,7 @@
       "reopenings": 0,
       "firstSeenSoldOutSeries": 0,
       "timeDayGroups": 38,
-      "groupsWithLeadTimeSuggestion": 9
+      "groupsWithLeadTimeSuggestion": 11
     },
     {
       "resourceId": "278",
@@ -428,7 +428,7 @@
     {
       "resourceId": "279",
       "name": "PR17 | Caminho do Pináculo e Folhadal",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 816,
       "observedChanges": 504,
@@ -443,7 +443,7 @@
     {
       "resourceId": "280",
       "name": "PR21 | Caminho do Norte",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 1938,
       "observedChanges": 37,
@@ -453,12 +453,12 @@
       "reopenings": 0,
       "firstSeenSoldOutSeries": 0,
       "timeDayGroups": 38,
-      "groupsWithLeadTimeSuggestion": 9
+      "groupsWithLeadTimeSuggestion": 11
     },
     {
       "resourceId": "281",
       "name": "PR22 | Vereda do Chão dos Louros",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 2040,
       "observedChanges": 86,
@@ -468,12 +468,12 @@
       "reopenings": 0,
       "firstSeenSoldOutSeries": 0,
       "timeDayGroups": 40,
-      "groupsWithLeadTimeSuggestion": 9
+      "groupsWithLeadTimeSuggestion": 11
     },
     {
       "resourceId": "285",
       "name": "PR6.8 | Levada do Paul II - Um caminho para todos",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 2142,
       "observedChanges": 181,
@@ -483,12 +483,12 @@
       "reopenings": 0,
       "firstSeenSoldOutSeries": 0,
       "timeDayGroups": 42,
-      "groupsWithLeadTimeSuggestion": 9
+      "groupsWithLeadTimeSuggestion": 11
     },
     {
       "resourceId": "292",
       "name": "PR9.1 | Queimadas - Um Caminho para todos",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 2040,
       "observedChanges": 168,
@@ -498,19 +498,19 @@
       "reopenings": 0,
       "firstSeenSoldOutSeries": 0,
       "timeDayGroups": 40,
-      "groupsWithLeadTimeSuggestion": 9
+      "groupsWithLeadTimeSuggestion": 11
     },
     {
       "resourceId": "301",
       "name": "PR1 | Vereda do Areeiro - Pico Ruivo (sentido único)",
-      "catalogLastSeen": "2026-11-10T13:36:06.563Z",
+      "catalogLastSeen": "2026-11-10T14:36:05.696Z",
       "distinctVisitDates": 102,
       "slotSeries": 1936,
-      "observedChanges": 5715,
-      "smallChanges": 4589,
-      "observedCrossings": 1399,
+      "observedChanges": 5728,
+      "smallChanges": 4600,
+      "observedCrossings": 1401,
       "gapSpanningCrossings": 30,
-      "reopenings": 542,
+      "reopenings": 544,
       "firstSeenSoldOutSeries": 212,
       "timeDayGroups": 38,
       "groupsWithLeadTimeSuggestion": 0
