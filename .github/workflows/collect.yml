@@ -43,7 +43,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           node scripts/publish.mjs
-      - name: Surface collection failures after publishing partial evidence
+      - name: Report collection health after publishing evidence
         env:
           COLLECT_OUTCOME: ${{ steps.collect.outcome }}
         run: node scripts/report-run.mjs

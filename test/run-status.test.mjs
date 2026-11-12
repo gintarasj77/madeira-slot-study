@@ -52,3 +52,41 @@ test('run summary bounds large failures and keeps untrusted text out of annotati
   assert.doesNotMatch(result.message, /injected|[\r\n]/);
   assert.doesNotMatch(result.summary, /\n::error::|<tag>/);
 });
+
+test('only consecutive scans stopped by the same source rejections use a warning', () => {
+  const stopped = hour => {
+    const s = scan();
+    s.startedAt = `2026-10-27T${hour}:00:00.000Z`;
+    s.finishedAt = `2026-10-27T${hour}:01:00.000Z`;
+    s.id = s.startedAt.replace(/[:.]/g, '-');
+    s.stopReason = 'repeated_source_failures';
+    s.entries = s.entries.map(({ r, d }, i) => ({ r, d, at: s.finishedAt,
+      ...(i ? { status: 'skipped', error: 'Not queried' } : { status: 'error', code: 'UPSTREAM_REJECTED', error: 'Rejected' }) }));
+    return s;
+  };
+  const current = stopped('11'), previous = stopped('10');
+  const partial = { ...health(current), state: 'partial', stopReason: current.stopReason };
+  const repeat = collectionRunStatus(current, partial, 'success', previous);
+  assert.equal(repeat.failed, true, 'coverage remains incomplete');
+  assert.equal(repeat.repeatedSourceRejection, true);
+  assert.equal(repeat.warning, true);
+  assert.match(repeat.summary, /Collection partial: SIMplifica rejections continue/);
+  assert.match(repeat.summary, /0\/2 checks verified; 2 failed\/not queried/);
+
+  for (const [candidate, state, outcome, prior] of [
+    [current, partial, 'success', undefined],
+    [current, partial, 'success', stopped('09')],
+    [current, partial, 'success', scan()],
+    [current, partial, 'success', current],
+    [current, partial, 'failure', previous],
+    [current, { ...partial, error: 'COLLECTION_FAILED' }, 'success', previous],
+    [current, { ...partial, scanId: previous.id }, 'success', previous],
+    [{ ...current, catalogRecheckError: { code: 'UPSTREAM_UNREACHABLE' } }, partial, 'success', previous],
+    [{ ...current, entries: [{ ...current.entries[0], code: 'UPSTREAM_TIMEOUT' }, current.entries[1]] }, partial, 'success', previous],
+  ]) {
+    const result = collectionRunStatus(candidate, state, outcome, prior);
+    assert.equal(result.failed, true);
+    assert.equal(result.repeatedSourceRejection, false);
+    assert.equal(result.warning, false);
+  }
+});
