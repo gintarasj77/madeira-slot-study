@@ -16,6 +16,7 @@ function fixture(overrides = {}) {
     if (overrides.failure) return new Response('ignored', { status: overrides.failure });
     if (init.method === 'POST') return overrides.dispatchFailure ? new Response('ignored', { status: 502 })
       : overrides.legacy ? new Response(null, { status: 204 }) : Response.json({ workflow_run_id: 123 });
+    if (url.endsWith('/jobs?per_page=1')) return Response.json(overrides.jobs || { total_count: 0, jobs: [] });
     return Response.json(url.includes('/runs?') ? { workflow_runs: runs } : url.includes('/contents/') ? health : metadata);
   } };
 }
@@ -30,6 +31,44 @@ test('stale public collector is dispatched once on main; no source or account en
     assert.ok(posts[0].url.endsWith('/actions/workflows/collect.yml/dispatches'));
     assert.deepEqual(JSON.parse(posts[0].body), { ref: 'main' });
   }
+});
+
+const completedRun = (id, start, conclusion, finish = start) => ({ id, status: 'completed', conclusion,
+  created_at: `2026-10-21T${start}:00Z`, updated_at: `2026-10-21T${finish}:00Z` });
+
+test('a first GitHub startup failure gets one early dispatch after confirming zero jobs', async () => {
+  const prior = completedRun(1, '08:45', 'success');
+  const failed = completedRun(2, '09:45', 'startup_failure', '09:54');
+  const f = fixture({ runs: [prior, failed] });
+  assert.deepEqual(await tick(env, { ...f, now }), { state: 'dispatched', runId: 123, startupRetryFor: 2 });
+  assert.ok(f.calls.some(c => c.url.endsWith('/actions/runs/2/jobs?per_page=1')));
+  assert.equal(f.calls.filter(c => c.method === 'POST').length, 1);
+
+  for (const options of [
+    { runs: [prior, { ...failed, updated_at: '2026-10-21T09:56:00Z' }] },
+    { runs: [prior, failed], jobs: { total_count: 1, jobs: [{ id: 23 }] } },
+    { runs: [prior, failed], health: { checkedAt: '2026-10-21T09:59:00Z', cooldownUntil: '2026-10-21T10:30:00Z' } },
+    { runs: [prior, failed], health: { checkedAt: '2026-10-21T09:47:00Z', state: 'complete', scanId: '2026-10-21T09-30-00-000Z' } },
+  ]) {
+    const blocked = fixture(options);
+    assert.equal((await tick(env, { ...blocked, now })).state, 'skipped');
+    assert.ok(blocked.calls.every(c => c.method === 'GET'));
+  }
+});
+
+test('a failed early replacement preserves the original deadline without chaining early dispatches', async () => {
+  const prior = completedRun(1, '08:00', 'success');
+  const failed = completedRun(2, '09:00', 'startup_failure', '09:15');
+  const replacement = completedRun(3, '09:30', 'startup_failure', '09:35');
+  const following = completedRun(4, '09:55', 'startup_failure', '09:58');
+  const runs = [replacement, failed, prior];
+  const waiting = fixture({ runs });
+  assert.equal((await tick(env, { ...waiting, now: now - 10 * 60_000 })).reason, 'recent_failed_attempt');
+  const due = fixture({ runs });
+  assert.deepEqual(await tick(env, { ...due, now }), { state: 'dispatched', runId: 123 });
+  const ongoing = fixture({ runs: [following, ...runs] });
+  assert.equal((await tick(env, { ...ongoing, now })).reason, 'recent_failed_attempt');
+  for (const f of [waiting, due, ongoing]) assert.ok(f.calls.every(c => !c.url.includes('/jobs?')));
 });
 
 test('active runs never dispatch duplicate collection', async () => {

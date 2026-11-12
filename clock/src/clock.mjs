@@ -1,5 +1,7 @@
 const API = 'https://api.github.com';
 const ACTIVE = new Set(['queued', 'in_progress', 'waiting', 'requested', 'pending']);
+const STARTUP_RETRY_DELAY_MS = 5 * 60_000;
+const isNonStartupResult = run => run?.status === 'completed' && run.conclusion && run.conclusion !== 'startup_failure';
 
 export async function tick(env, { fetcher = (url, init) => globalThis.fetch(url, init), now = Date.now() } = {}) {
   const repository = env.REPOSITORY;
@@ -46,9 +48,9 @@ export async function tick(env, { fetcher = (url, init) => globalThis.fetch(url,
     throw new Error('GitHub workflow-run schema changed.');
   }
   if (runs.some(r => ACTIVE.has(r.status))) return { state: 'skipped', reason: 'collector_already_active' };
-  const latest = Math.max(...runs.map(r => Date.parse(r.created_at)), -Infinity);
+  const [lastRun, previousRun, earlierRun] = runs.sort((a, b) => Date.parse(b.created_at) - Date.parse(a.created_at));
+  const latest = lastRun ? Date.parse(lastRun.created_at) : -Infinity;
   if (latest > now) return { state: 'skipped', reason: 'clock_skew' };
-  const lastRun = runs.find(r => Date.parse(r.created_at) === latest);
   const health = await request(`${base}/contents/data/collector-health.json?ref=main`, { raw: true });
   if (!health || !Number.isFinite(Date.parse(health.checkedAt))) throw new Error('Collector health schema changed.');
   if (health.error === 'ARCHIVE_SIZE_GUARD') return { state: 'skipped', reason: 'archive_storage_guard' };
@@ -70,8 +72,26 @@ export async function tick(env, { fetcher = (url, init) => globalThis.fetch(url,
     if (start > now) return { state: 'skipped', reason: 'clock_skew' };
     if (now - start < minimum * 60000) return { state: 'skipped', reason: 'recent_source_scan' };
   }
-  if (lastRun?.conclusion && lastRun.conclusion !== 'success' && now - latest < minimum * 60000) {
-    return { state: 'skipped', reason: 'recent_failed_attempt' };
+  let startupRetryFor;
+  if (lastRun?.conclusion && lastRun.conclusion !== 'success') {
+    let failedAt = latest;
+    if (lastRun.conclusion === 'startup_failure') {
+      const previousStart = Date.parse(previousRun?.created_at);
+      // An early replacement can also fail at startup. Keep the original hourly
+      // deadline for that pair, then use normal spacing for continued failures.
+      if (previousRun?.conclusion === 'startup_failure' && isNonStartupResult(earlierRun) &&
+          previousStart < latest && latest - previousStart < minimum * 60000) failedAt = previousStart;
+
+      const finished = Date.parse(lastRun.updated_at);
+      if (isNonStartupResult(previousRun) && previousStart < latest && now - latest < minimum * 60000 && finished >= latest &&
+          now - finished >= STARTUP_RETRY_DELAY_MS && Number.isSafeInteger(lastRun.id) && lastRun.id > 0) {
+        const jobs = await request(`${base}/actions/runs/${lastRun.id}/jobs?per_page=1`);
+        if (jobs?.total_count === 0 && Array.isArray(jobs.jobs) && jobs.jobs.length === 0) startupRetryFor = lastRun.id;
+      }
+    }
+    if (!startupRetryFor && now - failedAt < minimum * 60000) {
+      return { state: 'skipped', reason: 'recent_failed_attempt' };
+    }
   }
   // One attempt only: an uncertain response may already have created a run.
   // Later clock ticks first inspect active/recent runs before considering another dispatch.
@@ -79,7 +99,7 @@ export async function tick(env, { fetcher = (url, init) => globalThis.fetch(url,
   if (dispatched !== null && (!Number.isSafeInteger(dispatched?.workflow_run_id) || dispatched.workflow_run_id <= 0)) {
     throw new Error('Workflow dispatch response changed; inspect runs before retrying.');
   }
-  return { state: 'dispatched', runId: dispatched?.workflow_run_id || null };
+  return { state: 'dispatched', runId: dispatched?.workflow_run_id || null, ...(startupRetryFor ? { startupRetryFor } : {}) };
 }
 
 export default {

@@ -8,6 +8,8 @@ A ten-minute clock checks for an active or recently started collection. With a 5
 
 Requests use Cloudflare-compatible manual redirect handling and reject non-success responses. The credential is never forwarded to a redirect destination. Transport diagnostics expose only fixed error categories, never request headers, response bodies or arbitrary exception text.
 
+After a GitHub `startup_failure`, the clock can dispatch one early replacement once the failure has been complete for at least five minutes and GitHub confirms zero jobs. A failed replacement that also never starts leaves the original hourly deadline in place. Continued startup failures use the regular interval. Active runs, recent complete scans and upstream cooldown still take priority.
+
 ## Deployment
 
 Create a fine-grained GitHub token for just the public study repository, with Actions read/write, Contents read, and mandatory Metadata read. Store it only as the Worker's `GITHUB_ACTIONS_TOKEN` secret. Set `REPOSITORY` to the public repository path and leave `WORKFLOW` as `collect.yml`. Do not paste tokens into chat, source, reports or logs, and do not copy a broad existing GitHub CLI credential to Cloudflare. The token needs an expiry date and renewal before that date.
