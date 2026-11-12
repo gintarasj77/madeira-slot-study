@@ -2,8 +2,8 @@
   "version": 1,
   "resourceId": "228",
   "trail": "PR9 | Levada do Caldeirão Verde",
-  "latestScanId": "2026-11-12T13-21-02-020Z",
-  "scanFinishedAt": "2026-11-12T13:36:04.762Z",
+  "latestScanId": "2026-11-12T14-21-03-394Z",
+  "scanFinishedAt": "2026-11-12T14:36:11.901Z",
   "entries": [
     {
       "date": "2026-12-27",
@@ -40,7 +40,7 @@
       "status": "unreported",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "checkedAt": "2026-11-12T13:21:09.364Z",
+      "checkedAt": "2026-11-12T14:21:13.578Z",
       "error": "SIMplifica returned generic availability without a non-resident percentage; availability is unknown.",
       "code": "UPSTREAM_CATEGORY_UNAVAILABLE",
       "sourceTitle": "0 vagas disponíveis",
@@ -128,27 +128,27 @@
     {
       "date": "2026-11-13",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:21:38.388Z",
+      "sourceFetchedAt": "2026-11-12T14:21:43.761Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "ec715e1fe15d8dd606a202bac9c8078fd68ee61cd31e2109d1af6d7f8b193391",
+      "profileHash": "35240f26c5631765972eeafb9cf348672527dcaa4908c7c5b37b514915f3aa52",
       "path": "latest/slots/228/2026-11-13.json",
       "slotCount": 12
     },
     {
       "date": "2026-11-14",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:22:08.314Z",
+      "sourceFetchedAt": "2026-11-12T14:22:13.173Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "396486b1b71189c82867f08170504da82821a87170629e8a716ea81be114bafc",
+      "profileHash": "599c617eb4bd0acfbd2ca0410c58ab30789ba90fd60572399d042b46caecd752",
       "path": "latest/slots/228/2026-11-14.json",
       "slotCount": 12
     },
     {
       "date": "2026-11-15",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:22:38.375Z",
+      "sourceFetchedAt": "2026-11-12T14:22:43.032Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "61a9decc872eaf5f554e5774795f8f898ec761231583c1e0d2c0b099d3cdee87",
@@ -158,7 +158,7 @@
     {
       "date": "2026-11-16",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:23:08.366Z",
+      "sourceFetchedAt": "2026-11-12T14:23:13.059Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "60938356b075930b0a792680b6e9e3433123dcd45181da9ea3cb78843d8ce8ac",
@@ -168,7 +168,7 @@
     {
       "date": "2026-11-17",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:23:38.292Z",
+      "sourceFetchedAt": "2026-11-12T14:23:43.392Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "b9ad14656c12e2edf12de1fdef2cdddab5bea3afd07813501e0ea25c49c726b7",
@@ -178,17 +178,17 @@
     {
       "date": "2026-11-18",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:24:08.484Z",
+      "sourceFetchedAt": "2026-11-12T14:24:13.750Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "f86639710a16dd16b12af5b427030b02aab03d7498889993831edf339a19bfe1",
+      "profileHash": "6151649c8e3c7fb55d4556de758fd7d78155a5a3b157abbca91cb6139c2b8230",
       "path": "latest/slots/228/2026-11-18.json",
       "slotCount": 12
     },
     {
       "date": "2026-11-19",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:24:38.215Z",
+      "sourceFetchedAt": "2026-11-12T14:24:44.273Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "1852796fdbc78f253cd4b6087069e30bc65af1a7fa294d25afddc8b675ee56ae",
@@ -198,7 +198,7 @@
     {
       "date": "2026-11-20",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:25:08.382Z",
+      "sourceFetchedAt": "2026-11-12T14:25:13.987Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "d805dce1fddc608e519ad787b85d4d295737ee2ca590011da5883c762fd72261",
@@ -208,7 +208,7 @@
     {
       "date": "2026-11-21",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:25:38.374Z",
+      "sourceFetchedAt": "2026-11-12T14:25:43.820Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "838e6fdac6b44518bd917ebdbe41f83c5ac0a9e044987711b2467059f5649454",
@@ -218,7 +218,7 @@
     {
       "date": "2026-11-22",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:26:08.634Z",
+      "sourceFetchedAt": "2026-11-12T14:26:14.062Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "0611b955798cd3866e4516d0218a6a39b3696b175554b2070638b6399aecbc38",
@@ -228,7 +228,7 @@
     {
       "date": "2026-11-23",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:26:39.471Z",
+      "sourceFetchedAt": "2026-11-12T14:26:44.054Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "34827f5fbd922b3632b7d6259dff94f19cddf23387dd4c055f360a7cde1bfae7",
@@ -238,7 +238,7 @@
     {
       "date": "2026-11-24",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:27:08.783Z",
+      "sourceFetchedAt": "2026-11-12T14:27:14.166Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "8f7880924d1879a91db3b45ba20dd214185ec9110d53f30e7fdf921a657eb8ac",
@@ -248,7 +248,7 @@
     {
       "date": "2026-11-25",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:27:38.707Z",
+      "sourceFetchedAt": "2026-11-12T14:27:43.654Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "2e61ae7403ab083017484e399249bdc54859f814a4765b6c9651bcc3ef55252c",
@@ -258,7 +258,7 @@
     {
       "date": "2026-11-26",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:28:08.696Z",
+      "sourceFetchedAt": "2026-11-12T14:28:13.416Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "6dd654a455ce83797bac45854ef442944c9dacf0338ff066e59bef9d868d0e44",
@@ -268,7 +268,7 @@
     {
       "date": "2026-11-27",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:28:38.631Z",
+      "sourceFetchedAt": "2026-11-12T14:28:43.352Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "0fcb65605fafe8c6a39c1e63d2c51f7b91f846078bdf6f2667930a0ab4d1a3c9",
@@ -278,7 +278,7 @@
     {
       "date": "2026-11-28",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:29:08.674Z",
+      "sourceFetchedAt": "2026-11-12T14:29:14.557Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "9901b60a87e13a6fb171ba92e741c634dcebd405e9a21ef2cb07e2ba106111e2",
@@ -288,7 +288,7 @@
     {
       "date": "2026-11-29",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:29:38.822Z",
+      "sourceFetchedAt": "2026-11-12T14:29:44.679Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "dc09cd71a6367c4bba32b6a5c5a4f9ed650a3b3c9627ed9aefb187cc47ceb77d",
@@ -298,17 +298,17 @@
     {
       "date": "2026-11-30",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:30:09.247Z",
+      "sourceFetchedAt": "2026-11-12T14:30:14.707Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
-      "profileHash": "d2ee268298d028ff8b6f3abd9e9abf8afce15316235097b80291fddcb64ca285",
+      "profileHash": "e1537d71087b3f282fe98adf5e0705a9914ef7345e2500bd26e047de4d1fb221",
       "path": "latest/slots/228/2026-11-30.json",
       "slotCount": 12
     },
     {
       "date": "2026-12-01",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:30:39.300Z",
+      "sourceFetchedAt": "2026-11-12T14:30:44.694Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "b1c4b7c894ee388cc0c808f459d72c545da66eaf5e30fa67a882e970577cd298",
@@ -318,7 +318,7 @@
     {
       "date": "2026-12-02",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:31:09.737Z",
+      "sourceFetchedAt": "2026-11-12T14:31:14.957Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "225a7cd73458cedd96cf2abbc545d280fa4227d62893a9d38807df2d17080b23",
@@ -328,7 +328,7 @@
     {
       "date": "2026-12-03",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:31:39.410Z",
+      "sourceFetchedAt": "2026-11-12T14:31:46.934Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "6dd17253f150fa2c25116d0ec5ffdc79c3c54c7b72f8475aeed35fde2a4c9a96",
@@ -338,7 +338,7 @@
     {
       "date": "2026-12-04",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:32:09.387Z",
+      "sourceFetchedAt": "2026-11-12T14:32:16.948Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "eb0113f9fc634d73ce44aad63a4cfbd04b67cee3ffab7823a78c44094b11b603",
@@ -348,7 +348,7 @@
     {
       "date": "2026-12-05",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:32:39.452Z",
+      "sourceFetchedAt": "2026-11-12T14:32:46.893Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "42770b2c9decd3262fd20deb0941665a85400ac2310293d01c83620fe8bda2d3",
@@ -358,7 +358,7 @@
     {
       "date": "2026-12-06",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:33:09.361Z",
+      "sourceFetchedAt": "2026-11-12T14:33:16.983Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "8157dc7b59f1111acffc0daceb29ae127c5b1dd076acf67e4b17c69b11b2c055",
@@ -368,7 +368,7 @@
     {
       "date": "2026-12-07",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:33:39.315Z",
+      "sourceFetchedAt": "2026-11-12T14:33:47.079Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "805a5242ee6a0b51f6a91e60459336da1dc2c4cbba596dd192421d36b4829841",
@@ -378,7 +378,7 @@
     {
       "date": "2026-12-08",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:34:09.344Z",
+      "sourceFetchedAt": "2026-11-12T14:34:16.969Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "b9084e755bac3e650a1d439ddaafab14ece746ecd9fed5a287ec1645972ffbdc",
@@ -388,7 +388,7 @@
     {
       "date": "2026-12-09",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:34:39.294Z",
+      "sourceFetchedAt": "2026-11-12T14:34:46.934Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "b37b21e778a8f8d85ed37e69e9d184f1366e7867a72a698ae8bdd9ce355ac2db",
@@ -398,7 +398,7 @@
     {
       "date": "2026-12-10",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:35:09.341Z",
+      "sourceFetchedAt": "2026-11-12T14:35:16.883Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "a7660c3a0c2f652adc533a67780c267d965fa8ee7442acad6d2d3e7bd7389676",
@@ -408,7 +408,7 @@
     {
       "date": "2026-12-11",
       "status": "ok",
-      "sourceFetchedAt": "2026-11-12T13:35:39.442Z",
+      "sourceFetchedAt": "2026-11-12T14:35:46.867Z",
       "cadence": "hourly",
       "staleAfterMinutes": 90,
       "profileHash": "a9ff9b35fce5d34ba3a3853889099562ba1bce110a175d9d6089ca0d42147a9d",
