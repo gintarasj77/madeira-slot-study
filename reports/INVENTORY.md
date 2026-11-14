@@ -1,6 +1,6 @@
 # Official route inventory and booking coverage
 
-IFCN source fetched: **2026-11-13T00:30:58.427Z UTC**. [Official source](https://ifcn.madeira.gov.pt/en/atividades-de-natureza/percursos-pedestres-recomendados/percursos-pedestres-recomendados.html).
+IFCN source fetched: **2026-11-14T00:30:56.556Z UTC**. [Official source](https://ifcn.madeira.gov.pt/en/atividades-de-natureza/percursos-pedestres-recomendados/percursos-pedestres-recomendados.html).
 
 18 current SIMplifica booking resources; 39 official Madeira-island routes in the IFCN table. 21 official routes have no matching catalog resource; 0 booking resources have no automatic island/code match. Every Madeira-island catalog resource is collected, including unmatched variants. Porto Santo is excluded. The booking catalog and official walking-route list are different inventories. A missing booking resource or an empty API response is not proof of closure or exemption.
 
@@ -13,9 +13,9 @@ Status text is source context, preserved separately from availability. Read rest
 | Madeira | PR1.2 | Vereda do Pico Ruivo | ABERTO/OPEN | [226: PR1.2 \| Vereda do Pico Ruivo](trails/226.md) |
 | Madeira | PR1.3 | Vereda da Encumeada | ENCERRADO/CLOSED entre a Boca das Torrinhas e a Encumeada, manter-se-á encerrado | **No matching booking resource** |
 | Madeira | PR2 | Vereda do Urzal | ENCERRADO/CLOSED | **No matching booking resource** |
-| Madeira | PR3 | Vereda do Burro | ABERTO/OPEN | **No matching booking resource** |
-| Madeira | PR3.1 | Caminho Real do Monte | ABERTO/OPEN | **No matching booking resource** |
-| Madeira | PR4 | Levada do Barreiro | PARCIALMENTE TRANSITÁVEL MAPA | **No matching booking resource** |
+| Madeira | PR3 | Vereda do Burro | ENCERRADO/CLOSED | **No matching booking resource** |
+| Madeira | PR3.1 | Caminho Real do Monte | ENCERRADO/CLOSED | **No matching booking resource** |
+| Madeira | PR4 | Levada do Barreiro | ENCERRADO/CLOSED MAPA | **No matching booking resource** |
 | Madeira | PR5 | Vereda das Funduras | ABERTO/OPEN | [263: PR5 \| Vereda das Funduras](trails/263.md) |
 | Madeira | PR6 | Levada das 25 Fontes | ABERTO/OPEN ( circulação controlada num único sentido : Rabaçal – 25 Fontes (ida) pela Levada das 25 Fontes e 25 Fontes – Rabaçal (regresso) pelo troço alternativo, denominado de Bypass ) | [264: PR6 \| Levada das 25 Fontes](trails/264.md) |
 | Madeira | PR6.1 | Levada do Risco | ABERTO/OPEN | [227: PR6.1 \| Levada do Risco](trails/227.md) |
