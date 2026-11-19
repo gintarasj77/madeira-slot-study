@@ -1,6 +1,6 @@
 # Official route inventory and booking coverage
 
-IFCN source fetched: **2026-11-18T00:53:08.541Z UTC**. [Official source](https://ifcn.madeira.gov.pt/en/atividades-de-natureza/percursos-pedestres-recomendados/percursos-pedestres-recomendados.html).
+IFCN source fetched: **2026-11-19T00:53:11.746Z UTC**. [Official source](https://ifcn.madeira.gov.pt/en/atividades-de-natureza/percursos-pedestres-recomendados/percursos-pedestres-recomendados.html).
 
 22 current SIMplifica booking resources; 39 official Madeira-island routes in the IFCN table. 17 official routes have no matching catalog resource; 0 booking resources have no automatic island/code match. Every Madeira-island catalog resource is collected, including unmatched variants. Porto Santo is excluded. The booking catalog and official walking-route list are different inventories. A missing booking resource or an empty API response is not proof of closure or exemption.
 
@@ -8,7 +8,7 @@ Status text is source context, preserved separately from availability. Read rest
 
 | Island | Code | Official route | Official status text | Matching booking resources |
 |---|---|---|---|---|
-| Madeira | PR1 | Vereda do Areeiro | ENCERRADO/CLOSED Percurso nos dois sentidos entre o Pico do Areeiro e o Miradouro da Pedra Rija; | [225: PR1 \| Vereda do Areeiro até ao Miradouro da Pedra Rija](trails/225.md) |
+| Madeira | PR1 | Vereda do Areeiro | ABERTO/OPEN Percurso nos dois sentidos entre o Pico do Areeiro e o Miradouro da Pedra Rija; | [225: PR1 \| Vereda do Areeiro até ao Miradouro da Pedra Rija](trails/225.md) |
 | Madeira | PR1.1 | Vereda da Ilha | ABERTO/OPEN | [259: PR1.1 \| Vereda da Ilha](trails/259.md) |
 | Madeira | PR1.2 | Vereda do Pico Ruivo | ABERTO/OPEN | [226: PR1.2 \| Vereda do Pico Ruivo](trails/226.md) |
 | Madeira | PR1.3 | Vereda da Encumeada | ENCERRADO/CLOSED entre a Boca das Torrinhas e a Encumeada, manter-se-á encerrado | **No matching booking resource** |
@@ -33,10 +33,10 @@ Status text is source context, preserved separately from availability. Read rest
 | Madeira | PR10 | Levada do Furado | ENCERRADO/CLOSED | **No matching booking resource** |
 | Madeira | PR11 | Vereda dos Balcões | ABERTO/OPEN | [273: PR11 \| Vereda dos Balcões](trails/273.md) |
 | Madeira | PR12 | Caminho Real da Encumeada | ENCERRADO/CLOSED (Transitável desde a Boca da Corrida até ao km 3,5) | **No matching booking resource** |
-| Madeira | PR13 | Vereda do Fanal | ENCERRADO/CLOSED | [274: PR13 \| Vereda do Fanal](trails/274.md) |
-| Madeira | PR13.1 | Vereda da Palha Carga | ENCERRADO/CLOSED | [275: PR13.1 \| Vereda da Palha Carga](trails/275.md) |
+| Madeira | PR13 | Vereda do Fanal | ABERTO/OPEN | [274: PR13 \| Vereda do Fanal](trails/274.md) |
+| Madeira | PR13.1 | Vereda da Palha Carga | ABERTO/OPEN | [275: PR13.1 \| Vereda da Palha Carga](trails/275.md) |
 | Madeira | PR14 | Levada dos Cedros | ENCERRADO/CLOSED | **No matching booking resource** |
-| Madeira | PR15 | Vereda da Ribeira da Janela | ENCERRADO/CLOSED | [277: PR15 \| Vereda da Ribeira da Janela](trails/277.md) |
+| Madeira | PR15 | Vereda da Ribeira da Janela | ABERTO/OPEN | [277: PR15 \| Vereda da Ribeira da Janela](trails/277.md) |
 | Madeira | PR16 | Levada Fajã do Rodrigues | ENCERRADO/CLOSED | **No matching booking resource** |
 | Madeira | PR17 | Caminho do Pináculo e Folhadal | ENCERRADO/CLOSED (Transitável entre a Encumeada Folhadal – Caramujo - Bica da Cana) | **No matching booking resource** |
 | Madeira | PR18 | Levada do Rei | ABERTO | [231: PR18 \| Levada do Rei](trails/231.md) |
