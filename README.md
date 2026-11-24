@@ -48,7 +48,7 @@ The independent clock was validated on 21 October with real scheduled invocation
 
 Queued duplicate triggers do not query SIMplifica again when a complete, verified scan began less than 55 minutes ago. This check preserves the original source timestamps; it never labels a skipped run as a new observation. Partial or failed scans do not satisfy this guard, and upstream cooldowns still take priority.
 
-Publication imports immutable observations into a clean checkout of current main, verifies the combined history and rebuilds reports with the current code. A concurrent code or report update therefore cannot create a report merge conflict. A rejected push retries publication up to three times without making additional source requests. On 21 October a manual refresh collected successfully but its earlier report-rebase publisher failed; that unpublished interval remains a historical gap.
+Publication imports immutable observations into a clean checkout of current main, verifies the combined history and rebuilds reports with the current code. This avoids report merge conflicts when code or generated data changes during a run. A failed GitHub fetch or push can retry publication up to twice, with waits of 15 and 45 seconds. Each remote operation has a 90-second deadline. Retries reuse the same observations and timestamps. If publication still fails, the workflow reports the failure and the unpublished interval remains a historical gap.
 
 ## Running locally
 
