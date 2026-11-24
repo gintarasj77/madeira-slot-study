@@ -2,13 +2,13 @@
 
 IFCN source fetched: **2026-11-24T00:53:16.211Z UTC**. [Official source](https://ifcn.madeira.gov.pt/en/atividades-de-natureza/percursos-pedestres-recomendados/percursos-pedestres-recomendados.html).
 
-22 current SIMplifica booking resources; 39 official Madeira-island routes in the IFCN table. 17 official routes have no matching catalog resource; 0 booking resources have no automatic island/code match. Every Madeira-island catalog resource is collected, including unmatched variants. Porto Santo is excluded. The booking catalog and official walking-route list are different inventories. A missing booking resource or an empty API response is not proof of closure or exemption.
+23 current SIMplifica booking resources; 39 official Madeira-island routes in the IFCN table. 17 official routes have no matching catalog resource; 0 booking resources have no automatic island/code match. Every Madeira-island catalog resource is collected, including unmatched variants. Porto Santo is excluded. The booking catalog and official walking-route list are different inventories. A missing booking resource or an empty API response is not proof of closure or exemption.
 
 Status text is source context, preserved separately from availability. Read restrictions in the official source; a percentage does not establish that a route is open. Daily status snapshots are retained in data/context/ifcn.
 
 | Island | Code | Official route | Official status text | Matching booking resources |
 |---|---|---|---|---|
-| Madeira | PR1 | Vereda do Areeiro | ABERTO/OPEN Percurso nos dois sentidos entre o Pico do Areeiro e o Miradouro da Pedra Rija; | [225: PR1 \| Vereda do Areeiro até ao Miradouro da Pedra Rija](trails/225.md) |
+| Madeira | PR1 | Vereda do Areeiro | ABERTO/OPEN Percurso nos dois sentidos entre o Pico do Areeiro e o Miradouro da Pedra Rija; | [225: PR1 \| Vereda do Areeiro até ao Miradouro da Pedra Rija](trails/225.md); [301: PR1 \| Vereda do Areeiro - Pico Ruivo (sentido único)](trails/301.md) |
 | Madeira | PR1.1 | Vereda da Ilha | ABERTO/OPEN | [259: PR1.1 \| Vereda da Ilha](trails/259.md) |
 | Madeira | PR1.2 | Vereda do Pico Ruivo | ABERTO/OPEN | [226: PR1.2 \| Vereda do Pico Ruivo](trails/226.md) |
 | Madeira | PR1.3 | Vereda da Encumeada | ENCERRADO/CLOSED entre a Boca das Torrinhas e a Encumeada, manter-se-á encerrado | **No matching booking resource** |
