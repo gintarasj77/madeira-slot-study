@@ -2,7 +2,7 @@
 
 IFCN source fetched: **2026-11-28T00:53:45.858Z UTC**. [Official source](https://ifcn.madeira.gov.pt/en/atividades-de-natureza/percursos-pedestres-recomendados/percursos-pedestres-recomendados.html).
 
-23 current SIMplifica booking resources; 39 official Madeira-island routes in the IFCN table. 17 official routes have no matching catalog resource; 0 booking resources have no automatic island/code match. Every Madeira-island catalog resource is collected, including unmatched variants. Porto Santo is excluded. The booking catalog and official walking-route list are different inventories. A missing booking resource or an empty API response is not proof of closure or exemption.
+22 current SIMplifica booking resources; 39 official Madeira-island routes in the IFCN table. 18 official routes have no matching catalog resource; 0 booking resources have no automatic island/code match. Every Madeira-island catalog resource is collected, including unmatched variants. Porto Santo is excluded. The booking catalog and official walking-route list are different inventories. A missing booking resource or an empty API response is not proof of closure or exemption.
 
 Status text is source context, preserved separately from availability. Read restrictions in the official source; a percentage does not establish that a route is open. Daily status snapshots are retained in data/context/ifcn.
 
@@ -28,7 +28,7 @@ Status text is source context, preserved separately from availability. Read rest
 | Madeira | PR6.8 | Levada do Paul II – Um Caminho para todos | ABERTO/OPEN | [285: PR6.8 \| Levada do Paul II - Um caminho para todos](trails/285.md) |
 | Madeira | PR7 | Levada do Moinho | ENCERRADO/CLOSED | **No matching booking resource** |
 | Madeira | PR8 | Vereda da Ponta de S. Lourenço | ABERTO/OPEN | [188: PR8 \| Vereda da Ponta de São Lourenço](trails/188.md) |
-| Madeira | PR9 | Levada do Caldeirão Verde | ABERTO/OPEN | [228: PR9 \| Levada do Caldeirão Verde](trails/228.md) |
+| Madeira | PR9 | Levada do Caldeirão Verde | ABERTO/OPEN | **No matching booking resource** |
 | Madeira | PR9.1 | Levada do Caldeirão Verde - Um Caminho para todos | ABERTO/OPEN | [292: PR9.1 \| Queimadas - Um Caminho para todos](trails/292.md) |
 | Madeira | PR10 | Levada do Furado | ENCERRADO/CLOSED | **No matching booking resource** |
 | Madeira | PR11 | Vereda dos Balcões | ABERTO/OPEN | [273: PR11 \| Vereda dos Balcões](trails/273.md) |
